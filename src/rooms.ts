@@ -1,6 +1,7 @@
 import { PROFESSIONS } from "./constants";
 
 export const rooms = [
+    //HOPEPORT
     {
         name: 'Rocky Road',
         location: [439.96, 2797.61],
@@ -644,6 +645,810 @@ export const rooms = [
         location: [],
         actions: []
     },
-
+    //HOPE FOREST
+    {
+        name: "Two Headed Bear Clearing",
+        location: [2317.02, 2846.08],
+        actions: [
+            { name: "Goat Horn", type: PROFESSIONS.FORAGER },
+            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
+            { name: "Yew Branches", type: PROFESSIONS.GATHERER }
+        ]
+    },
+    {
+        name: "Bear Behind",
+        location: [2081.39, 2629.58],
+        actions: [
+            { name: "Bear", type: PROFESSIONS.SCOUT },
+            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
+            { name: "Yew Branches", type: PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Bear Clearing",
+        location: [2278.75, 2629.58],
+        actions: [
+            { name: "Bear", type: PROFESSIONS.SCOUT },
+            { name: "Goat Horn", type: PROFESSIONS.FORAGER },
+            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
+            { name: "Yew Branches", type: PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Road to Hopeport",
+        location: [2325.80, 2130.35],
+        actions: [
+            { name: "Globeplant", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Forest Clearing",
+        location: [2539.16, 2137.21],
+        actions: [
+            { name: "Outlaw", "type": PROFESSIONS.SCOUT },
+            { name: "Globeplant", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Forest Path",
+        location: [2805.40, 2190.46],
+        actions: [
+            { name: "Outlaw", "type": PROFESSIONS.SCOUT }
+        ]
+    },
+    {
+        name: "Goblin Camp",
+        location: [2814.96, 2054.61],
+        actions: [
+            { name: "Goblin", "type": PROFESSIONS.SCOUT },
+            { name: "Obelisk", "type": PROFESSIONS.OBELISK }
+        ]
+    },
+    {
+        name: "Mushroom Glade",
+        location: [2396.49, 1904.42],
+        actions: [
+            { name: "Dandelion", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Huntsman's Clearing",
+        location: [2604.70, 1924.90],
+        actions: [
+            { name: "Wild Boar", "type": PROFESSIONS.SCOUT },
+            { name: "Dandelion", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Timberwell Supplies",
+        location: [2408.96, 1603.58],
+        actions: [
+            { name: "Basket" },
+            { name: "Bottle" },
+            { name: "Bucket" },
+            { name: "Crate" },
+            { name: "Jar" },
+            { name: "Sack" },
+            { name: "Hand Rake" },
+            { name: "Sickle" },
+            { name: "Tier 2 Sickle" },
+            { name: "Tier 2 Hand Rake" },
+            { name: "Tier 3 Hand Rake" },
+            { name: "Tier 3 Sickle" },
+        ]
+    },
+    {
+        name: "Timberwell Road",
+        location: [2658.77, 1654.70],
+        actions: [
+            { name: "Ash Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Ash Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Timberwell Side Road",
+        location: [2380.10, 1470.84],
+        actions: [
+            { name: "Apple", "type": PROFESSIONS.FORAGER },
+            { name: "Ash Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Ash Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "The Color Wheel",
+        location: [2178.74, 1468.99],
+        actions: [
+            { name: "Dyes", "type": PROFESSIONS.SELLER }
+        ]
+    },
+    {
+        name: "Mr McGrish's Garden",
+        location: [2237.28, 1279.37],
+        actions: [
+            { name: "Apple", "type": PROFESSIONS.FORAGER },
+            { name: "Ash Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Ash Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Gwen's Lumber",
+        location: [2485.44, 1361.81],
+        actions: [
+            { name: "Coarse Ash Log" },
+            { name: "Coarse Oak Log" },
+            { name: "Coarse Pine Log" },
+            { name: "Coarse Hickory Log" },
+            { name: "Coarse Juniper Log" },
+            { name: "Coarse Poplar Log" },
+            { name: "Coarse Suave Log" },
+            { name: "Coarse Yew Log" },
+            { name: "Rugged Ash Log" },
+            { name: "Rugged Oak Log" },
+            { name: "Rugged Pine Log" },
+            { name: "Rugged Hickory Log" },
+            { name: "Rugged Juniper Log" },
+            { name: "Rugged Poplar Log" },
+            { name: "Rugged Suave Log" },
+            { name: "Rugged Yew Log" },
+            { name: "Average Ash Log" },
+            { name: "Average Oak Log" },
+            { name: "Average Pine Log" },
+            { name: "Average Hickory Log" },
+            { name: "Average Juniper Log" },
+            { name: "Average Poplar Log" },
+            { name: "Average Suave Log" },
+            { name: "Average Yew Log" },
+            { name: "Fine Ash Log" },
+            { name: "Fine Oak Log" },
+            { name: "Fine Pine Log" },
+            { name: "Fine Hickory Log" },
+            { name: "Fine Juniper Log" },
+            { name: "Fine Poplar Log" },
+            { name: "Fine Suave Log" },
+            { name: "Fine Yew Log" },
+            { name: "Sturdy Ash Log" },
+            { name: "Sturdy Oak Log" },
+            { name: "Sturdy Pine Log" },
+            { name: "Sturdy Hickory Log" },
+            { name: "Sturdy Juniper Log" },
+            { name: "Sturdy Poplar Log" },
+            { name: "Sturdy Suave Log" },
+            { name: "Sturdy Yew Log" },
+            { name: "Perfect Ash Log" },
+            { name: "Perfect Oak Log" },
+            { name: "Perfect Pine Log" },
+            { name: "Perfect Hickory Log" },
+            { name: "Perfect Juniper Log" },
+            { name: "Perfect Poplar Log" },
+            { name: "Perfect Suave Log" },
+            { name: "Perfect Yew Log" },
+        ]
+    },
+    {
+        name: "Timberwell Green",
+        location: [2646.21, 1322.24],
+        actions: [
+            { name: "Catkin", "type": PROFESSIONS.FORAGER },
+            { name: "Ash Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Ash Branches", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Morauce\'s Pointy Implements", "type": PROFESSIONS.SELLER },
+            { name: "Timber", "type": PROFESSIONS.STORAGE }
+        ]
+    },
+    {
+        name: "Morauce\'s Point Implements",
+        location: [2646.21, 1322.24],
+        actions: [
+            { name: "Hand Saw" },
+            { name: "Hatchet" },
+            { name: "Two Person Saw" },
+            { name: "Tree Loppers" }
+        ]
+    },
+    {
+        name: "Timber Merchant",
+        location: [2626.42, 1043.57],
+        actions: [
+            { name: "Coarse Ash Plank" },
+            { name: "Coarse Oak Pole" },
+            { name: "Coarse Pine Pole" },
+            { name: "Coarse Hickory Pole" },
+            { name: "Coarse Juniper Stave" },
+            { name: "Coarse Poplar Pole" },
+            { name: "Coarse Suave Pole" },
+            { name: "Coarse Yew Pole" },
+            { name: "Rugged Ash Plank" },
+            { name: "Rugged Oak Pole" },
+            { name: "Rugged Pine Pole" },
+            { name: "Rugged Hickory Pole" },
+            { name: "Rugged Juniper Stave" },
+            { name: "Rugged Poplar Pole" },
+            { name: "Rugged Suave Log" },
+            { name: "Rugged Yew Pole" },
+            { name: "Average Ash Plank" },
+            { name: "Average Oak Pole" },
+            { name: "Average Pine Pole" },
+            { name: "Average Hickory Pole" },
+            { name: "Average Juniper Stave" },
+            { name: "Average Poplar Pole" },
+            { name: "Average Suave Log" },
+            { name: "Average Yew Pole" },
+            { name: "Fine Ash Plank" },
+            { name: "Fine Oak Pole" },
+            { name: "Fine Pine Pole" },
+            { name: "Fine Hickory Pole" },
+            { name: "Fine Juniper Stave" },
+            { name: "Fine Poplar Pole" },
+            { name: "Fine Suave Log" },
+            { name: "Fine Yew Pole" },
+            { name: "Sturdy Ash Plank" },
+            { name: "Sturdy Oak Pole" },
+            { name: "Sturdy Pine Pole" },
+            { name: "Sturdy Hickory Pole" },
+            { name: "Sturdy Juniper Stave" },
+            { name: "Sturdy Poplar Pole" },
+            { name: "Sturdy Suave Log" },
+            { name: "Sturdy Yew Pole" },
+            { name: "Perfect Ash Plank" },
+            { name: "Perfect Oak Pole" },
+            { name: "Perfect Pine Pole" },
+            { name: "Perfect Hickory Pole" },
+            { name: "Perfect Juniper Stave" },
+            { name: "Perfect Poplar Pole" },
+            { name: "Perfect Suave Log" },
+            { name: "Perfect Yew Pole" }
+        ]
+    },
+    {
+        name: "Carpenter's Workshop",
+        location: [2626.42, 1043.57],
+        actions: [
+            { name: "Lumber", "type": PROFESSIONS.STORAGE },
+            { name: "Sawmill", "type": PROFESSIONS.CARPENTER },
+            { name: "Furniture Assembly Station", "type": PROFESSIONS.CARPENTER },
+            { name: "Workbench", "type": PROFESSIONS.CARPENTER },
+            { name: "Timber Merchant", "type": PROFESSIONS.SELLER }
+        ]
+    },
+    {
+        name: "Thin Trail",
+        location: [2687.04, 2837.96],
+        actions: [
+            { name: "Leek", "type": PROFESSIONS.FORAGER },
+            { name: "Yew Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Yew Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Narrow Path",
+        location: [2684.77, 2689.04],
+        actions: [
+            { name: "Leek", "type": PROFESSIONS.GATHERER },
+            { name: "Yew Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Yew Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Leafy Junction",
+        location: [2490.49, 2587.74],
+        actions: [
+            { name: "Wildman", "type": PROFESSIONS.SCOUT },
+            { name: "Yew Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Yew Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Leafy Lane",
+        location: [2485.12,2391.76],
+        actions: [
+            { name: "Yew Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Yew Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Secluded Dead End",
+        location: [2622.73,2487.20],
+        actions: [
+            { name: "Satyr", "type": PROFESSIONS.SCOUT },
+            { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Hickory Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Secluded Path",
+        location: [2758.13,2456.13],
+        actions: [
+            { name: "Tangfruit", "type": PROFESSIONS.FORAGER },
+            { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Hickory Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Secluded Junction",
+        location: [2915.71,2452.80],
+        actions: [
+            { name: "Orchid", "type": PROFESSIONS.FORAGER },
+            { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Hickory Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Dryad Glade",
+        location: [2702.64,2339.60],
+        actions: [
+            { name: "Tangfruit", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Luscious Glade",
+        location: [2907.95,2346.26],
+        actions: [
+            { name: "Orchid", "type": PROFESSIONS.FORAGER },
+            { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Hickory Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "North Central Path",
+        location: [3036.68,2371.78],
+        actions: [
+            { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Hickory Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Wooded Clifftop",
+        location: [2903.39,3258.93],
+        actions: [
+            { name: "Bramblelith", "type": PROFESSIONS.SCOUT }
+        ]
+    },
+    {
+        name: "Rising Trail",
+        location: [2912.41,3119.57],
+        actions: [
+            { name: "Bramblelith", "type": PROFESSIONS.SCOUT }
+        ]
+    },
+    {
+        name: "North Peat Bog",
+        location: [3036.19,3338.44],
+        actions: [
+            { name: "Dock Leaf", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Peat Bog",
+        location: [3036.19,3235.97],
+        actions: [
+            { name: "Dock Leaf", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Hopeforest North Portal Stone",
+        location: [3194.40,3104.00],
+        actions: [
+            { name: "Portal Stone", "type": PROFESSIONS.PORTALSTONE }
+        ]
+    },
+    {
+        name: "Treeway Clearing",
+        location: [2978.81,2983.50],
+        actions: [
+            { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Berry Glade",
+        location: [3187.04,2951.50],
+        actions: [
+            { name: "Haleberries", "type": PROFESSIONS.FORAGER },
+            { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Tangled Path",
+        location: [2849.92,2596.53],
+        actions: [
+            { name: "Storage Rift", "type": PROFESSIONS.STORAGE },
+        ]
+    },
+    {
+        name: "Canopy Junction",
+        location: [2947.90,2833.41],
+        actions: [
+            { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Treeway Junction",
+        location: [3049.12,2828.03],
+        actions: [
+            { name: "Spriggan", "type": PROFESSIONS.SCOUT }
+        ]
+    },
+    {
+        name: "Canopy Lane",
+        location: [2870.38,2738.66],
+        actions: [
+            { name: "Beetroot", "type": PROFESSIONS.FORAGER },
+            { name: "Hazelnut", "type": PROFESSIONS.FORAGER },
+            { name: "Worms", "type": PROFESSIONS.FORAGER },
+            { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Treeway Trail",
+        location: [3219.01,2836.80],
+        actions: [
+            { name: "Spriggan", "type": PROFESSIONS.SCOUT },
+            { name: "Haleberries", "type": PROFESSIONS.FORAGER },
+            { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Twisted Road",
+        location: [3466.72,2799.17],
+        actions: [
+            { name: "Shade", "type": PROFESSIONS.SCOUT },
+            { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Stump Clearing",
+        location: [3024.38,2640.08],
+        actions: [
+            { name: "Moss Monster", "type": PROFESSIONS.SCOUT },
+            { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Cutters Clearing",
+        location: [3244.92,2724.74],
+        actions: [
+            { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Split Wood for Murphy", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Bones", "type": PROFESSIONS.STORAGE }
+        ]
+    },
+    {
+        name: "Shortcut",
+        location: [3400.68,2567.44],
+        actions: [
+            { name: "Brambles", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Stumped Path",
+        location: [3233.04,2566.44],
+        actions: [
+            { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Twisted Junction",
+        location: [3531.39,2589.39],
+        actions: [
+            { name: "Shade", "type": PROFESSIONS.SCOUT }
+        ]
+    },
+    {
+        name: "Wolves' Den",
+        location: [3743.64,2843.60],
+        actions: [
+            { name: "Wolf", "type": PROFESSIONS.SCOUT },
+            { name: "Femur Shard", "type": PROFESSIONS.FORAGER },
+            { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Gnarled Path",
+        location: [3671.84,2718.26],
+        actions: [
+            { name: "Femur Shard", "type": PROFESSIONS.FORAGER },
+            { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Overgrown Trail",
+        location: [3698.61,2578.32],
+        actions: [
+            { name: "Bone Spike", "type": PROFESSIONS.FORAGER },
+            { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Storage Rift", "type": PROFESSIONS.STORAGE }
+        ]
+    },
+    {
+        name: "Crystal Clearing",
+        location: [3909.13,2567.37],
+        actions: [
+            { name: "Bone Spike", "type": PROFESSIONS.FORAGER },
+            { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Bramble Path",
+        location: [3705.91,2463.93],
+        actions: [
+            { name: "Brambles", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Mushroom Grove",
+        location: [3703.48,2355.63],
+        actions: [
+            { name: "Acorn", "type": PROFESSIONS.FORAGER },
+            { name: "Ancient Coin", "type": PROFESSIONS.FORAGER },
+            { name: "Sheep Rib", "type": PROFESSIONS.FORAGER },
+            { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Logging Area",
+        location: [3221.44,2355.77],
+        actions: [
+            { name: "Thistle", "type": PROFESSIONS.FORAGER },
+            { name: "Poplar Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Poplar Branches", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Split Wood for Claude", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Snakes Path",
+        location: [3402.12,2376.40],
+        actions: [
+            { name: "Viper", "type": PROFESSIONS.SCOUT },
+            { name: "Snake Scale", "type": PROFESSIONS.FORAGER },
+            { name: "Poplar Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Poplar Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Snakes Clearing",
+        location:  [3372.42,2194.06],
+        actions: [
+            { name: "Viper", "type": PROFESSIONS.SCOUT },
+            { name: "Chestnut", "type": PROFESSIONS.FORAGER },
+            { name: "Snake Scale", "type": PROFESSIONS.FORAGER },
+            { name: "Poplar Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Poplar Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Central Junction",
+        location: [3171.94,2199.02],
+        actions: [
+            { name: "Chestnut", "type": PROFESSIONS.FORAGER },
+            { name: "Poplar Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Poplar Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Central Crossroads",
+        location: [3011.05,2198.19],
+        actions: [
+            { name: "Beetle", "type": PROFESSIONS.FORAGER },
+            { name: "Bug", "type": PROFESSIONS.FORAGER },
+            { name: "Lichen", "type": PROFESSIONS.FORAGER },
+            { name: "Poplar Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Poplar Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Ivy Path",
+        location: [ /* coordinates would go here if specified */ ],
+        actions: []
+    },
+    {
+        name: "Hopeforest Central Portal Stone",
+        location: [3119.65,2013.34],
+        actions: [
+            { name: "Portal Stone", "type": PROFESSIONS.PORTALSTONE }
+        ]
+    },
+    {
+        name: "Cliffside Junction",
+        location: [3327.17,1953.30],
+        actions: [
+            { name: "Tree Cat", "type": PROFESSIONS.SCOUT },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Cyclops Path",
+        location: [3496.85,1966.35],
+        actions: [
+            { name: "Rams Horn", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Ivy Junction",
+        location: [3007.40,1838.44],
+        actions: [
+            { name: "Wendigo", "type": PROFESSIONS.SCOUT },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Ivy Trail",
+        location: [3179.69,1846.27],
+        actions: [
+            { name: "Wendigo", "type": PROFESSIONS.SCOUT },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Cliffside Shortcut",
+        location: [3327.17,1818.86],
+        actions: [
+            { name: "Brambles", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Quiet Grove",
+        location: [3483.80,1871.07],
+        actions: [
+            { name: "Rams Horn", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Huntsman's Path",
+        location: [2807.70,1838.44],
+        actions: [
+            { name: "Storage Rift", "type": PROFESSIONS.STORAGE }
+        ]
+    },
+    {
+        name: "Lumber Clearing",
+        location: [2857.43,1660.44],
+        actions: [
+            { name: "Clover", "type": PROFESSIONS.FORAGER },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Split Wood for Hanna", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Fern Junction",
+        location: [3024.20,1708.08],
+        actions: [
+            { name: "Clover", "type": PROFESSIONS.FORAGER },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Path of Good Intentions",
+        location: [3207.99,1701.28],
+        actions: [
+            { name: "Bitterfruit", "type": PROFESSIONS.FORAGER },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Cliffside Path",
+        location: [3274.93,1576.48],
+        actions: [
+            { name: "Bitterfruit", "type": PROFESSIONS.FORAGER },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Mine Road West",
+        location: [2841.55,1489.13],
+        actions: [
+            { name: "Catkin", "type": PROFESSIONS.FORAGER },
+            { name: "Aboreden Egg", "type": PROFESSIONS.FORAGER },
+            { name: "Shoot", "type": PROFESSIONS.FORAGER },
+            { name: "Stalks", "type": PROFESSIONS.FORAGER }
+        ]
+    },
+    {
+        name: "Mine Road East",
+        location: [3083.20,1453.96],
+        actions: [
+            { name: "Giant Fly", "type": PROFESSIONS.SCOUT },
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Barricades",
+        location: [3294.21,1439.21],
+        actions: [
+            { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Tree Lined Trail",
+        location: [2857.61,1305.41],
+        actions: [
+            { name: "Aboreden", "type": PROFESSIONS.SCOUT },
+            { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Tree Lined Track",
+        location:[2843.58,1059.75],
+        actions: [
+            { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Small Clearing",
+        location: [3013.65,1369.65],
+        actions: [
+            { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Acidic Avenue",
+        location: [3021.09,1202.20],
+        actions: []
+    },
+    {
+        name: "Pool of Rainbows",
+        location: [3008.84,985.89],
+        actions: [
+            { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Storage Rift", "type": PROFESSIONS.STORAGE }
+        ]
+    },
+    {
+        name: "Hopeforest Ferry",
+        location: [2790.13,855.25],
+        actions: [
+            { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Ferry South Shore",
+        location: [2808.79,547.78],
+        actions: [
+            { name: "Sage", "type": PROFESSIONS.FORAGER },
+            { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    },
+    {
+        name: "Himatik Ruins",
+        location: [2822.50,376.37],
+        actions: [
+            { name: "Sage", "type": PROFESSIONS.FORAGER },
+            { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
+            { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
+        ]
+    }
     // More rooms as needed
 ];

@@ -58,7 +58,7 @@ const areaLayer = new VectorLayer({
         width: 3,
       }),
       fill: new Fill({
-        color: feature.get('name') != 'hopeport' ? feature.get('color') : 'rgba(0, 0, 0, 0)', // No fill
+        color: (feature.get('name') != 'hopeport' && feature.get('name') != 'hopeforest') ? feature.get('color') : 'rgba(0, 0, 0, 0)', // No fill
       }),
     });
   },
@@ -92,24 +92,24 @@ const overlay = new Overlay({
 map.addOverlay(overlay);
 
 
-// Display tooltip on hover
-// map.on('pointermove', (event) => {
-//   const coords = map.getCoordinateFromPixel(event.pixel);
-//   const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
-//   overlay.setPosition(event.coordinate);
-//     // Set the content of the coordDisplay div
-//     tooltip.innerHTML = `X: ${x}, Y: ${y}`;
-//     // Position the display div near the cursor
-//     tooltip.style.left = `${event.originalEvent.pageX + 15}px`;
-//     tooltip.style.top = `${event.originalEvent.pageY + 15}px`;
-// });
+//Display tooltip on hover
+map.on('pointermove', (event) => {
+  const coords = map.getCoordinateFromPixel(event.pixel);
+  const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
+  overlay.setPosition(event.coordinate);
+    // Set the content of the coordDisplay div
+    tooltip.innerHTML = `X: ${x}, Y: ${y}`;
+    // Position the display div near the cursor
+    tooltip.style.left = `${event.originalEvent.pageX + 15}px`;
+    tooltip.style.top = `${event.originalEvent.pageY + 15}px`;
+});
 
-// // Log coordinates to console on map click
-// map.on('click', function (event) {
-//   const coords = map.getCoordinateFromPixel(event.pixel);
-//   const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
-//   console.log(`Clicked coordinates: [${x},${y}]`);
-// });
+// Log coordinates to console on map click
+map.on('click', function (event) {
+  const coords = map.getCoordinateFromPixel(event.pixel);
+  const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
+  console.log(`Clicked coordinates: [${x},${y}]`);
+});
 
 // Vector layer for drawing
 const drawSource = new VectorSource();
