@@ -1,18 +1,20 @@
 import 'ol/ol.css';
-import {Feature, Map, Overlay, View} from 'ol';
+import { Feature, Map, Overlay, View } from 'ol';
 import ImageLayer from 'ol/layer/Image.js';
 import Static from 'ol/source/ImageStatic.js';
 import Projection from 'ol/proj/Projection.js';
-import {Draw} from 'ol/interaction';
-import {Vector as VectorLayer} from 'ol/layer';
-import {Vector as VectorSource} from 'ol/source';
-import {getCenter} from 'ol/extent.js';
-import {Style, Stroke, Fill} from 'ol/style';
-import { Polygon } from 'ol/geom';
+import { Draw } from 'ol/interaction';
+import { Vector as VectorLayer } from 'ol/layer';
+import { Vector as VectorSource } from 'ol/source';
+import { getCenter } from 'ol/extent.js';
+import { Style, Stroke, Fill, Circle } from 'ol/style';
+import { Point, Polygon } from 'ol/geom';
 import { areas } from './areas';
 
 import './style.css'
 import { rooms } from './rooms';
+import { fromLonLat } from 'ol/proj';
+import { legendItems, PROFESSIONS } from './constants';
 
 // Define the extent of your map image
 const extent = [0, 0, 6754, 3668];
@@ -28,7 +30,7 @@ const background = new ImageLayer({
     imageExtent: extent,
   }),
 })
-background.set('title',"Background");
+background.set('title', "Background");
 
 // Initialize the map with a static image layer
 const map = new Map({
@@ -63,12 +65,11 @@ const areaLayer = new VectorLayer({
     });
   },
 });
-areaLayer.set('title',"Areas");
+areaLayer.set('title', "Areas");
 
 // Add predefined areas as features to the vector source
 areas.forEach(area => {
   const polygon = new Polygon(area.poly);
-  console.log(area);
   const feature = new Feature({
     geometry: polygon,
     name: area.name,
@@ -93,28 +94,28 @@ map.addOverlay(overlay);
 
 
 //Display tooltip on hover
-map.on('pointermove', (event) => {
-  const coords = map.getCoordinateFromPixel(event.pixel);
-  const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
-  overlay.setPosition(event.coordinate);
-    // Set the content of the coordDisplay div
-    tooltip.innerHTML = `X: ${x}, Y: ${y}`;
-    // Position the display div near the cursor
-    tooltip.style.left = `${event.originalEvent.pageX + 15}px`;
-    tooltip.style.top = `${event.originalEvent.pageY + 15}px`;
-});
+// map.on('pointermove', (event) => {
+//   const coords = map.getCoordinateFromPixel(event.pixel);
+//   const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
+//   overlay.setPosition(event.coordinate);
+//     // Set the content of the coordDisplay div
+//     tooltip.innerHTML = `X: ${x}, Y: ${y}`;
+//     // Position the display div near the cursor
+//     tooltip.style.left = `${event.originalEvent.pageX + 15}px`;
+//     tooltip.style.top = `${event.originalEvent.pageY + 15}px`;
+// });
 
-// Log coordinates to console on map click
-map.on('click', function (event) {
-  const coords = map.getCoordinateFromPixel(event.pixel);
-  const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
-  console.log(`Clicked coordinates: [${x},${y}]`);
-});
+// // Log coordinates to console on map click
+// map.on('click', function (event) {
+//   const coords = map.getCoordinateFromPixel(event.pixel);
+//   const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
+//   console.log(`Clicked coordinates: [${x},${y}]`);
+// });
 
 // Vector layer for drawing
 const drawSource = new VectorSource();
 // const drawLayer = new VectorLayer({
-  
+
 //   source: drawSource,
 //   style: new Style({
 //     stroke: new Stroke({
@@ -140,7 +141,7 @@ draw.on('drawend', function (event) {
   const polygon = event.feature.getGeometry() as Polygon;
   const coordinates = polygon.getCoordinates();
   console.log('Polygon coordinates:', coordinates);
-  
+
   // Optionally, you could do something else with these coordinates,
   // like displaying them on the page or storing them
 
@@ -173,10 +174,10 @@ function addLayerToggle(layer: any) {
 
 // Add existing layers to the control
 map.getLayers().forEach((layer, i) => {
-  if(i > 0) {
+  if (i > 0) {
     addLayerToggle(layer);
   }
-  
+
 });
 
 
@@ -186,35 +187,35 @@ function populateSuggestions(searchText: string) {
   suggestionsBox.innerHTML = ''; // Clear previous suggestions
   suggestionsBox.style.display = 'none';
 
-  if (searchText.length < 2 ) return;
+  if (searchText.length < 2) return;
 
   const matchingRooms = rooms.filter((room: any) =>
-      Object.values(room!.actions).some((action: any) =>action.name.toLowerCase().includes(searchText.toLowerCase()))
+    Object.values(room!.actions).some((action: any) => action.name.toLowerCase().includes(searchText.toLowerCase()))
   );
 
   matchingRooms.forEach((room: any) => {
     const item = room.actions.find((action: any) => action.name.toLowerCase().includes(searchText.toLowerCase()))
-      const suggestion = document.createElement('div');
-      suggestion.className = 'suggestion-item';
-      suggestion.textContent = `${item.name} - ${room.name}`;
-      suggestion.onclick = () => {
-          centerMapOnRoom(room);
-          suggestionsBox.style.display = 'none';
-      };
-      suggestionsBox.appendChild(suggestion);
+    const suggestion = document.createElement('div');
+    suggestion.className = 'suggestion-item';
+    suggestion.textContent = `${item.name} - ${room.name}`;
+    suggestion.onclick = () => {
+      centerMapOnRoom(room);
+      suggestionsBox.style.display = 'none';
+    };
+    suggestionsBox.appendChild(suggestion);
   });
 
   if (matchingRooms.length > 0) {
-      suggestionsBox.style.display = 'block';
+    suggestionsBox.style.display = 'block';
   }
 }
 
 // Function to center map on a selected room
 function centerMapOnRoom(room: any) {
   map.getView().animate({
-      center: room.location,
-      duration: 1000,
-      zoom: 5
+    center: room.location,
+    duration: 1000,
+    zoom: 6
   });
 }
 
@@ -222,13 +223,95 @@ function centerMapOnRoom(room: any) {
 // Set up search box with event listener for input
 const searchBox = document.getElementById('search-box')! as HTMLInputElement;
 searchBox.addEventListener('input', () => {
-    const searchText = searchBox.value;
-    populateSuggestions(searchText);
+  const searchText = searchBox.value;
+  populateSuggestions(searchText);
 });
 
 // Hide suggestions when clicking outside
 document.addEventListener('click', (event) => {
-    if (!document.getElementById('search-container')!.contains(event.target as any)) {
-        document.getElementById('suggestions')!.style.display = 'none';
-    }
+  if (!document.getElementById('search-container')!.contains(event.target as any)) {
+    document.getElementById('suggestions')!.style.display = 'none';
+  }
 });
+
+
+
+
+
+
+
+
+
+
+
+const legendContainer = document.getElementById("legend") as HTMLDivElement;
+
+legendItems.forEach(item => {
+  const legendItem = document.createElement('div');
+  legendItem.classList.add("legend-item");
+  legendItem.innerHTML = item;
+  legendItem.addEventListener('click', ()=> highlightCategory(item)) 
+  legendContainer.appendChild(legendItem);
+})
+// <div class="legend-item" onclick="highlightCategory('Portal Stone')">Portal Stones</div>
+// <div class="legend-item" onclick="highlightCategory('Storage Rift')">Storage Rifts</div>
+
+// Style for invisible markers
+const invisibleStyle = new Style({
+  image: new Circle({
+    radius: 6,
+    fill: new Fill({ color: 'rgba(0, 0, 255, 0)' }) // Invisible by default
+  })
+});
+
+// Style for visible/highlighted markers
+const visibleStyle = new Style({
+  image: new Circle({
+    radius: 6,
+    stroke: new Stroke({ color: 'rgba(255, 255, 255, 1)', width: 2 }),
+    fill: new Fill({ color: 'rgba(125, 255, 125, 1)' }) // Change color as needed
+  })
+});
+
+const markerSource = new VectorSource();
+const markerLayer: VectorLayer = new VectorLayer({
+  source: markerSource,
+  style: invisibleStyle
+});
+markerLayer.set('title', "Items");
+
+rooms.forEach((d) => {
+  const feature = new Feature({
+    geometry: new Point(d.location),
+    name: d.name,
+    style: invisibleStyle
+  });
+  feature.set('actions', d.actions)
+  console.log(feature);
+  markerSource.addFeature(feature);
+});
+// Create vector source and layer for areas
+map.addLayer(markerLayer);
+
+function highlightCategory(category: string) {
+  markerLayer!.getSource()!.getFeatures().forEach((feature) => {
+    if (feature.get('actions').some((action: any) => {return action?.type?.toLowerCase() == category.toLowerCase()})) {
+      // Apply "ping" style
+      feature.setStyle(new Style({
+        image: new Circle({
+          radius: 6,
+          fill: new Fill({ color: 'blue' }),
+          stroke: new Stroke({ color: 'yellow', width: 2 })
+        })
+      }));
+      feature.setStyle(visibleStyle);
+      // Add ping animation class (CSS handles the animation)
+      setTimeout(() => {
+        feature.setStyle(invisibleStyle); // Reset to visible style after ping
+      }, 1000); // Adjust duration to match CSS animation timing
+      
+    } else {
+      feature.setStyle(invisibleStyle); // Keep other points invisible
+    }
+  });
+}

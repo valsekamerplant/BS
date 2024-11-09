@@ -25,3 +25,5 @@ export const PROFESSIONS = {
     OBELISK: "Obelist",
     PORTALSTONE: "Portal Stone"
 };
+
+export const legendItems = [PROFESSIONS.STORAGE,PROFESSIONS.OBELISK,PROFESSIONS.PORTALSTONE] 
