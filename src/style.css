@@ -80,21 +80,27 @@ h1 {
 }
 
 #legend {
-  padding: 10px;
   background: #fff;
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   left: 10px;
   z-index: 1000;
 }
+
 .legend-item {
+  padding: 10px;
+}
+
+.legend-item:hover {
   cursor: pointer;
-  margin: 5px 0;
+  background-color: #CCC;
   z-index: 999;
 }
+
 .ping {
   animation: ping-animation 1s infinite;
 }
+
 @keyframes ping-animation {
   0% {
     opacity: 1;

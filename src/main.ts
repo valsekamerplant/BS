@@ -13,8 +13,7 @@ import { areas } from './areas';
 
 import './style.css'
 import { rooms } from './rooms';
-import { fromLonLat } from 'ol/proj';
-import { legendItems, PROFESSIONS } from './constants';
+import { legendItems } from './constants';
 
 // Define the extent of your map image
 const extent = [0, 0, 6754, 3668];
@@ -60,7 +59,7 @@ const areaLayer = new VectorLayer({
         width: 3,
       }),
       fill: new Fill({
-        color: (feature.get('name') != 'hopeport' && feature.get('name') != 'hopeforest') ? feature.get('color') : 'rgba(0, 0, 0, 0)', // No fill
+        color: feature.get('name') == 'Crenopolis' ? feature.get('color') : 'rgba(0, 0, 0, 0)', // No fill
       }),
     });
   },
@@ -250,7 +249,7 @@ legendItems.forEach(item => {
   const legendItem = document.createElement('div');
   legendItem.classList.add("legend-item");
   legendItem.innerHTML = item;
-  legendItem.addEventListener('click', ()=> highlightCategory(item)) 
+  legendItem.addEventListener('click', () => highlightCategory(item))
   legendContainer.appendChild(legendItem);
 })
 // <div class="legend-item" onclick="highlightCategory('Portal Stone')">Portal Stones</div>
@@ -287,7 +286,6 @@ rooms.forEach((d) => {
     style: invisibleStyle
   });
   feature.set('actions', d.actions)
-  console.log(feature);
   markerSource.addFeature(feature);
 });
 // Create vector source and layer for areas
@@ -295,7 +293,7 @@ map.addLayer(markerLayer);
 
 function highlightCategory(category: string) {
   markerLayer!.getSource()!.getFeatures().forEach((feature) => {
-    if (feature.get('actions').some((action: any) => {return action?.type?.toLowerCase() == category.toLowerCase()})) {
+    if (feature.get('actions').some((action: any) => { return action?.type?.toLowerCase() == category.toLowerCase() })) {
       // Apply "ping" style
       feature.setStyle(new Style({
         image: new Circle({
@@ -309,9 +307,68 @@ function highlightCategory(category: string) {
       setTimeout(() => {
         feature.setStyle(invisibleStyle); // Reset to visible style after ping
       }, 1000); // Adjust duration to match CSS animation timing
-      
+
     } else {
       feature.setStyle(invisibleStyle); // Keep other points invisible
     }
   });
 }
+
+
+
+
+// Function to update URL with the closest point
+function updateUrlWithClosestPoint(name: string) {
+  const url = new URL(window.location.href);
+  url.searchParams.set('selectedRoom', name);
+  window.history.pushState({}, '', url);
+}
+
+// Find and highlight closest point on click
+map.on('singleclick', function (event) {
+  let closestFeature: any = null;
+  let minDistance = Infinity;
+
+  markerLayer!.getSource()!.getFeatures().forEach((feature) => {
+    const featureCoords = feature.getGeometry().getCoordinates();
+    const distance = Math.hypot(featureCoords[0] - event.coordinate[0], featureCoords[1] - event.coordinate[1]);
+
+    if (distance < minDistance) {
+      minDistance = distance;
+      closestFeature = feature;
+    }
+  });
+
+  if (closestFeature) {
+    const closestName = closestFeature.get('name');
+    closestFeature.setStyle(visibleStyle);
+    updateUrlWithClosestPoint(closestName);
+
+    // Reset highlight after a brief period
+    setTimeout(() => {
+      closestFeature.setStyle(invisibleStyle);
+    }, 1000);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const closest = params.get('selectedRoom');
+
+  if (closest) {
+    console.log(closest)
+    markerLayer!.getSource()!.getFeatures().forEach((feature) => {
+
+      if (feature.get('name') === closest) {
+
+        const selectedRoom = rooms.filter((room) => room.name == feature.get('name'))[0]
+        console.log(selectedRoom);
+        feature.setStyle(visibleStyle);
+        centerMapOnRoom(selectedRoom)
+
+        // Keep highlight temporarily
+        setTimeout(() => feature.setStyle(invisibleStyle), 1000);
+      }
+    });
+  }
+});

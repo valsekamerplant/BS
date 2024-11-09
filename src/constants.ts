@@ -22,8 +22,9 @@ export const PROFESSIONS = {
 	WATCHPERSON:"Watchperson",
     SELLER: "Seller",
     STORAGE: "Storage",
+    STORAGERIFT: "Storage Rift",
     OBELISK: "Obelist",
     PORTALSTONE: "Portal Stone"
 };
 
-export const legendItems = [PROFESSIONS.STORAGE,PROFESSIONS.OBELISK,PROFESSIONS.PORTALSTONE] 
+export const legendItems = [PROFESSIONS.STORAGE,PROFESSIONS.OBELISK,PROFESSIONS.PORTALSTONE, PROFESSIONS.STORAGERIFT] 

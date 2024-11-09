@@ -4,259 +4,264 @@ export const rooms = [
     //HOPEPORT
     {
         name: 'Rocky Road',
-        location: [439.96, 2797.61],
+        location: [407.92,2723.71],
         actions: [{ name: 'Punkupine', type: PROFESSIONS.GUARD }]
     },
     {
         name: 'Collapsed Hovels',
-        location: [337.90, 2614.39],
+        location: [280.97,2556.14],
         actions: [{ name: 'Ghoul', type: PROFESSIONS.GUARD }, { name: 'Feather', type: PROFESSIONS.GATHERER }, { name: 'Maggots (any)', type: PROFESSIONS.GATHERER }, { name: 'Moth Wing', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Wasteland',
-        location: [444.87, 2443.96],
+        location: [407.92,2380.11],
         actions: [{ name: 'Ghoul', type: PROFESSIONS.GUARD }, { name: 'Monument Piece', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Overgrow Road',
-        location: [641.29, 2340.57],
+        location: [600.88,2278.44],
         actions: [{ name: 'Hairbeast', type: PROFESSIONS.GUARD }, { name: 'Nettle', type: PROFESSIONS.GATHERER }, { name: 'WaterLily', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Crater',
-        location: [463.30, 2152.11],
+        location: [428.23,2090.56],
         actions: [{ name: 'Giant Ant', type: PROFESSIONS.GUARD }, { name: 'Hogberries', type: PROFESSIONS.GATHERER }, { name: 'Monument Piece', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Pirate Hideout',
-        location: [221.18, 2137.71],
+        location: [189.57,2080.41],
         actions: [{ name: 'Pirate', type: PROFESSIONS.GUARD }, { name: 'Gurnard (any)', type: PROFESSIONS.FISHER }, { name: 'Limpet', type: PROFESSIONS.GATHERER }, { name: 'Wrack', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Ray Bay',
-        location: [259.31, 1926.46],
+        location: [230.20,1858.68],
         actions: [{ name: 'Limpet', type: PROFESSIONS.GATHERER }, { name: 'Ray (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Starfish Point',
-        location: [248.99, 1716.22],
+        location: [213.27,1658.95],
         actions: [, { name: 'Wrack', type: PROFESSIONS.GATHERER }, { name: 'Starfish', type: PROFESSIONS.GATHERER }, { name: 'Cod (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Jellyfish Landing',
-        location: [450.98, 1730.24],
+        location: [414.69,1684.34],
         actions: [{ name: 'Jellyfish', type: PROFESSIONS.GUARD }, { name: 'Kelp', type: PROFESSIONS.GATHERER }, { name: 'Starfish', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Fallen Monument',
-        location: [423.65, 1917.71],
+        location: [413.00,1863.75],
         actions: [{ name: 'Carnivorous Plant', type: PROFESSIONS.GUARD }, { name: 'Hogberries', type: PROFESSIONS.GATHERER }, { name: 'Potato', type: PROFESSIONS.GATHERER }, { name: 'Monument Piece', type: PROFESSIONS.GATHERER }, { name: 'Fallen Monument', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Rubble Road',
-        location: [671.53, 2115.84],
+        location: [631.34,2056.71],
         actions: [{ name: 'Hairbeast', type: PROFESSIONS.GUARD }, { name: 'Bellplant', type: PROFESSIONS.GATHERER }, { name: 'Water lilly', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Overgrown Pond',
-        location: [854.15, 2055.69],
+        location: [800.61,1990.70],
         actions: [{ name: 'Bugman', type: PROFESSIONS.GUARD }, { name: 'Nettle', type: PROFESSIONS.GATHERER }, { name: 'Pond Weed', type: PROFESSIONS.GATHERER }]
     },
 
     {
         name: 'Overgrown Field',
-        location: [664.28, 1928.15],
+        location: [624.57,1863.75],
         actions: [{ name: 'Carnivorous Plant', type: PROFESSIONS.GUARD }, { name: 'Bellplant', type: PROFESSIONS.GATHERER }, { name: 'Potato', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Seashells Seashore',
-        location: [680.23, 1686.84],
+        location: [638.11,1653.87],
         actions: [{ name: 'Bass (any)', type: PROFESSIONS.FISHER }, { name: 'Shell', type: PROFESSIONS.GATHERER }, { name: 'Anemone', type: PROFESSIONS.GATHERER }, { name: 'Sea Potato', type: PROFESSIONS.GATHERER }, { name: 'Sea Slug (any)', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'East Beach',
-        location: [872.99, 1664.86],
+        location: [822.61,1620.02],
         actions: [{ name: 'Crab', type: PROFESSIONS.GUARD }, { name: 'Flounder (any)', type: PROFESSIONS.FISHER }, { name: 'Kelp', type: PROFESSIONS.GATHERER }, { name: 'Shell', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Sea Road',
-        location: [916.04, 1812.92],
-        actions: [{ name: 'The seaside Rock Shop', type: PROFESSIONS.SELLER }, { name: 'Storage Rift', type: PROFESSIONS.STORAGE }]
+        location: [866.62,1746.96],
+        actions: [{ name: 'The seaside Rock Shop', type: PROFESSIONS.SELLER }, { name: 'Storage Rift', type: PROFESSIONS.STORAGERIFT }]
     },
     {
         name: 'Scrapyard',
-        location: [1067.36, 1959.68],
+        location: [1032.49,1897.61],
         actions: [{ name: 'Scrap Merchant', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'West Waterfront',
-        location: [1152.81, 1735.30],
+        location: [1126.06,1693.19],
         actions: [{ name: 'Lobster (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Little Lucy',
-        location: [1182.10, 1560.23],
+        location: [1148.90,1488.99],
         actions: [{ name: 'Wraddock (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Central Waterfront',
-        location: [1383.40, 1733.76],
+        location: [1349.07,1694.53],
         actions: [{ name: 'Bream (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Boardwalk',
-        location: [1613.64, 1744.44],
+        location: [1582.83,1687.82],
         actions: [{ name: 'Herring (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'East Waterfront',
-        location: [1851.72, 1743.14],
+        location: [1804.49,1689.16],
         actions: [{ name: 'Oyster (any)', type: PROFESSIONS.FISHER }, { name: 'Scrap Metal', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Vacant Pier',
-        location: [1797.58, 1568.98],
+        location: [1758.82,1506.45],
         actions: [{ name: 'Dab (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Vincible',
-        location: [1967.83, 1524.63],
+        location: [1944.21,1456.75],
         actions: [{ name: 'Sturlet (any)', type: PROFESSIONS.FISHER }]
     },
     {
+        name: 'Salty Swine',
+        location: [1314.14,1484.96],
+        actions: [{ name: 'Mackibut (any)', type: PROFESSIONS.FISHER }]
+    },
+    {
         name: 'Eel Street',
-        location: [1443.22, 1910.14],
+        location: [1393.41,1845.00],
         actions: [{ name: 'The frequently fresh fish stall', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Eel street Bridge',
-        location: [1441.02, 2078.17],
+        location: [1394.75,2016.95],
         actions: [{ name: 'Eel (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Hopeport Obelisk',
-        location: [1252.60, 2082.58],
+        location: [1215.15,2021.02],
         actions: [{ name: 'Obelist', type: PROFESSIONS.OBELISK }]
     },
     {
         name: 'Brannof Boulevard',
-        location: [1232.93, 2233.79],
+        location:  [1192.52,2181.98],
         actions: [{ name: 'Periwinkle', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Town Square',
-        location: [1441.92, 2228.41],
+        location: [1398.76,2166.89],
         actions: [{ name: 'Potion Reagents', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Stone Street',
-        location: [1465.91, 2441.73],
+        location: [1435.23,2350.50],
         actions: [{ name: 'Kevin\'s Ingredients', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Apothecary',
-        location: [1623.94, 2408.87],
+        location:  [1581.10,2344.21],
         actions: [{ name: 'Potion Stations', type: PROFESSIONS.ALCHEMIST }, { name: 'Passive Potion Stations', type: PROFESSIONS.ALCHEMIST }, { name: 'Work for Ebsworth', type: PROFESSIONS.ALCHEMIST }, { name: 'Potion Reagents', type: PROFESSIONS.STORAGE }, { name: 'Potions', type: PROFESSIONS.STORAGE }, { name: 'The Apothecary Shop', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Melv\s Fishing Supplies',
-        location: [1589.19, 2280.69],
+        location: [1550.92,2227.26],
         actions: [{ name: 'Fishing Bait', type: PROFESSIONS.STORAGE }, { name: 'Fishing Supplies', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Hairdresser',
-        location: [1712.80, 2281.21],
+        location: [1671.65,2223.48],
         actions: [{ name: 'Hairdresser', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Old Street West',
-        location: [1645.52, 2192.03],
+        location: [1606.25,2131.68],
         actions: [{ name: 'Wallplant', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Wilhope Passage',
-        location: [1582.93, 1960.98],
+        location: [1649.01,1919.15],
         actions: [{ name: 'Street Louse', type: PROFESSIONS.GUARD }]
     },
     {
         name: 'Tim\'s Alley',
-        location: [1834.32, 2078.33],
+        location: [1793.63,2010.96],
         actions: [{ name: 'Thief', type: PROFESSIONS.GUARD }]
     },
     {
         name: 'Limpet Lane',
-        location: [1835.36, 1861.36],
+        location: [1793.63,1802.20],
         actions: [{ name: 'Thief', type: PROFESSIONS.GUARD }]
     },
     {
         name: 'Little Square',
-        location: [1831.19, 1966.71],
+        location: [1791.11,1904.06],
         actions: [{ name: 'Louse', type: PROFESSIONS.GATHERER }, { name: 'Shimmerbean', type: PROFESSIONS.GATHERER }, { name: 'Spinseed', type: PROFESSIONS.GATHERER }, { name: 'Sprey', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Nook Alley',
-        location: [1919.34, 1873.88],
+        location: [1880.40,1822.32],
         actions: [{ name: 'Scrap Metal', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Murk Close',
-        location: [2006.96, 1968.28],
-        actions: [{ name: 'Thug', type: PROFESSIONS.GUARD }, { name: 'Storage Rift', type: PROFESSIONS.STORAGE }]
+        location: [1965.91,1905.32],
+        actions: [{ name: 'Thug', type: PROFESSIONS.GUARD }, { name: 'Storage Rift', type: PROFESSIONS.STORAGERIFT }]
     },
     {
         name: 'Hopeport Portal Stone',
-        location: [1201.50, 2827.37],
+        location: [1166.19,2756.11],
         actions: [{ name: 'Portal Stone', type: PROFESSIONS.PORTALSTONE }]
     },
     {
         name: 'Sparring Area',
-        location: [1122.85, 2628.53],
+        location: [1076.90,2566.22],
         actions: [{ name: 'Sparring Guard', type: PROFESSIONS.GUARD }]
     },
     {
         name: 'Quartermaster',
-        location: [1568.77, 2573.77],
+        location: [1522.08,2519.69],
         actions: [{ name: 'Quartermaster', type: PROFESSIONS.STORAGE }, { name: 'Quartermaster Shop', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Old Street East',
-        location: [1878.13, 2200.17],
+        location: [1841.50,2129.85],
         actions: [{ name: 'Deathcrow', type: PROFESSIONS.GUARD }, { name: 'Wallplant', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'The Cloakroom',
-        location: [1805.11, 2286.88],
+        location: [1767.30,2224.17],
         actions: [{ name: 'Capes', type: PROFESSIONS.STORAGE }, { name: 'Cape Shop', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'The Forager\'s Warehouse',
-        location: [1956.36, 2304.48],
+        location: [1899.35,2236.74],
         actions: [{ name: 'The Forager\'s Warehouse', type: PROFESSIONS.SELLER }]
     },
 
     {
         name: 'Enchantress Shop',
-        location: [1897.03, 2087.39],
+        location: [1856.59,2019.19],
         actions: [{ name: 'Enchantress', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Town Gates',
-        location: [2119.34, 2193.00],
+        location: [2062.61,2127.49],
         actions: [{ name: 'Deathcrow', type: PROFESSIONS.GUARD }]
     },
     {
         name: 'South Walls',
-        location: [2175.41, 2037.41],
+        location: [2130.52,1961.49],
         actions: [{ name: 'Goblin Chief', type: PROFESSIONS.GUARD }]
     },
     {
         name: 'North Walls',
-        location: [2176.71, 2368.86],
+        location: [2120.46,2294.74],
         actions: [{ name: 'Goblin Soldier', type: PROFESSIONS.GUARD }]
     },
     {
         name: 'Kevin\'s Ingredients ',
-        location: [1442.33, 2481.69],
+        location: [1407.11,2406.36],
         actions: [{ name: "Bread" },
         { name: "Butter" },
         { name: "Cabbage" },
@@ -314,7 +319,7 @@ export const rooms = [
     },
     {
         name: 'Ebsworth',
-        location: [1613.31, 2416.14],
+        location: [1594.07,2358.82],
         actions: [
             { name: "Bottle" },
             { name: "+1 Potion Boost Level" },
@@ -326,7 +331,7 @@ export const rooms = [
     },
     {
         name: 'Melv',
-        location: [1592.54, 2281.33],
+        location: [1548.12,2217.81],
         actions: [{ name: "Bucket" },
         { name: "Crate" },
         { name: "Fishing Spear" },
@@ -369,7 +374,7 @@ export const rooms = [
     },
     {
         name: 'Frequently fresh fish shop',
-        location: [1412.73, 1938.52],
+        location: [1365.91,1872.41],
         actions: [{ name: "Placid Bass" },
         { name: "Striped Bass" },
         { name: "Emerald Bass" },
@@ -483,7 +488,7 @@ export const rooms = [
     },
     {
         name: 'Forager\'s warehouse',
-        location: [1953.54, 2292.21],
+        location: [1899.35,2236.74],
         actions: [{ name: "Basket" },
         { name: "Bottle" },
         { name: "Bucket" },
@@ -496,7 +501,7 @@ export const rooms = [
     },
     {
         name: 'Zeltay Tramagan (Potion Reagents)',
-        location: [1488.91, 2184.51],
+        location: [1398.76,2166.89],
         actions: [
             { name: "Blue Aboredon Egg" },
             { name: "Stoneshell Aboredon Egg" },
@@ -543,107 +548,6 @@ export const rooms = [
             { name: "Brown Kelp" },
             { name: "White Periwinkle" },
             { name: "Creamy Wallplant" },]
-    },
-    {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
-    }, {
-        name: '',
-        location: [],
-        actions: []
     },
     //HOPE FOREST
     {
@@ -939,7 +843,7 @@ export const rooms = [
     },
     {
         name: "Leafy Lane",
-        location: [2485.12,2391.76],
+        location: [2485.12, 2391.76],
         actions: [
             { name: "Yew Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Yew Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -947,7 +851,7 @@ export const rooms = [
     },
     {
         name: "Secluded Dead End",
-        location: [2622.73,2487.20],
+        location: [2622.73, 2487.20],
         actions: [
             { name: "Satyr", "type": PROFESSIONS.SCOUT },
             { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
@@ -956,7 +860,7 @@ export const rooms = [
     },
     {
         name: "Secluded Path",
-        location: [2758.13,2456.13],
+        location: [2758.13, 2456.13],
         actions: [
             { name: "Tangfruit", "type": PROFESSIONS.FORAGER },
             { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
@@ -965,7 +869,7 @@ export const rooms = [
     },
     {
         name: "Secluded Junction",
-        location: [2915.71,2452.80],
+        location: [2915.71, 2452.80],
         actions: [
             { name: "Orchid", "type": PROFESSIONS.FORAGER },
             { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
@@ -974,14 +878,14 @@ export const rooms = [
     },
     {
         name: "Dryad Glade",
-        location: [2702.64,2339.60],
+        location: [2702.64, 2339.60],
         actions: [
             { name: "Tangfruit", "type": PROFESSIONS.FORAGER }
         ]
     },
     {
         name: "Luscious Glade",
-        location: [2907.95,2346.26],
+        location: [2907.95, 2346.26],
         actions: [
             { name: "Orchid", "type": PROFESSIONS.FORAGER },
             { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
@@ -990,7 +894,7 @@ export const rooms = [
     },
     {
         name: "North Central Path",
-        location: [3036.68,2371.78],
+        location: [3036.68, 2371.78],
         actions: [
             { name: "Hickory Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Hickory Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -998,42 +902,42 @@ export const rooms = [
     },
     {
         name: "Wooded Clifftop",
-        location: [2903.39,3258.93],
+        location: [2903.39, 3258.93],
         actions: [
             { name: "Bramblelith", "type": PROFESSIONS.SCOUT }
         ]
     },
     {
         name: "Rising Trail",
-        location: [2912.41,3119.57],
+        location: [2912.41, 3119.57],
         actions: [
             { name: "Bramblelith", "type": PROFESSIONS.SCOUT }
         ]
     },
     {
         name: "North Peat Bog",
-        location: [3036.19,3338.44],
+        location: [3036.19, 3338.44],
         actions: [
             { name: "Dock Leaf", "type": PROFESSIONS.FORAGER }
         ]
     },
     {
         name: "Peat Bog",
-        location: [3036.19,3235.97],
+        location: [3036.19, 3235.97],
         actions: [
             { name: "Dock Leaf", "type": PROFESSIONS.FORAGER }
         ]
     },
     {
         name: "Hopeforest North Portal Stone",
-        location: [3194.40,3104.00],
+        location: [3194.40, 3104.00],
         actions: [
             { name: "Portal Stone", "type": PROFESSIONS.PORTALSTONE }
         ]
     },
     {
         name: "Treeway Clearing",
-        location: [2978.81,2983.50],
+        location: [2978.81, 2983.50],
         actions: [
             { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -1041,7 +945,7 @@ export const rooms = [
     },
     {
         name: "Berry Glade",
-        location: [3187.04,2951.50],
+        location: [3187.04, 2951.50],
         actions: [
             { name: "Haleberries", "type": PROFESSIONS.FORAGER },
             { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1050,14 +954,14 @@ export const rooms = [
     },
     {
         name: "Tangled Path",
-        location: [2849.92,2596.53],
+        location: [2849.92, 2596.53],
         actions: [
-            { name: "Storage Rift", "type": PROFESSIONS.STORAGE },
+            { name: "Storage Rift", "type": PROFESSIONS.STORAGERIFT },
         ]
     },
     {
         name: "Canopy Junction",
-        location: [2947.90,2833.41],
+        location: [2947.90, 2833.41],
         actions: [
             { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -1065,14 +969,14 @@ export const rooms = [
     },
     {
         name: "Treeway Junction",
-        location: [3049.12,2828.03],
+        location: [3049.12, 2828.03],
         actions: [
             { name: "Spriggan", "type": PROFESSIONS.SCOUT }
         ]
     },
     {
         name: "Canopy Lane",
-        location: [2870.38,2738.66],
+        location: [2870.38, 2738.66],
         actions: [
             { name: "Beetroot", "type": PROFESSIONS.FORAGER },
             { name: "Hazelnut", "type": PROFESSIONS.FORAGER },
@@ -1083,7 +987,7 @@ export const rooms = [
     },
     {
         name: "Treeway Trail",
-        location: [3219.01,2836.80],
+        location: [3219.01, 2836.80],
         actions: [
             { name: "Spriggan", "type": PROFESSIONS.SCOUT },
             { name: "Haleberries", "type": PROFESSIONS.FORAGER },
@@ -1093,7 +997,7 @@ export const rooms = [
     },
     {
         name: "Twisted Road",
-        location: [3466.72,2799.17],
+        location: [3466.72, 2799.17],
         actions: [
             { name: "Shade", "type": PROFESSIONS.SCOUT },
             { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1102,7 +1006,7 @@ export const rooms = [
     },
     {
         name: "Stump Clearing",
-        location: [3024.38,2640.08],
+        location: [3024.38, 2640.08],
         actions: [
             { name: "Moss Monster", "type": PROFESSIONS.SCOUT },
             { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1111,7 +1015,7 @@ export const rooms = [
     },
     {
         name: "Cutters Clearing",
-        location: [3244.92,2724.74],
+        location: [3244.92, 2724.74],
         actions: [
             { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER },
@@ -1121,7 +1025,7 @@ export const rooms = [
     },
     {
         name: "Shortcut",
-        location: [3400.68,2567.44],
+        location: [3400.68, 2567.44],
         actions: [
             { name: "Brambles", "type": PROFESSIONS.WOODCUTTER },
             { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1130,7 +1034,7 @@ export const rooms = [
     },
     {
         name: "Stumped Path",
-        location: [3233.04,2566.44],
+        location: [3233.04, 2566.44],
         actions: [
             { name: "Oak Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Oak Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -1138,14 +1042,14 @@ export const rooms = [
     },
     {
         name: "Twisted Junction",
-        location: [3531.39,2589.39],
+        location: [3531.39, 2589.39],
         actions: [
             { name: "Shade", "type": PROFESSIONS.SCOUT }
         ]
     },
     {
         name: "Wolves' Den",
-        location: [3743.64,2843.60],
+        location: [3743.64, 2843.60],
         actions: [
             { name: "Wolf", "type": PROFESSIONS.SCOUT },
             { name: "Femur Shard", "type": PROFESSIONS.FORAGER },
@@ -1155,7 +1059,7 @@ export const rooms = [
     },
     {
         name: "Gnarled Path",
-        location: [3671.84,2718.26],
+        location: [3671.84, 2718.26],
         actions: [
             { name: "Femur Shard", "type": PROFESSIONS.FORAGER },
             { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1164,17 +1068,17 @@ export const rooms = [
     },
     {
         name: "Overgrown Trail",
-        location: [3698.61,2578.32],
+        location: [3698.61, 2578.32],
         actions: [
             { name: "Bone Spike", "type": PROFESSIONS.FORAGER },
             { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Suave Branches", "type": PROFESSIONS.WOODCUTTER },
-            { name: "Storage Rift", "type": PROFESSIONS.STORAGE }
+            { name: "Storage Rift", "type": PROFESSIONS.STORAGERIFT }
         ]
     },
     {
         name: "Crystal Clearing",
-        location: [3909.13,2567.37],
+        location: [3909.13, 2567.37],
         actions: [
             { name: "Bone Spike", "type": PROFESSIONS.FORAGER },
             { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1183,7 +1087,7 @@ export const rooms = [
     },
     {
         name: "Bramble Path",
-        location: [3705.91,2463.93],
+        location: [3705.91, 2463.93],
         actions: [
             { name: "Brambles", "type": PROFESSIONS.WOODCUTTER },
             { name: "Suave Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1192,7 +1096,7 @@ export const rooms = [
     },
     {
         name: "Mushroom Grove",
-        location: [3703.48,2355.63],
+        location: [3703.48, 2355.63],
         actions: [
             { name: "Acorn", "type": PROFESSIONS.FORAGER },
             { name: "Ancient Coin", "type": PROFESSIONS.FORAGER },
@@ -1203,7 +1107,7 @@ export const rooms = [
     },
     {
         name: "Logging Area",
-        location: [3221.44,2355.77],
+        location: [3221.44, 2355.77],
         actions: [
             { name: "Thistle", "type": PROFESSIONS.FORAGER },
             { name: "Poplar Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1213,7 +1117,7 @@ export const rooms = [
     },
     {
         name: "Snakes Path",
-        location: [3402.12,2376.40],
+        location: [3402.12, 2376.40],
         actions: [
             { name: "Viper", "type": PROFESSIONS.SCOUT },
             { name: "Snake Scale", "type": PROFESSIONS.FORAGER },
@@ -1223,7 +1127,7 @@ export const rooms = [
     },
     {
         name: "Snakes Clearing",
-        location:  [3372.42,2194.06],
+        location: [3372.42, 2194.06],
         actions: [
             { name: "Viper", "type": PROFESSIONS.SCOUT },
             { name: "Chestnut", "type": PROFESSIONS.FORAGER },
@@ -1234,7 +1138,7 @@ export const rooms = [
     },
     {
         name: "Central Junction",
-        location: [3171.94,2199.02],
+        location: [3171.94, 2199.02],
         actions: [
             { name: "Chestnut", "type": PROFESSIONS.FORAGER },
             { name: "Poplar Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1243,7 +1147,7 @@ export const rooms = [
     },
     {
         name: "Central Crossroads",
-        location: [3011.05,2198.19],
+        location: [3011.05, 2198.19],
         actions: [
             { name: "Beetle", "type": PROFESSIONS.FORAGER },
             { name: "Bug", "type": PROFESSIONS.FORAGER },
@@ -1254,19 +1158,19 @@ export const rooms = [
     },
     {
         name: "Ivy Path",
-        location: [ /* coordinates would go here if specified */ ],
+        location: [ /* coordinates would go here if specified */],
         actions: []
     },
     {
         name: "Hopeforest Central Portal Stone",
-        location: [3119.65,2013.34],
+        location: [3119.65, 2013.34],
         actions: [
             { name: "Portal Stone", "type": PROFESSIONS.PORTALSTONE }
         ]
     },
     {
         name: "Cliffside Junction",
-        location: [3327.17,1953.30],
+        location: [3327.17, 1953.30],
         actions: [
             { name: "Tree Cat", "type": PROFESSIONS.SCOUT },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1275,14 +1179,14 @@ export const rooms = [
     },
     {
         name: "Cyclops Path",
-        location: [3496.85,1966.35],
+        location: [3496.85, 1966.35],
         actions: [
             { name: "Rams Horn", "type": PROFESSIONS.FORAGER }
         ]
     },
     {
         name: "Ivy Junction",
-        location: [3007.40,1838.44],
+        location: [3007.40, 1838.44],
         actions: [
             { name: "Wendigo", "type": PROFESSIONS.SCOUT },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1291,7 +1195,7 @@ export const rooms = [
     },
     {
         name: "Ivy Trail",
-        location: [3179.69,1846.27],
+        location: [3179.69, 1846.27],
         actions: [
             { name: "Wendigo", "type": PROFESSIONS.SCOUT },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1300,7 +1204,7 @@ export const rooms = [
     },
     {
         name: "Cliffside Shortcut",
-        location: [3327.17,1818.86],
+        location: [3327.17, 1818.86],
         actions: [
             { name: "Brambles", "type": PROFESSIONS.WOODCUTTER },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1309,21 +1213,21 @@ export const rooms = [
     },
     {
         name: "Quiet Grove",
-        location: [3483.80,1871.07],
+        location: [3483.80, 1871.07],
         actions: [
             { name: "Rams Horn", "type": PROFESSIONS.FORAGER }
         ]
     },
     {
         name: "Huntsman's Path",
-        location: [2807.70,1838.44],
+        location: [2807.70, 1838.44],
         actions: [
-            { name: "Storage Rift", "type": PROFESSIONS.STORAGE }
+            { name: "Storage Rift", "type": PROFESSIONS.STORAGERIFT }
         ]
     },
     {
         name: "Lumber Clearing",
-        location: [2857.43,1660.44],
+        location: [2857.43, 1660.44],
         actions: [
             { name: "Clover", "type": PROFESSIONS.FORAGER },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1333,7 +1237,7 @@ export const rooms = [
     },
     {
         name: "Fern Junction",
-        location: [3024.20,1708.08],
+        location: [3024.20, 1708.08],
         actions: [
             { name: "Clover", "type": PROFESSIONS.FORAGER },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1342,7 +1246,7 @@ export const rooms = [
     },
     {
         name: "Path of Good Intentions",
-        location: [3207.99,1701.28],
+        location: [3207.99, 1701.28],
         actions: [
             { name: "Bitterfruit", "type": PROFESSIONS.FORAGER },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1351,7 +1255,7 @@ export const rooms = [
     },
     {
         name: "Cliffside Path",
-        location: [3274.93,1576.48],
+        location: [3274.93, 1576.48],
         actions: [
             { name: "Bitterfruit", "type": PROFESSIONS.FORAGER },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1360,7 +1264,7 @@ export const rooms = [
     },
     {
         name: "Mine Road West",
-        location: [2841.55,1489.13],
+        location: [2841.55, 1489.13],
         actions: [
             { name: "Catkin", "type": PROFESSIONS.FORAGER },
             { name: "Aboreden Egg", "type": PROFESSIONS.FORAGER },
@@ -1370,7 +1274,7 @@ export const rooms = [
     },
     {
         name: "Mine Road East",
-        location: [3083.20,1453.96],
+        location: [3083.20, 1453.96],
         actions: [
             { name: "Giant Fly", "type": PROFESSIONS.SCOUT },
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1379,7 +1283,7 @@ export const rooms = [
     },
     {
         name: "Barricades",
-        location: [3294.21,1439.21],
+        location: [3294.21, 1439.21],
         actions: [
             { name: "Pine Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Pine Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -1387,7 +1291,7 @@ export const rooms = [
     },
     {
         name: "Tree Lined Trail",
-        location: [2857.61,1305.41],
+        location: [2857.61, 1305.41],
         actions: [
             { name: "Aboreden", "type": PROFESSIONS.SCOUT },
             { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1396,7 +1300,7 @@ export const rooms = [
     },
     {
         name: "Tree Lined Track",
-        location:[2843.58,1059.75],
+        location: [2843.58, 1059.75],
         actions: [
             { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -1404,7 +1308,7 @@ export const rooms = [
     },
     {
         name: "Small Clearing",
-        location: [3013.65,1369.65],
+        location: [3013.65, 1369.65],
         actions: [
             { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -1412,21 +1316,21 @@ export const rooms = [
     },
     {
         name: "Acidic Avenue",
-        location: [3021.09,1202.20],
+        location: [3021.09, 1202.20],
         actions: []
     },
     {
         name: "Pool of Rainbows",
-        location: [3008.84,985.89],
+        location: [3008.84, 985.89],
         actions: [
             { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER },
-            { name: "Storage Rift", "type": PROFESSIONS.STORAGE }
+            { name: "Storage Rift", "type": PROFESSIONS.STORAGERIFT }
         ]
     },
     {
         name: "Hopeforest Ferry",
-        location: [2790.13,855.25],
+        location: [2790.13, 855.25],
         actions: [
             { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
@@ -1434,7 +1338,7 @@ export const rooms = [
     },
     {
         name: "Ferry South Shore",
-        location: [2808.79,547.78],
+        location: [2808.79, 547.78],
         actions: [
             { name: "Sage", "type": PROFESSIONS.FORAGER },
             { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
@@ -1443,91 +1347,404 @@ export const rooms = [
     },
     {
         name: "Himatik Ruins",
-        location: [2822.50,376.37],
+        location: [2822.50, 376.37],
         actions: [
             { name: "Sage", "type": PROFESSIONS.FORAGER },
             { name: "Juniper Log", "type": PROFESSIONS.WOODCUTTER },
             { name: "Juniper Branches", "type": PROFESSIONS.WOODCUTTER }
         ]
-    }
-    // Mine of Mantuban
-    // { name: 'Mine Back Entrance', actions: [{ name: 'Minecrawler' }]},
-    // { name: 'Rugged Tunnel', actions: [{ name: 'Minecrawler' }]},
-    // { name: 'Mine Cart Cave', actions: [{ name: 'Mine Cart Work' }]},
-    // { name: 'Northwest Mining Cavern', actions: [{ name: 'Limestone' }]},
-    // { name: 'Jagged Junction', actions: [{ name: 'Basalt' }]},
-    // { name: 'North Mining Cavern', actions: [{ name: 'Basalt' }]},
-    // { name: 'Rat Infested Tunnel', actions: []},
-    // { name: 'Cave of the Past', actions: [{ name: 'Fossil Assembly' }]},
-    // { name: 'Mine Entrance', actions: []},
-    // { name: 'Abandoned Mine Cavern', actions: [{ name: 'Flint'}]},
-    // { name: 'Rat Infested Junction', actions: [{ name: 'Flint'}, { name: 'Beastman'}]},
-    // { name: 'Goblin Loot Stash', actions: []},
-    // { name: 'Goblin Sleeping Area 3', actions: []},
-    // { name: 'Goblin Sleeping Area 2', actions: [{ name: 'Goblin Miner'}]},
-    // { name: 'Goblin Sleeping Area', actions: [{ name: 'Goblin Miner'}]},
-    // { name: 'Chuncrates Chamber', actions: []},
-    // { name: 'Communal Goblin Area', actions: []},
-    // { name: 'Ratty Terminus', actions: [{ name: 'Giant Rat'}]},
-    // { name: 'Mine Cart Tunnel', actions: [{ name: 'Storage Rift'}]},
-    // { name: 'Dilapidated Mining Cavern', actions: [{ name: 'Iron Ore'}]},
-    // { name: 'Bridge Cavern', actions: [{ name: 'Jangle\'s Bone Shop'}, { name: 'Iron Ore'}, { name: 'Building Materials'}]},
-    // { name: 'Bone Vats', actions: [{ name: 'Timber'}, { name: 'Bonemeal Cement'}, { name: 'Knickknacks'}, { name: 'Bones'}]},
-    // { name: 'Leech Pools', actions: [{ name: 'Gas Leeches'}]},
-    // { name: 'Bat Cave', actions: [{ name: 'Giant Bat'}]},
-    // { name: 'Boneworks', actions: [{ name: 'Bone Weapon Stations'}]},
-    // { name: 'Andesite Site', actions: [{ name: 'Andesite'}]},
-    // { name: 'Stalagmite Nook', actions: [{ name: 'Andesite'}]},
-    // { name: 'Purpladium Vein', actions: [{ name: 'Electric Snail'}, { name: 'Purpladium'}]},
-    // { name: 'Gassy Cave', actions: [{ name: 'Floor Tentacle'}]},
-    // { name: 'Gassy Grotto', actions: [{ name: 'Soapstone'}, { name: 'Gas Vents'}]},
-    // { name: 'Big River Cavern', actions: [{ name: 'Gold'}, { name: 'Corrupted Miner'}]},
-    // { name: 'Riverside Goblin Cavern', actions: [{ name: 'Alabaster'}]},
-    // { name: 'Upstream Goblin Cavern', actions: [{ name: 'Flantium Ore'}]},
-    // { name: 'River Bend', actions: [{ name: 'Flantium Ore'}]},
-    // { name: 'Mine of Mantuban Obelisk', actions: [{ name: 'Obelisk'}]},
-    // { name: 'Waterfall', actions: []},
-    // { name: 'Kobold Cavern', actions: [{ name: 'Kobold'}]},
-    // { name: 'Grachnid Cave', actions: []},
-    // { name: 'Rocky Passage', actions: []},
-    // { name: 'Mossy Corner', actions: []},
-    // { name: 'Tenebrous Tunnel', actions: [{ name: 'Cabranese Ore'}]},
-    // { name: 'Central Mining Cavern', actions: [{ name: 'Cabranese Ore'}]},
-    // { name: 'Moderate Mineshaft', actions: [{ name: 'Floor tentacle'}]},
-    // { name: 'Rugged Passage', actions: [{ name: 'Shinerium'}]},
-    // { name: 'Strange Junction', actions: [{ name: 'Fire Toad'}]},
-    // { name: 'Outside Hollow', actions: [{ name: 'Fire Toad'}]},
-    // { name: 'Forsaken Mine Workings', actions: [{ name: 'Skeleton Miner'}]},
-    // { name: 'Wretched Excavation', actions: [{ name: 'Skeleton Miner'}]},
-    // { name: 'Lost and Found', actions: []},
-    // { name: 'Strange Stairway', actions: []},
-    // { name: 'Podium Cave', actions: []},
-    // { name: 'Goblin Well', actions: []},
-    // { name: 'Goblin Storage Cave', actions: []},
-    // { name: 'Mine Southwest Portal', actions: [{ name: 'Portal Stone'}]},
-    // { name: 'Market Tunnel', actions: []},
-    // { name: 'Goblin Marketplace', actions: [{ name: 'Bobble\'s Oresome Ores'}, { name: 'Pans and Pickaxes'}, { name: 'Poffit\'s Interesting Rocks'}, { name: 'Mogorob\'s Stoneware Assortment'}]},
-    // { name: 'Cave of the Future', actions: [{ name: 'Divination'}]},
-    // { name: 'Stonemasonry Room', actions: [{ name: 'Timber'}, { name: 'Stone'}, { name: 'Stone Weapon Stations'}]},
-    // { name: 'Polished Tunnel', actions: []},
-    // { name: 'Goblin Living Quarters', actions: []},
-    // { name: 'Sculpting Room', actions: [{ name: 'T.E.A. Machine'}, { name: 'Stone Sculpting Cart'}, { name: 'Stoneware Bench'}]},
-    // { name: 'Goblin Workshop', actions: [{ name: 'Timber'}, { name: 'Ore and Ingots'}, { name: 'Goblin Forge'}, { name: 'Goblin Smelter'}]},
-    // { name: 'Upper River Bend', actions: [{ name: 'Granite'}]},
-    // { name: 'Rockling Cave', actions: [{ name: 'Rockling'}, { name: 'Storage Rift'}]},
-    // { name: 'Skallek\'s Dwelling', actions: []},
-    // { name: 'Upper Bridge', actions: [{ name: 'Dread Shell'}, { name: 'Granite'}]},
-    // { name: 'Gnome Dwelling', actions: [{ name: 'Torreli Jewelry Trading'}]},
-    // { name: 'Damp Tunnel', actions: [{ name: 'Metalith'}]},
-    // { name: 'Crumbling Passage', actions: [{ name: 'Stonewurm'}]},
-    // { name: 'Rubble Cave', actions: [{ name: 'Adathril Ore'}]},
-    // { name: 'Bronze Gate', actions: [{ name: 'Adathril Ore'}, { name: 'Brimstone'}]},
-    // { name: 'Stonewurm Nests', actions: [{ name: 'Stonewurm'}]},
-    // { name: 'Rock Strewn Tunnel', actions: [{ name: 'Metalith'}]},
-    // { name: 'Cockroach Lair', actions: [{ name: 'Cockroach'}]},
-    // { name: 'Mutant Cockroaches', actions: [{ name: 'Cockroach'}]},
-    // { name: 'Cave of the Crystal', actions: [{ name: 'Marble'}]},
-    // { name: 'Gnome Forge', actions: [{ name: 'Timber'}, { name: 'Ore and Ingots'}, { name: 'Gnome Forge'}, { name: 'Gnome Smelter'}, { name: 'Jewelry Bench'}]},
-    // { name: 'Gnomic Silver Mine', actions: [{ name: 'Silver'}]},
+    },
+    // MINE OF MANTUBAN
+    {
+        name: 'Mine Back Entrance',
+        location: [3469.16,1747.71],
+        actions: [{ name: 'Minecrawler', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Rugged Tunnel', 
+        location: [3608.55,1735.71],
+        actions: [{ name: 'Minecrawler', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Mine Cart Cave',
+        location: [3445.15,1593.54],
+        actions: [{ name: 'Mine Cart Work', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Northwest Mining Cavern',
+        location: [3563.32,1579.69],
+        actions: [{ name: 'Limestone', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Jagged Junction',
+        location: [3670.41,1645.24],
+        actions: [{ name: 'Basalt', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'North Mining Cavern',
+        location: [3800.57,1644.31],
+        actions: [{ name: 'Basalt', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Rat Infested Tunnel',
+        location: [3677.79,1552.00],
+        actions: []
+    },
+    {
+        name: 'Cave of the Past',
+        location: [3967.67,1681.24],
+        actions: [{ name: 'Fossil Assembly', type: PROFESSIONS.BONEWRIGHT }]
+    },
+    {
+        name: 'Mine Entrance',
+        location: [3436.85,1446.76],
+        actions: []
+    },
+    {
+        name: 'Abandoned Mine Cavern',
+        location: [3554.09,1445.83],
+        actions: [{ name: 'Flint', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Rat Infested Junction',
+        location: [3687.95,1438.45],
+        actions: [{ name: 'Flint', type: PROFESSIONS.MINER }, { name: 'Beastman', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Goblin Loot Stash',
+        location: [3832.89,1503.07],
+        actions: []
+    },
+    {
+        name: 'Goblin Sleeping Area 3',
+        location: [3834.73,1420.91],
+        actions: []
+    },
+    {
+        name: 'Goblin Sleeping Area 2',
+        location: [3935.36,1353.52],
+        actions: [{ name: 'Goblin Miner', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Communal Goblin Area',
+        location: [3831.89,1296.12],
+        actions: [{ name: 'Goblin Miner' }]
+    },
+    {
+        name: 'Chuncrates Chamber',
+        location: [4044.29,1348.90],
+        actions: []
+    },
+    {
+        name: 'Ratty Terminus',
+        location: [3690.72,1331.36],
+        actions: [{ name: 'Giant Rat', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Mine Cart Tunnel',
+        location: [3525.47,1316.59],
+        actions: [{ name: 'Storage Rift', type: PROFESSIONS.STORAGERIFT }]
+    },
+    {
+        name: 'Dilapidated Mining Cavern',
+        location: [3419.34,1276.86],
+        actions: [{ name: 'Iron Ore', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Bridge Cavern',
+        location: [3484.89,1156.84],
+        actions: [{ name: 'Jangle\'s Bone Shop', type: PROFESSIONS.SELLER }, { name: 'Iron Ore', type: PROFESSIONS.MINER }, { name: 'Building Materials', type: PROFESSIONS.STORAGE }]
+    },
+    //TODO
+    {
+        name: 'Jangle\'s Bone Shop',
+        location: [3484.89,1156.84],
+        actions: []
+    },
+    {
+        name: 'Bone Vats',
+        location: [3233.00,1075.76],
+        actions: [{ name: 'Timber', type: PROFESSIONS.STORAGE }, { name: 'Bonemeal Cement', type: PROFESSIONS.BONEWRIGHT }, { name: 'Knickknacks', type: PROFESSIONS.BONEWRIGHT }, { name: 'Bones', type: PROFESSIONS.STORAGE }]
+    },
+    {
+        name: 'Leech Pools',
+        location: [3356.42,1005.61],
+        actions: [{ name: 'Gas Leeches', type: PROFESSIONS.STONEMASON }]
+    },
+    {
+        name: 'Bat Cave',
+        location: [3466.85,1006.26],
+        actions: [{ name: 'Giant Bat', type: PROFESSIONS.MINEFIGHTER}]
+    },
+    {
+        name: 'Boneworks',
+        location: [3229.76,939.36],
+        actions: [{ name: 'Bone Weapon Stations', type: PROFESSIONS.BONEWRIGHT }]
+    },
+    {
+        name: 'Andesite Site',
+        location: [3484.03,859.74],
+        actions: [{ name: 'Andesite', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Stalagmite Nook',
+        location: [3359.32,807.78],
+        actions: [{ name: 'Andesite', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Purpladium Vein',
+        location: [3503.86,752.55],
+        actions: [{ name: 'Electric Snail', type: PROFESSIONS.MINEFIGHTER }, { name: 'Purpladium', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Gassy Cave',
+        location: [3629.23,844.14],
+        actions: [{ name: 'Floor Tentacle', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Gassy Grotto',
+        location: [3771.48,785.03],
+        actions: [{ name: 'Soapstone', type: PROFESSIONS.MINER }, { name: 'Gas Vents', type: PROFESSIONS.STONEMASON }]
+    },
+    {
+        name: 'Big River Cavern',
+        location: [3633.81,1149.79],
+        actions: [{ name: 'Gold', type: PROFESSIONS.MINER  }, { name: 'Corrupted Miner', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Riverside Goblin Cavern',
+        location: [3819.59,1158.23],
+        actions: [{ name: 'Alabaster', type: PROFESSIONS.MINER  }]
+    },
+    {
+        name: 'Upstream Goblin Cavern',
+        location: [3962.49,1154.33],
+        actions: [{ name: 'Flantium Ore', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'River Bend',
+        location: [4142.42,1184.21],
+        actions: [{ name: 'Flantium Ore', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Mine of Mantuban Obelisk',
+        location: [4165.75,1013.19],
+        actions: [{ name: 'Obelisk', type: PROFESSIONS.OBELISK }]
+    },
+    {
+        name: 'Waterfall',
+        location: [4183.28,1314.58],
+        actions: []
+    },
+    {
+        name: 'Kobold Cavern',
+        location: [3906.23,1011.74],
+        actions: [{ name: 'Kobold', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Grachnid Cave',
+        location: [4015.61,910.58],
+        actions: []
+    },
+    {
+        name: 'Rocky Passage',
+        location: [3595.71,1004.35],
+        actions: []
+    },
+    {
+        name: 'Mossy Corner',
+        location: [3658.51,1026.96],
+        actions: []
+    },
+    {
+        name: 'Tenebrous Tunnel',
+        location: [3766.53,999.95],
+        actions: [{ name: 'Cabranese Ore', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Central Mining Cavern',
+        location: [3760.88,913.91],
+        actions: [{ name: 'Cabranese Ore', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Moderate Mineshaft',
+        location: [3670.40,650.71],
+        actions: [{ name: 'Floor tentacle', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Rugged Passage',
+        location: [3775.08,613.33],
+        actions: [{ name: 'Shinerium', type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Strange Junction',
+        location: [3908.17,604.85],
+        actions: [{ name: 'Fire Toad', type: PROFESSIONS.MINEFIGHTER  }]
+    },
+    {
+        name: 'Outside Hollow',
+        location: [4072.66,584.42],
+        actions: [{ name: 'Fire Toad', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Forsaken Mine Workings',
+        location: [4023.32,415.44],
+        actions: [{ name: 'Skeleton Miner', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Wretched Excavation',
+        location: [4140.46,425.40],
+        actions: [{ name: 'Skeleton Miner', type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Lost and Found',
+        location: [3917.98,497.88],
+        actions: []
+    },
+    {
+        name: 'Strange Stairway',
+        location: [3930.94,374.76],
+        actions: []
+    },
+    {
+        name: 'Podium Cave',
+        location: [3994.75,185.34],
+        actions: []
+    },
+    {
+        name: 'Goblin Well',
+        location: [3622.39,479.44],
+        actions: []
+    },
+    {
+        name: 'Goblin Storage Cave',
+        location: [3485.31,480.93],
+        actions: []
+    },
+    {
+        name: 'Mine Southwest Portal',
+        location: [3350.22,483.92],
+        actions: [{ name: 'Portal Stone',type: PROFESSIONS.PORTALSTONE }]
+    },
+    {
+        name: 'Market Tunnel',
+        location: [3471.85,380.05],
+        actions: []
+    },
+    {
+        name: 'Goblin Marketplace',
+        location: [3323.55,248.69],
+        actions: [{ name: 'Bobble\'s Oresome Ores',type: PROFESSIONS.SELLER }, { name: 'Pans and Pickaxes',type: PROFESSIONS.SELLER }, { name: 'Poffit\'s Interesting Rocks',type: PROFESSIONS.SELLER }, { name: 'Mogorob\'s Stoneware Assortment',type: PROFESSIONS.SELLER }]
+    },
+    {
+        name: 'Cave of the Future',
+        location:  [3340.00,96.70],
+        actions: [{ name: 'Divination',type: PROFESSIONS.BONEWRIGHT }]
+    },
+    {
+        name: 'Stonemasonry Room',
+        location: [3535.90,230.29],
+        actions: [{ name: 'Timber',type: PROFESSIONS.STORAGE }, { name: 'Stone',type: PROFESSIONS.STORAGE }, { name: 'Stone Weapon Stations',type: PROFESSIONS.STONEMASON }]
+    },
+    {
+        name: 'Polished Tunnel',
+        location: [3581.17,378.38],
+        actions: []
+    },
+    {
+        name: 'Goblin Living Quarters',
+        location: [3676.33,397.93],
+        actions: []
+    },
+    {
+        name: 'Sculpting Room',
+        location: [3707.60,234.76],
+        actions: [{ name: 'T.E.A. Machine',type: PROFESSIONS.STONEMASON }, { name: 'Stone Sculpting Cart',type: PROFESSIONS.STONEMASON }, { name: 'Stoneware Bench',type: PROFESSIONS.STONEMASON }]
+    },
+    {
+        name: 'Goblin Workshop',
+        location:  [3790.02,461.63],
+        actions: [{ name: 'Timber',type: PROFESSIONS.STORAGE }, { name: 'Ore and Ingots',type: PROFESSIONS.STORAGE }, { name: 'Goblin Forge',type: PROFESSIONS.BLACKSMITH }, { name: 'Goblin Smelter',type: PROFESSIONS.BLACKSMITH }]
+    },
+    {
+        name: 'Upper River Bend',
+        location: [4195.26,1448.01],
+        actions: [{ name: 'Granite',type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Rockling Cave',
+        location: [4151.07,1583.11],
+        actions: [{ name: 'Rockling',type: PROFESSIONS.MINEFIGHTER }, { name: 'Storage Rift', type:PROFESSIONS.STORAGERIFT }]
+    },
+    {
+        name: 'Skallek\'s Dwelling',
+        location: [4320.16,1575.46],
+        actions: []
+    },
+    {
+        name: 'Upper Bridge',
+        location:  [4317.61,1454.81],
+        actions: [{ name: 'Dread Shell',type: PROFESSIONS.MINEFIGHTER }, { name: 'Granite',type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Gnome Dwelling',
+        location: [4311.66,1315.46],
+        actions: [{ name: 'Torreli Jewelry Trading',type: PROFESSIONS.SELLER  }]
+    },
+    {
+        name: 'Damp Tunnel',
+        location: [4444.21,1499.84],
+        actions: [{ name: 'Metalith',type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Crumbling Passage',
+        location: [4470.10,1299.85],
+        actions: [{ name: 'Stonewurm',type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Rubble Cave',
+        location: [4474.37,1142.73],
+        actions: [{ name: 'Adathril Ore',type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Bronze Gate',
+        location: [4450.34,987.58],
+        actions: [{ name: 'Adathril Ore',type: PROFESSIONS.MINER }, { name: 'Brimstone',type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Stonewurm Nests',
+        location: [4603.12,1297.43],
+        actions: [{ name: 'Stonewurm',type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Rock Strewn Tunnel',
+        location: [4592.36,1484.64],
+        actions: [{ name: 'Metalith',type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Cockroach Lair',
+        location: [4710.71,1567.48],
+        actions: [{ name: 'Cockroach',type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Mutant Cockroaches',
+        location: [4715.01,1433.00],
+        actions: [{ name: 'Cockroach',type: PROFESSIONS.MINEFIGHTER }]
+    },
+    {
+        name: 'Cave of the Crystal',
+        location: [4836.59,1441.60],
+        actions: [{ name: 'Marble',type: PROFESSIONS.MINER }]
+    },
+    {
+        name: 'Gnome Forge',
+        location: [4866.71,1630.96],
+        actions: [{ name: 'Timber',type: PROFESSIONS.STORAGE }, { name: 'Ore and Ingots',type: PROFESSIONS.STORAGE }, { name: 'Gnome Forge',type: PROFESSIONS.BLACKSMITH }, { name: 'Gnome Smelter',type: PROFESSIONS.BLACKSMITH }, { name: 'Jewelry Bench',type: PROFESSIONS.BLACKSMITH }]
+    },
+    {
+        name: 'Gnomic Silver Mine',
+        location: [5008.08,1621.28],
+        actions: [{ name: 'Silver',type: PROFESSIONS.MINER }]
+    },
     // More rooms as needed
 ];
