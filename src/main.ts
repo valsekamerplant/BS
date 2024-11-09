@@ -22,6 +22,7 @@ const projection = new Projection({
   units: 'pixels',
   extent: extent,
 });
+
 const background = new ImageLayer({
   source: new Static({
     url: 'shores-min.png', // Replace with the path to your image
@@ -59,7 +60,7 @@ const areaLayer = new VectorLayer({
         width: 3,
       }),
       fill: new Fill({
-        color: feature.get('name') == 'Crenopolis' ? feature.get('color') : 'rgba(0, 0, 0, 0)', // No fill
+        color: 'rgba(0, 0, 0, 0)', // No fill
       }),
     });
   },
@@ -93,23 +94,23 @@ map.addOverlay(overlay);
 
 
 //Display tooltip on hover
-// map.on('pointermove', (event) => {
-//   const coords = map.getCoordinateFromPixel(event.pixel);
-//   const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
-//   overlay.setPosition(event.coordinate);
-//     // Set the content of the coordDisplay div
-//     tooltip.innerHTML = `X: ${x}, Y: ${y}`;
-//     // Position the display div near the cursor
-//     tooltip.style.left = `${event.originalEvent.pageX + 15}px`;
-//     tooltip.style.top = `${event.originalEvent.pageY + 15}px`;
-// });
+map.on('pointermove', (event) => {
+  const coords = map.getCoordinateFromPixel(event.pixel);
+  const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
+  overlay.setPosition(event.coordinate);
+    // Set the content of the coordDisplay div
+    tooltip.innerHTML = `X: ${x}, Y: ${y}`;
+    // Position the display div near the cursor
+    tooltip.style.left = `${event.originalEvent.pageX + 15}px`;
+    tooltip.style.top = `${event.originalEvent.pageY + 15}px`;
+});
 
-// // Log coordinates to console on map click
-// map.on('click', function (event) {
-//   const coords = map.getCoordinateFromPixel(event.pixel);
-//   const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
-//   console.log(`Clicked coordinates: [${x},${y}]`);
-// });
+// Log coordinates to console on map click
+map.on('click', function (event) {
+  const coords = map.getCoordinateFromPixel(event.pixel);
+  const [x, y] = coords.map(coord => coord.toFixed(2)); // Round to 2 decimal places
+  console.log(`Clicked coordinates: [${x},${y}]`);
+});
 
 // Vector layer for drawing
 const drawSource = new VectorSource();
@@ -188,15 +189,37 @@ function populateSuggestions(searchText: string) {
 
   if (searchText.length < 2) return;
 
-  const matchingRooms = rooms.filter((room: any) =>
-    Object.values(room!.actions).some((action: any) => action.name.toLowerCase().includes(searchText.toLowerCase()))
-  );
+  // Filter rooms by room name or actions
+  const matchingRooms = rooms.filter((room: any) => {
+    // Check if room name matches search text
+    const roomNameMatch = room.name.toLowerCase().includes(searchText.toLowerCase());
 
+    // Check if any action name matches search text
+    const actionMatch = room.actions.some((action: any) => 
+      action.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+    return roomNameMatch || actionMatch; // Match if either condition is true
+  });
+
+  // Populate suggestions based on matched rooms
   matchingRooms.forEach((room: any) => {
-    const item = room.actions.find((action: any) => action.name.toLowerCase().includes(searchText.toLowerCase()))
+    // Check if the room name matches, to prioritize how it's displayed
+    const roomNameMatch = room.name.toLowerCase().includes(searchText.toLowerCase());
+
+    // Find the first action that matches (if any)
+    const matchingAction = room.actions.find((action: any) =>
+      action.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+    // Create the suggestion text
+    const suggestionText = roomNameMatch 
+      ? `${room.name}` // If room name matches, display the room name only
+      : `${matchingAction.name} - ${room.name}`; // Otherwise, display action and room name
+
     const suggestion = document.createElement('div');
     suggestion.className = 'suggestion-item';
-    suggestion.textContent = `${item.name} - ${room.name}`;
+    suggestion.textContent = suggestionText;
     suggestion.onclick = () => {
       centerMapOnRoom(room);
       suggestionsBox.style.display = 'none';
@@ -204,6 +227,7 @@ function populateSuggestions(searchText: string) {
     suggestionsBox.appendChild(suggestion);
   });
 
+  // Display suggestions if there are matches
   if (matchingRooms.length > 0) {
     suggestionsBox.style.display = 'block';
   }
@@ -356,13 +380,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const closest = params.get('selectedRoom');
 
   if (closest) {
-    console.log(closest)
     markerLayer!.getSource()!.getFeatures().forEach((feature) => {
 
       if (feature.get('name') === closest) {
-
         const selectedRoom = rooms.filter((room) => room.name == feature.get('name'))[0]
-        console.log(selectedRoom);
         feature.setStyle(visibleStyle);
         centerMapOnRoom(selectedRoom)
 
