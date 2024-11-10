@@ -23,8 +23,18 @@ export const PROFESSIONS = {
     SELLER: "Seller",
     STORAGE: "Storage",
     STORAGERIFT: "Storage Rift",
-    OBELISK: "Obelist",
+    OBELISK: "Obelisk",
     PORTALSTONE: "Portal Stone"
 };
 
 export const legendItems = [PROFESSIONS.STORAGE,PROFESSIONS.OBELISK,PROFESSIONS.PORTALSTONE, PROFESSIONS.STORAGERIFT] 
+
+
+export const iconScale = 32 / 64;
+
+export const iconSpriteInfo: { [key: string]: { x: number; y: number; width: number; height: number } } = {
+	[PROFESSIONS.STORAGE]: { x: 330, y: 0, width: 66, height: 66 },
+	[PROFESSIONS.OBELISK]: { x: 66 , y: 0, width: 66, height: 66 },
+	[PROFESSIONS.PORTALSTONE]: { x: 128, y: 0, width: 73, height: 66 },
+	[PROFESSIONS.STORAGERIFT]: { x: 264, y: 0, width: 66, height: 66 },
+  };

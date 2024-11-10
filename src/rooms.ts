@@ -1,6 +1,7 @@
 import { PROFESSIONS } from "./constants";
+import { Room } from "./types";
 
-export const rooms = [
+export const rooms: Room[] = [
     //HOPEPORT
     {
         name: 'Rocky Road',
@@ -40,7 +41,7 @@ export const rooms = [
     {
         name: 'Starfish Point',
         location: [213.27,1658.95],
-        actions: [, { name: 'Wrack', type: PROFESSIONS.GATHERER }, { name: 'Starfish', type: PROFESSIONS.GATHERER }, { name: 'Cod (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Wrack', type: PROFESSIONS.GATHERER }, { name: 'Starfish', type: PROFESSIONS.GATHERER }, { name: 'Cod (any)', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Jellyfish Landing',
@@ -141,7 +142,7 @@ export const rooms = [
     {
         name: 'Hopeport Obelisk',
         location: [1215.15,2021.02],
-        actions: [{ name: 'Obelist', type: PROFESSIONS.OBELISK }]
+        actions: [{ name: 'Obelisk', type: PROFESSIONS.OBELISK }]
     },
     {
         name: 'Brannof Boulevard',
@@ -1241,7 +1242,7 @@ export const rooms = [
     },
     {
         name: "Ivy Path",
-        location: [ /* coordinates would go here if specified */],
+        location: [3015.60,2014.66],
         actions: []
     },
     {

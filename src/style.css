@@ -8,6 +8,11 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  background-color: #2a2b2a;
+}
+
+*:focus {
+  outline: none;
 }
 h1 {
   pointer-events: none;
@@ -35,7 +40,7 @@ h1 {
 #layerControl {
   z-index: 99;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
   background-color: white;
   padding: 10px;
@@ -45,14 +50,31 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 60px;
+  top: 70px;
   z-index: 99;
 }
 #search-box {
   width: 200px;
-  padding: 5px;
+  padding: 8px;
   text-align: center;
   border: none;
+  border-radius: 5px;
+  background: #2a2b2a;
+    color: white;
+}
+::placeholder {
+  color: white
+}
+#suggestions:after, #search-container:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  border: 19px solid transparent;
+  border-image: url(./corners.png) 24;
+  pointer-events: none;
 }
 #suggestions {
   background-color: white;
@@ -60,18 +82,19 @@ h1 {
   display: none;
   position: absolute;
   min-width: 250px;
-  position: absolute;
-  top: 30px;
+  background: #2a2b2a;
+  top: 40px;
+  color: white;
   left: 50%;
   transform: translateX(-50%);
 }
 .suggestion-item {
   padding: 5px 10px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #4b4b4b;
 }
 
 .suggestion-item:hover {
-  background: #eee;
+  background: #3a3b3a;
   cursor: pointer;
 }
 
@@ -89,11 +112,13 @@ h1 {
 
 .legend-item {
   padding: 10px;
+  position: relative;
+  padding-left: 30px;
 }
 
 .legend-item:hover {
   cursor: pointer;
-  background-color: #CCC;
+  background-color: #ccc;
   z-index: 999;
 }
 
@@ -115,3 +140,17 @@ h1 {
     transform: scale(1);
   }
 }
+
+
+
+.icon {
+  position: absolute;
+  top: -14px;
+  left: -18px;
+  transform: scale(0.35);
+}
+
+/* 
+.icon-storage-rift { background-position: calc( -68.2px * 9 ) calc( -69px * 2 )}
+
+.icon-portal-stone { background-position: calc( -68.2px * 8 ) calc( -69px * 2 ) } */
