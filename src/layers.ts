@@ -1,39 +1,78 @@
 import { Feature } from 'ol';
-import { Point } from 'ol/geom';
+import { Point, Polygon } from 'ol/geom';
 import { Vector as VectorLayer } from 'ol/layer';
-import ImageLayer from 'ol/layer/Image.js';
 import { Projection } from 'ol/proj';
-import { Vector as VectorSource } from 'ol/source';
+import { Vector, Vector as VectorSource, XYZ } from 'ol/source';
 import ImageStatic from 'ol/source/ImageStatic';
-import { Circle, Fill, Icon, Style } from 'ol/style';
+import { Circle, Fill, Icon, Stroke, Style } from 'ol/style';
 import { iconScale, iconSpriteInfo, legendItems } from './constants';
 import { rooms } from './rooms';
+import TileLayer from 'ol/layer/Tile';
+import { Draw } from 'ol/interaction';
+import { TileGrid } from 'ol/tilegrid';
+import { getWidth } from 'ol/extent';
+import { map } from './map';
 
 // Define projection and extent
-export const extent = [0, 0, 6754, 3668];
-export const mainExtend = [-3377, -1834, 10131, 5502];
+
+
+export const tileSize = 256;
+
+const initialWidth = tileSize;
+const initialHeight = tileSize;
+
+const futureExpansionFactor = 1;
+
+
+export const extent = [
+    -initialWidth,
+    -initialHeight,
+    initialWidth ,
+    initialHeight
+];
+export const maxExtent = [
+    0,
+    0,
+    initialWidth * futureExpansionFactor,
+    initialHeight * futureExpansionFactor
+];
+
+const resolutions = Array.from({ length: 5 + 1 }, (_, z) =>
+    maxExtent[2] / tileSize / Math.pow(2, z)
+  );
+
+
 export const projection = new Projection({
   code: 'shores',
   units: 'pixels',
-  extent: extent,
+  extent: maxExtent,
 });
 
+const tileGrid = new TileGrid({
+    origin: [0,0],
+    resolutions: resolutions,
+    tileSize: tileSize,
+  });
+
 // Background Layer
-export const backgroundLayer = new ImageLayer({
-  source: new ImageStatic({
-    url: 'shores-min.png',
-    projection: projection,
-    imageExtent: extent,
-  }),
+// export const backgroundLayer = new ImageLayer({
+//   source: new ImageStatic({
+//     url: 'shores-min.png',
+//     projection: projection,
+//     imageExtent: extent,
+//   }),
+// });
+
+// Define the TileLayer with `extent` and `maxExtent` considerations
+export const backgroundLayer = new TileLayer({
+    source: new XYZ({
+        url: '/tiles/{z}/{y}/{x}.png',
+        tileGrid: tileGrid, // Use the custom tile grid
+        projection: projection,
+        wrapX: false,
+    }),
 });
 backgroundLayer.set('title', 'Background');
-backgroundLayer.on('postrender', (event: any) => {
-  const context = event.context as CanvasRenderingContext2D;
-  context.imageSmoothingEnabled = false;
-  if (context.canvas instanceof HTMLCanvasElement) {
-    context.canvas.style.imageRendering = 'pixelated';
-  }
-});
 
 // Area Layer
 // const areaSource = new VectorSource();
@@ -92,6 +131,7 @@ export const legendLayers: { [key: string]: VectorLayer } = {};
 legendItems.forEach((item) => {
 const sprite = iconSpriteInfo[item];
   const layer = new VectorLayer({
+    
     source: new VectorSource(),
     style: [
         // Circle background style
@@ -133,3 +173,27 @@ rooms.forEach((room) => {
     }
   });
 });
+
+
+
+
+
+
+
+const hoverSource = new VectorSource();
+export const hoverLayer = new VectorLayer({
+  source: hoverSource,
+  style: new Style({
+    fill: new Fill({
+      color: 'rgba(255, 255, 0, 0.2)', // Semi-transparent yellow
+    }),
+    stroke: new Stroke({
+      color: 'yellow',
+      width: 2,
+    }),
+  }),
+});
+
+// Add a single polygon feature for the hover effect
+export const hoverFeature = new Feature(new Polygon([[[0, 0], [0, 0], [0, 0], [0, 0]]]));
+hoverSource.addFeature(hoverFeature);

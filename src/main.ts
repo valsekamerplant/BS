@@ -393,7 +393,7 @@
 import './style.css';
 import './icons.css';
 import { map } from './map';
-import { addLayerToggle, centerMapOnRoom, populateSuggestions } from './controls';
+import { addLayerToggle, centerMapOnRoom, populateSuggestions, setWikiInfo } from './controls';
 import { markerLayer } from './layers';
 import { rooms } from './rooms';
 
@@ -435,6 +435,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (feature.get('name') === closest) {
         const selectedRoom = rooms.filter((room) => room.name == feature.get('name'))[0]
         centerMapOnRoom(selectedRoom.location)
+        setWikiInfo(selectedRoom)
       }
     });
   }

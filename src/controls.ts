@@ -1,6 +1,8 @@
 
+import { wikiUrl } from './constants';
 import { map } from './map';
 import { rooms } from './rooms';
+import { Room } from './types';
 
 
 
@@ -25,7 +27,7 @@ export function addLayerToggle(layer: any, containerId: string) {
     layerControl.appendChild(layerWrapper);
 }
 
-export function populateSuggestions(searchText: string) {
+export async function populateSuggestions(searchText: string) {
     const suggestionsBox = document.getElementById('suggestions')!;
     suggestionsBox.innerHTML = ''; // Clear previous suggestions
     suggestionsBox.style.display = 'none';
@@ -48,7 +50,7 @@ export function populateSuggestions(searchText: string) {
     });
 
     // Populate suggestions based on matched rooms
-    matchingRooms.forEach((room: any) => {
+    matchingRooms.forEach((room: Room) => {
         // Check if the room name matches, to prioritize how it's displayed
         //const roomNameMatch = room.name.toLowerCase().includes(searchText.toLowerCase());
 
@@ -65,8 +67,9 @@ export function populateSuggestions(searchText: string) {
         const suggestion = document.createElement('div');
         suggestion.className = 'suggestion-item';
         suggestion.textContent = suggestionText;
-        suggestion.onclick = () => {
+        suggestion.onclick = async () => {
             centerMapOnRoom(room.location);
+            setWikiInfo(room);
             suggestionsBox.style.display = 'none';
         };
         suggestionsBox.appendChild(suggestion);
@@ -78,14 +81,56 @@ export function populateSuggestions(searchText: string) {
     }
 }
 
+export async function setWikiInfo(room: Room) {
+    const roomInfo = document.getElementById('room-info');
+
+            const requests = room.actions.map(action => getPageInfo(createWikiParams(action.name)));
+            const results = await Promise.all(requests);
+            console.log(results);
+            if(results && roomInfo) {
+                roomInfo.innerHTML = "";
+                roomInfo.style.display = 'block';
+                const resultTitle= document.createElement("h3");
+                resultTitle.textContent=room.name;
+                roomInfo.appendChild(resultTitle);
+                results.forEach((result => roomInfo.appendChild(createResultItem(result)) ) )
+            }
+            
+}
+
 export function centerMapOnRoom(location: [number, number]) {
     map.getView().animate({
         center: location,
         duration: 1000,
         zoom: 6,
     });
+
 }
 
+function createResultItem(result: any) {
+    // Create a container div for each result
+    const resultItem = document.createElement("div");
+    resultItem.classList.add("result-item");
+
+    // Create a link element for the title
+    const titleLink = document.createElement("a");
+    titleLink.href = `${wikiUrl}${encodeURIComponent(result.title)}`;
+    titleLink.target = "_blank"; // Opens in a new tab
+    titleLink.textContent = result.title;
+    titleLink.classList.add("result-title");
+
+    // Create a paragraph for the extract
+    const extractParagraph = document.createElement("p");
+    extractParagraph.textContent = result.extract;
+    extractParagraph.classList.add("result-extract");
+
+    // Append the title link and extract paragraph to the result item container
+    resultItem.appendChild(titleLink);
+    resultItem.appendChild(extractParagraph);
+
+    // Append the result item to the main room-info div
+    return resultItem;
+}
 
 
 // Function to create a legend for specified categories
@@ -139,3 +184,33 @@ export function centerMapOnRoom(location: [number, number]) {
 //         }
 //     });
 // }
+
+
+
+
+export function createWikiParams(skillNode: string) {
+    return new URLSearchParams({
+        action: "query",
+        format: "json",
+        prop: "extracts",
+        exintro: "1",
+        explaintext: "1",
+        titles: skillNode,
+        origin: "*" // CORS workaround
+      });
+}
+
+export function getPageInfo(params: URLSearchParams) {
+    return fetch(`${wikiUrl}api.php?${params}`)
+    .then(function(response){return response.json();})
+    .then(function(response) {
+        const pageId = Object.keys(response.query.pages)[0];
+        const page = response.query.pages[pageId];
+        return {
+            title: page.title || "No title found",
+            extract: page.extract || "No summary available",
+          };
+    })
+    .catch(function(error){console.log(error);});
+}
+

@@ -60,12 +60,14 @@ h1 {
   border: none;
   border-radius: 5px;
   background: #2a2b2a;
-    color: white;
+  color: white;
 }
 ::placeholder {
-  color: white
+  color: white;
 }
-#suggestions:after, #search-container:after {
+
+#suggestions:after,
+#search-container:after {
   content: "";
   position: absolute;
   top: -4px;
@@ -141,8 +143,43 @@ h1 {
   }
 }
 
+#room-info {
+  position: absolute;
+  display: none;
+  top: 60px;
+  left: 10px;
+  padding: 10px;
+  z-index: 99;
+  max-width: 400px;
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #404040;
+  max-height: 80vh;
+  border-radius: 5px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: 3px;
+}
 
+#room-info h3{
+  text-align: center;
+  border-bottom: 2px solid white;
+}
 
+.result-item {
+  margin-bottom: 15px;
+}
+.result-item a,
+.result-item:visited,
+.result-item a:active {
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 5px;
+}
+.result-item p {
+  margin: 0px 0;
+}
 .icon {
   position: absolute;
   top: -14px;

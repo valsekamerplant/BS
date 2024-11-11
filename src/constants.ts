@@ -38,3 +38,5 @@ export const iconSpriteInfo: { [key: string]: { x: number; y: number; width: num
 	[PROFESSIONS.PORTALSTONE]: { x: 128, y: 0, width: 73, height: 66 },
 	[PROFESSIONS.STORAGERIFT]: { x: 264, y: 0, width: 66, height: 66 },
   };
+
+  export const wikiUrl = "https://brightershoreswiki.org/"; 

@@ -11,7 +11,7 @@ export const rooms: Room[] = [
     {
         name: 'Collapsed Hovels',
         location: [280.97,2556.14],
-        actions: [{ name: 'Ghoul', type: PROFESSIONS.GUARD }, { name: 'Feather', type: PROFESSIONS.GATHERER }, { name: 'Maggots (any)', type: PROFESSIONS.GATHERER }, { name: 'Moth Wing', type: PROFESSIONS.GATHERER }]
+        actions: [{ name: 'Ghoul', type: PROFESSIONS.GUARD }, { name: 'Feather', type: PROFESSIONS.GATHERER }, { name: 'Maggots', type: PROFESSIONS.GATHERER }, { name: 'Moth Wing', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Wasteland',
@@ -31,17 +31,17 @@ export const rooms: Room[] = [
     {
         name: 'Pirate Hideout',
         location: [189.57,2080.41],
-        actions: [{ name: 'Pirate', type: PROFESSIONS.GUARD }, { name: 'Gurnard (any)', type: PROFESSIONS.FISHER }, { name: 'Limpet', type: PROFESSIONS.GATHERER }, { name: 'Wrack', type: PROFESSIONS.GATHERER }]
+        actions: [{ name: 'Pirate', type: PROFESSIONS.GUARD }, { name: 'Gurnard', type: PROFESSIONS.FISHER }, { name: 'Limpet', type: PROFESSIONS.GATHERER }, { name: 'Wrack', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Ray Bay',
         location: [230.20,1858.68],
-        actions: [{ name: 'Limpet', type: PROFESSIONS.GATHERER }, { name: 'Ray (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Limpet', type: PROFESSIONS.GATHERER }, { name: 'Ray', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Starfish Point',
         location: [213.27,1658.95],
-        actions: [{ name: 'Wrack', type: PROFESSIONS.GATHERER }, { name: 'Starfish', type: PROFESSIONS.GATHERER }, { name: 'Cod (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Wrack', type: PROFESSIONS.GATHERER }, { name: 'Starfish', type: PROFESSIONS.GATHERER }, { name: 'Cod', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Jellyfish Landing',
@@ -72,17 +72,17 @@ export const rooms: Room[] = [
     {
         name: 'Seashells Seashore',
         location: [638.11,1653.87],
-        actions: [{ name: 'Bass (any)', type: PROFESSIONS.FISHER }, { name: 'Shell', type: PROFESSIONS.GATHERER }, { name: 'Anemone', type: PROFESSIONS.GATHERER }, { name: 'Sea Potato', type: PROFESSIONS.GATHERER }, { name: 'Sea Slug (any)', type: PROFESSIONS.GATHERER }]
+        actions: [{ name: 'Bass', type: PROFESSIONS.FISHER }, { name: 'Shell', type: PROFESSIONS.GATHERER }, { name: 'Anemone', type: PROFESSIONS.GATHERER }, { name: 'Sea Potato', type: PROFESSIONS.GATHERER }, { name: 'Sea Slug', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'East Beach',
         location: [822.61,1620.02],
-        actions: [{ name: 'Crab', type: PROFESSIONS.GUARD }, { name: 'Flounder (any)', type: PROFESSIONS.FISHER }, { name: 'Kelp', type: PROFESSIONS.GATHERER }, { name: 'Shell', type: PROFESSIONS.GATHERER }]
+        actions: [{ name: 'Crab', type: PROFESSIONS.GUARD }, { name: 'Flounder', type: PROFESSIONS.FISHER }, { name: 'Kelp', type: PROFESSIONS.GATHERER }, { name: 'Shell', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Sea Road',
         location: [866.62,1746.96],
-        actions: [{ name: 'The seaside Rock Shop', type: PROFESSIONS.SELLER }, { name: 'Storage Rift', type: PROFESSIONS.STORAGERIFT }]
+        actions: [{ name: 'The Seaside Rock Shop', type: PROFESSIONS.SELLER }, { name: 'Storage Rift', type: PROFESSIONS.STORAGERIFT }]
     },
     {
         name: 'Scrapyard',
@@ -92,52 +92,52 @@ export const rooms: Room[] = [
     {
         name: 'West Waterfront',
         location: [1126.06,1693.19],
-        actions: [{ name: 'Lobster (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Lobster', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Little Lucy',
         location: [1148.90,1488.99],
-        actions: [{ name: 'Wraddock (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Wraddock', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Central Waterfront',
         location: [1349.07,1694.53],
-        actions: [{ name: 'Bream (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Bream', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Boardwalk',
         location: [1582.83,1687.82],
-        actions: [{ name: 'Herring (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Herring', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'East Waterfront',
         location: [1804.49,1689.16],
-        actions: [{ name: 'Oyster (any)', type: PROFESSIONS.FISHER }, { name: 'Scrap Metal', type: PROFESSIONS.GATHERER }]
+        actions: [{ name: 'Oyster', type: PROFESSIONS.FISHER }, { name: 'Scrap Metal', type: PROFESSIONS.GATHERER }]
     },
     {
         name: 'Vacant Pier',
         location: [1758.82,1506.45],
-        actions: [{ name: 'Dab (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Dab', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Vincible',
         location: [1944.21,1456.75],
-        actions: [{ name: 'Sturlet (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Sturlet', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Salty Swine',
         location: [1314.14,1484.96],
-        actions: [{ name: 'Mackibut (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Mackibut', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Eel Street',
         location: [1393.41,1845.00],
-        actions: [{ name: 'The frequently fresh fish stall', type: PROFESSIONS.SELLER }]
+        actions: [{ name: 'The Frequently Fresh Fish Stall', type: PROFESSIONS.SELLER }]
     },
     {
         name: 'Eel street Bridge',
         location: [1394.75,2016.95],
-        actions: [{ name: 'Eel (any)', type: PROFESSIONS.FISHER }]
+        actions: [{ name: 'Eel', type: PROFESSIONS.FISHER }]
     },
     {
         name: 'Hopeport Obelisk',
@@ -374,7 +374,7 @@ export const rooms: Room[] = [
         { name: "Squirm Worms" }]
     },
     {
-        name: 'Frequently fresh fish shop',
+        name: 'Frequently Fresh Fish Shop',
         location: [1365.91,1872.41],
         actions: [{ name: "Placid Bass" },
         { name: "Striped Bass" },
