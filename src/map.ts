@@ -1,17 +1,20 @@
 import { Map, Overlay, View } from 'ol';
-import { backgroundLayer, markerLayer, projection, legendLayers, hoverFeature, hoverLayer, maxExtent } from './layers';
-import { Point } from 'ol/geom';
+import { backgroundLayer, highlightLayer, highlightTile, legendLayers, mapExtent, maxZoom, projection, resolutions, tileUnit, roomLayer, skillingLayer, skillingSource } from './layers';
 import { getCenter } from 'ol/extent';
+import { Icon, Style } from 'ol/style';
 
 export const map = new Map({
     target: 'map',
-    layers: [backgroundLayer, hoverLayer, ...Object.values(legendLayers)],
+    layers: [ backgroundLayer, highlightLayer,roomLayer,skillingLayer, ...Object.values(legendLayers)],
     view: new View({
         projection: projection,
-        center: [0, 0],
-        zoom: 5,
-        minZoom: 2,
-        maxZoom: 5,
+        resolutions: backgroundLayer.getSource()!.getTileGrid()!.getResolutions()!,
+        extent: mapExtent,
+        center: getCenter(mapExtent),
+        zoom: 0,
+        minZoom: 0,
+        maxZoom: maxZoom,
+        constrainResolution: true,
     }),
 });
 
@@ -45,47 +48,80 @@ export const map = new Map({
 //     window.history.pushState({}, '', url);
 // }
 
-// Function to update the hover feature's geometry based on the current zoom level
-function updateHoverFeature(center: [number, number]) {
-    const view = map.getView();
-    const currentZoom = view.getZoom()!;
-    const hoverSizeInPixels = 24 / Math.pow(2, 5 - currentZoom); // Adjust size relative to zoom
-
-    const mapResolution = view.getResolution()!;
-    const hoverSizeInMapUnits = hoverSizeInPixels * mapResolution;
-
-    // Calculate the four corners of the hover square based on the center and hover size
-    const [centerX, centerY] = center;
-    const hoverCoordinates = [
-        [centerX - hoverSizeInMapUnits / 2, centerY - hoverSizeInMapUnits / 2],
-        [centerX + hoverSizeInMapUnits / 2, centerY - hoverSizeInMapUnits / 2],
-        [centerX + hoverSizeInMapUnits / 2, centerY + hoverSizeInMapUnits / 2],
-        [centerX - hoverSizeInMapUnits / 2, centerY + hoverSizeInMapUnits / 2],
-        [centerX - hoverSizeInMapUnits / 2, centerY - hoverSizeInMapUnits / 2],
-    ];
-
-    // Update the geometry of the hover feature
-    hoverFeature.getGeometry()?.setCoordinates([hoverCoordinates]);
+function updateUrlWithClosestPoint(name: string) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('selectedRoom', name);
+    window.history.pushState({}, '', url);
 }
 
 
-// Update hover feature position on pointer move
-map.on('pointermove', (event) => {
-    const mapResolution = map.getView().getResolution()!;
-    const tileSizeInMapUnits = 24 * mapResolution;
 
-    // Calculate the snapped center of the nearest tile
-    const snappedX = Math.floor(event.coordinate[0] / tileSizeInMapUnits) * tileSizeInMapUnits + tileSizeInMapUnits / 2;
-    const snappedY = Math.floor(event.coordinate[1] / tileSizeInMapUnits) * tileSizeInMapUnits + tileSizeInMapUnits / 2;
+// const output = rooms.map(room => {
+//   let outputString = '';
+//  let sellers: string[] = []
+//  let mobs: string[] = []
+//  let skills: string[] = []
+//  room.actions.forEach(action => {
+//     if(action.type && combatProfessions.includes(action.type)) {
+//       mobs.push(action.name);
+//     } else if (action.type && action.type === PROFESSIONS.SELLER) {
+//       sellers.push(action.name)
+//     } else if (action.type) {
+//       skills.push(action.name)
+//     }
 
-    // Update the hover feature geometry based on the snapped center
-    updateHoverFeature([snappedX, snappedY]);
+
+//  });
+//  return `${room.name};;;${mobs.join(', ')};${skills.join(', ')};${sellers.join(', ')}\n`
+// })
+// console.log(output.join(''))
+
+
+
+
+
+// Create a tooltip element for the overlay
+export const tooltipElement = document.createElement('div');
+tooltipElement.className = 'ol-tooltip';
+tooltipElement.style.position = 'absolute';
+tooltipElement.style.background = 'rgba(0, 0, 0, 0.6)';
+tooltipElement.style.color = 'white';
+tooltipElement.style.padding = '5px';
+tooltipElement.style.borderRadius = '4px';
+tooltipElement.style.whiteSpace = 'nowrap';
+tooltipElement.style.pointerEvents = 'none';
+
+// Create an overlay for the tooltip and add it to the map
+export const tooltipOverlay = new Overlay({
+    element: tooltipElement,
+    offset: [10, 0],
+    positioning: 'bottom-left',
+});
+map.addOverlay(tooltipOverlay);
+
+
+// Function to highlight the current tile under the cursor
+
+// Update the highlighted tile on pointer move
+map.on('pointermove', (event: any) => {
+    highlightTile(event.coordinate);
 });
 
-// Update hover feature size on zoom change
+
+// Add listener to adjust icon size relative to zoom level
 map.getView().on('change:resolution', () => {
-    const currentCenter = hoverFeature.getGeometry()?.getInteriorPoint().getCoordinates();
-    if (currentCenter) {
-        updateHoverFeature([currentCenter[0], currentCenter[1]]);
-    }
-});
+    const currentZoom = map.getView().getZoom()!;
+    const maxZoom = map.getView().getMaxZoom();
+  
+    // Calculate the scale based on current zoom level relative to max zoom
+    const scaleFactor = Math.pow(2, currentZoom - maxZoom);
+  
+    // Iterate over all features to update their scale dynamically
+    skillingSource.getFeatures().forEach(feature => {
+      const iconStyle = feature.getStyle() as Style;
+      if (iconStyle && iconStyle.getImage() instanceof Icon) {
+        const icon = iconStyle.getImage() as Icon;
+        icon.setScale(scaleFactor); // Dynamically adjust scale relative to zoom level
+      }
+    });
+  });

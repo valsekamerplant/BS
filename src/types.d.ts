@@ -8,3 +8,11 @@ export interface Action {
     location: [number, number];
     actions: Action[];
   }
+
+  export interface Marker {
+    name: string,
+    image: string,
+    type: string,
+    x: number,
+    y: number
+  }

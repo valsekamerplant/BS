@@ -265,7 +265,7 @@ export const areas = [
     },
     {
         name: "Crenopolis",
-        color:"#979795",
+        color: "#979795",
         poly: [
             [
                 [
