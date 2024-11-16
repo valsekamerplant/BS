@@ -2,2610 +2,6273 @@ import { PROFESSIONS } from "./constants";
 import { Room } from "./types";
 
 export const rooms: Room[] = [
-    //HOPEPORT
     {
-        name: 'Rocky Road',
-        location: [407.92,2723.71],
-        actions: [{ name: 'Punkupine', type: PROFESSIONS.GUARD }]
-    },
-    {
-        name: 'Collapsed Hovels',
-        location: [280.97,2556.14],
-        actions: [{ name: 'Ghoul', type: PROFESSIONS.GUARD }, { name: 'Feather', type: PROFESSIONS.GATHERER }, { name: 'Maggots', type: PROFESSIONS.GATHERER }, { name: 'Moth Wing', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Wasteland',
-        location: [407.92,2380.11],
-        actions: [{ name: 'Ghoul', type: PROFESSIONS.GUARD }, { name: 'Monument Piece', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Overgrow Road',
-        location: [600.88,2278.44],
-        actions: [{ name: 'Hairbeast', type: PROFESSIONS.GUARD }, { name: 'Nettle', type: PROFESSIONS.GATHERER }, { name: 'WaterLily', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Crater',
-        location: [428.23,2090.56],
-        actions: [{ name: 'Giant Ant', type: PROFESSIONS.GUARD }, { name: 'Hogberries', type: PROFESSIONS.GATHERER }, { name: 'Monument Piece', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Pirate Hideout',
-        location: [189.57,2080.41],
-        actions: [{ name: 'Pirate', type: PROFESSIONS.GUARD }, { name: 'Gurnard', type: PROFESSIONS.FISHER }, { name: 'Limpet', type: PROFESSIONS.GATHERER }, { name: 'Wrack', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Ray Bay',
-        location: [230.20,1858.68],
-        actions: [{ name: 'Limpet', type: PROFESSIONS.GATHERER }, { name: 'Ray', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Starfish Point',
-        location: [213.27,1658.95],
-        actions: [{ name: 'Wrack', type: PROFESSIONS.GATHERER }, { name: 'Starfish', type: PROFESSIONS.GATHERER }, { name: 'Cod', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Jellyfish Landing',
-        location: [414.69,1684.34],
-        actions: [{ name: 'Jellyfish', type: PROFESSIONS.GUARD }, { name: 'Kelp', type: PROFESSIONS.GATHERER }, { name: 'Starfish', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Fallen Monument',
-        location: [413.00,1863.75],
-        actions: [{ name: 'Carnivorous Plant', type: PROFESSIONS.GUARD }, { name: 'Hogberries', type: PROFESSIONS.GATHERER }, { name: 'Potato', type: PROFESSIONS.GATHERER }, { name: 'Monument Piece', type: PROFESSIONS.GATHERER }, { name: 'Fallen Monument', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Rubble Road',
-        location: [631.34,2056.71],
-        actions: [{ name: 'Hairbeast', type: PROFESSIONS.GUARD }, { name: 'Bellplant', type: PROFESSIONS.GATHERER }, { name: 'Water lilly', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Overgrown Pond',
-        location: [800.61,1990.70],
-        actions: [{ name: 'Bugman', type: PROFESSIONS.GUARD }, { name: 'Nettle', type: PROFESSIONS.GATHERER }, { name: 'Pond Weed', type: PROFESSIONS.GATHERER }]
-    },
-
-    {
-        name: 'Overgrown Field',
-        location: [624.57,1863.75],
-        actions: [{ name: 'Carnivorous Plant', type: PROFESSIONS.GUARD }, { name: 'Bellplant', type: PROFESSIONS.GATHERER }, { name: 'Potato', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Seashells Seashore',
-        location: [638.11,1653.87],
-        actions: [{ name: 'Bass', type: PROFESSIONS.FISHER }, { name: 'Shell', type: PROFESSIONS.GATHERER }, { name: 'Anemone', type: PROFESSIONS.GATHERER }, { name: 'Sea Potato', type: PROFESSIONS.GATHERER }, { name: 'Sea Slug', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'East Beach',
-        location: [822.61,1620.02],
-        actions: [{ name: 'Crab', type: PROFESSIONS.GUARD }, { name: 'Flounder', type: PROFESSIONS.FISHER }, { name: 'Kelp', type: PROFESSIONS.GATHERER }, { name: 'Shell', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Sea Road',
-        location: [866.62,1746.96],
-        actions: [{ name: 'The Seaside Rock Shop', type: PROFESSIONS.SELLER }, { name: 'Storage Rift', type: PROFESSIONS.STORAGERIFT }]
-    },
-    {
-        name: 'Scrapyard',
-        location: [1032.49,1897.61],
-        actions: [{ name: 'Scrap Merchant', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'West Waterfront',
-        location: [1126.06,1693.19],
-        actions: [{ name: 'Lobster', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Little Lucy',
-        location: [1148.90,1488.99],
-        actions: [{ name: 'Wraddock', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Central Waterfront',
-        location: [1349.07,1694.53],
-        actions: [{ name: 'Bream', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Boardwalk',
-        location: [1582.83,1687.82],
-        actions: [{ name: 'Herring', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'East Waterfront',
-        location: [1804.49,1689.16],
-        actions: [{ name: 'Oyster', type: PROFESSIONS.FISHER }, { name: 'Scrap Metal', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Vacant Pier',
-        location: [1758.82,1506.45],
-        actions: [{ name: 'Dab', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Vincible',
-        location: [1944.21,1456.75],
-        actions: [{ name: 'Sturlet', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Salty Swine',
-        location: [1314.14,1484.96],
-        actions: [{ name: 'Mackibut', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Eel Street',
-        location: [1393.41,1845.00],
-        actions: [{ name: 'The Frequently Fresh Fish Stall', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Eel street Bridge',
-        location: [1394.75,2016.95],
-        actions: [{ name: 'Eel', type: PROFESSIONS.FISHER }]
-    },
-    {
-        name: 'Hopeport Obelisk',
-        location: [1215.15,2021.02],
-        actions: [{ name: 'Obelisk', type: PROFESSIONS.OBELISK }]
-    },
-    {
-        name: 'Brannof Boulevard',
-        location:  [1192.52,2181.98],
-        actions: [{ name: 'Periwinkle', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Town Square',
-        location: [1398.76,2166.89],
-        actions: [{ name: 'Potion Reagents', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Stone Street',
-        location: [1435.23,2350.50],
-        actions: [{ name: 'Kevin\'s Ingredients', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Apothecary',
-        location:  [1581.10,2344.21],
-        actions: [{ name: 'Potion Stations', type: PROFESSIONS.ALCHEMIST }, { name: 'Passive Potion Stations', type: PROFESSIONS.ALCHEMIST }, { name: 'Work for Ebsworth', type: PROFESSIONS.ALCHEMIST }, { name: 'Potion Reagents', type: PROFESSIONS.STORAGE }, { name: 'Potions', type: PROFESSIONS.STORAGE }, { name: 'The Apothecary Shop', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Melv\s Fishing Supplies',
-        location: [1550.92,2227.26],
-        actions: [{ name: 'Fishing Bait', type: PROFESSIONS.STORAGE }, { name: 'Fishing Supplies', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Hairdresser',
-        location: [1671.65,2223.48],
-        actions: [{ name: 'Hairdresser', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Old Street West',
-        location: [1606.25,2131.68],
-        actions: [{ name: 'Wallplant', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Wilhope Passage',
-        location: [1649.01,1919.15],
-        actions: [{ name: 'Street Louse', type: PROFESSIONS.GUARD }]
-    },
-    {
-        name: 'Tim\'s Alley',
-        location: [1793.63,2010.96],
-        actions: [{ name: 'Thief', type: PROFESSIONS.GUARD }]
-    },
-    {
-        name: 'Limpet Lane',
-        location: [1793.63,1802.20],
-        actions: [{ name: 'Thief', type: PROFESSIONS.GUARD }]
-    },
-    {
-        name: 'Little Square',
-        location: [1791.11,1904.06],
-        actions: [{ name: 'Louse', type: PROFESSIONS.GATHERER }, { name: 'Shimmerbean', type: PROFESSIONS.GATHERER }, { name: 'Spinseed', type: PROFESSIONS.GATHERER }, { name: 'Sprey', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Nook Alley',
-        location: [1880.40,1822.32],
-        actions: [{ name: 'Scrap Metal', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'Murk Close',
-        location: [1965.91,1905.32],
-        actions: [{ name: 'Thug', type: PROFESSIONS.GUARD }, { name: 'Storage Rift', type: PROFESSIONS.STORAGERIFT }]
-    },
-    {
-        name: 'Hopeport Portal Stone',
-        location: [1166.19,2756.11],
-        actions: [{ name: 'Portal Stone', type: PROFESSIONS.PORTALSTONE }]
-    },
-    {
-        name: 'Sparring Area',
-        location: [1076.90,2566.22],
-        actions: [{ name: 'Sparring Guard', type: PROFESSIONS.GUARD }]
-    },
-    {
-        name: 'Quartermaster',
-        location: [1522.08,2519.69],
-        actions: [{ name: 'Quartermaster', type: PROFESSIONS.STORAGE }, { name: 'Quartermaster Shop', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Old Street East',
-        location: [1841.50,2129.85],
-        actions: [{ name: 'Deathcrow', type: PROFESSIONS.GUARD }, { name: 'Wallplant', type: PROFESSIONS.GATHERER }]
-    },
-    {
-        name: 'The Cloakroom',
-        location: [1767.30,2224.17],
-        actions: [{ name: 'Capes', type: PROFESSIONS.STORAGE }, { name: 'Cape Shop', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'The Forager\'s Warehouse',
-        location: [1899.35,2236.74],
-        actions: [{ name: 'The Forager\'s Warehouse', type: PROFESSIONS.SELLER }]
-    },
-
-    {
-        name: 'Enchantress Shop',
-        location: [1856.59,2019.19],
-        actions: [{ name: 'Enchantress', type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Town Gates',
-        location: [2062.61,2127.49],
-        actions: [{ name: 'Deathcrow', type: PROFESSIONS.GUARD }]
-    },
-    {
-        name: 'South Walls',
-        location: [2130.52,1961.49],
-        actions: [{ name: 'Goblin Chief', type: PROFESSIONS.GUARD }]
-    },
-    {
-        name: 'North Walls',
-        location: [2120.46,2294.74],
-        actions: [{ name: 'Goblin Soldier', type: PROFESSIONS.GUARD }]
-    },
-    {
-        name: 'Kevin\'s Ingredients ',
-        location: [1407.11,2406.36],
-        actions: [{ name: "Bread" },
-        { name: "Butter" },
-        { name: "Cabbage" },
-        { name: "Raw Chicken" },
-        { name: "Cream" },
-        { name: "Gelatin" },
-        { name: "Lemon Juice" },
-        { name: "Pastry" },
-        { name: "Raw Sausages" },
-        { name: "Soy Sauce" },
-        { name: "Stock" },
-        { name: "Wine" },
-        { name: "Basic Raw Bacon" },
-        { name: "Appetizing Raw Bacon" },
-        { name: "Fine Raw Bacon" },
-        { name: "Tasty Raw Bacon" },
-        { name: "Delicious Raw Bacon" },
-        { name: "Gourmet Raw Bacon" },
-        { name: "Golbranth Beetroot" },
-        { name: "Tarang Beetroot" },
-        { name: "Kalb Beetroot" },
-        { name: "Flexhair Beetroot" },
-        { name: "Zing Beetroot" },
-        { name: "Oldclay Beetroot" },
-        { name: "Furtop Beetroot" },
-        { name: "Olgrave Beetroot" },
-        { name: "Volbarn Beetroot" },
-        { name: "Jamato Beetroot" },
-        { name: "Basic Eggs" },
-        { name: "Appetizing Eggs" },
-        { name: "Tasty Eggs" },
-        { name: "Delicious Eggs" },
-        { name: "Gourmet Eggs" },
-        { name: "Deepside Garlic" },
-        { name: "Firevein Garlic" },
-        { name: "Langard Garlic" },
-        { name: "Shelkram Garlic" },
-        { name: "Grotto Garlic" },
-        { name: "Amberflesh Garlic" },
-        { name: "Weldbulb Garlic" },
-        { name: "Valent Leek" },
-        { name: "Basic Mixed Vegetables" },
-        { name: "Appetizing Mixed Vegetables" },
-        { name: "Fine Mixed Vegetables" },
-        { name: "Tasty Mixed Vegetables" },
-        { name: "Delicious Mixed Vegetables" },
-        { name: "Gourmet Mixed Vegetables" },
-        { name: "Piper Potato" },
-        { name: "King Phelwan Potato" },
-        { name: "Calystra Potato" },
-        { name: "Colawan Potato" },
-        { name: "Bitterbide Potato" },
-        { name: "Greengrail Potato" },
-        { name: "Galimeer Potato" }]
-    },
-    {
-        name: 'Ebsworth',
-        location: [1594.07,2358.82],
-        actions: [
-            { name: "Bottle" },
-            { name: "+1 Potion Boost Level" },
-            { name: "+2 Potion Boost level" },
-            { name: "3 Minute Potion Fear" },
-            { name: "6 Minute Potion Fear" },
-            { name: "20% Potion Healing" },
-            { name: "25% Potion Healing" }]
-    },
-    {
-        name: 'Melv',
-        location: [1548.12,2217.81],
-        actions: [{ name: "Bucket" },
-        { name: "Crate" },
-        { name: "Fishing Spear" },
-        { name: "Tier 2 Fishing Spear" },
-        { name: "Tier 3 Fishing Spear" },
-        { name: "Tier 4 Fishing Spear" },
-        { name: "Tier 5 Fishing Spear" },
-        { name: "Tier 6 Fishing Spear" },
-        { name: "Fishing Rod" },
-        { name: "Tier 2 Fishing Rod" },
-        { name: "Tier 3 Fishing Rod" },
-        { name: "Tier 4 Fishing Rod" },
-        { name: "Tier 5 Fishing Rod" },
-        { name: "Tier 6 Fishing Rod" },
-        { name: "Cast Net" },
-        { name: "Lobster Pot" },
-        { name: "Oyster Net" },
-        { name: "Tier 2 Cast Net" },
-        { name: "Tier 2 Lobster Pot" },
-        { name: "Tier 2 Oyster Net" },
-        { name: "Grubby Grubs" },
-        { name: "Hobrin Grubs" },
-        { name: "Shvelt Grubs" },
-        { name: "Meldan Grubs" },
-        { name: "Cellandale Grubs" },
-        { name: "Blotchy Maggots" },
-        { name: "Pasty Maggots" },
-        { name: "Icky Maggots" },
-        { name: "Rosy Maggots" },
-        { name: "Writhing Maggots" },
-        { name: "Slippy Sea Slug" },
-        { name: "Black Sea Slug" },
-        { name: "Brown Sea Slug" },
-        { name: "Gunky Sea Slug" },
-        { name: "Juicy Sea Slug" },
-        { name: "Feast Worms" },
-        { name: "Pine Needle Worms" },
-        { name: "Red Worms" },
-        { name: "Squirm Worms" }]
-    },
-    {
-        name: 'Frequently Fresh Fish Shop',
-        location: [1365.91,1872.41],
-        actions: [{ name: "Placid Bass" },
-        { name: "Striped Bass" },
-        { name: "Emerald Bass" },
-        { name: "Dropthe Bass" },
-        { name: "Giant Bass" },
-        { name: "Leathery Bream" },
-        { name: "Black Bream" },
-        { name: "Surf Bream" },
-        { name: "Graceful Bream" },
-        { name: "Cream Bream" },
-        { name: "Gilt-Headed Bream" },
-        { name: "Brilliant Bream" },
-        { name: "Slight Cod" },
-        { name: "Waltzing Cod" },
-        { name: "Teal Cod" },
-        { name: "Pearly Cod" },
-        { name: "Mosaic Cod" },
-        { name: "Burly Cod" },
-        { name: "Emperor Cod" },
-        { name: "Common Dab" },
-        { name: "Small Dab" },
-        { name: "Dancing Dab" },
-        { name: "Summer Dab" },
-        { name: "Smooth Dab" },
-        { name: "Screaming Ab Dab" },
-        { name: "Spotted Dab" },
-        { name: "Mighty Dab" },
-        { name: "Lesser Eel" },
-        { name: "Gray Eel" },
-        { name: "Rocky Eel" },
-        { name: "Rord Eel" },
-        { name: "Moray Eel" },
-        { name: "Conger Eel" },
-        { name: "Leopard Eel" },
-        { name: "Greater Eel" },
-        { name: "Mottled Flounder" },
-        { name: "Olive Flounder" },
-        { name: "Stone Flounder" },
-        { name: "Arrowtooth Flounder" },
-        { name: "Flowery Flounder" },
-        { name: "Jelly Flounder" },
-        { name: "Peacock Flounder" },
-        { name: "Starry Flounder" },
-        { name: "Black Flounder" },
-        { name: "Yellowtail Gurnard" },
-        { name: "Bigeye Gurnard" },
-        { name: "Blackfin Gurnard" },
-        { name: "Shiny Gurnard" },
-        { name: "Torpedo Gurnard" },
-        { name: "Grand Gurnard" },
-        { name: "Ridged Herring" },
-        { name: "Gray Herring" },
-        { name: "Red Herring" },
-        { name: "Ochre Herring" },
-        { name: "Wishful Herring" },
-        { name: "Hope Herring" },
-        { name: "Shimmering Herring" },
-        { name: "Orange Lobster" },
-        { name: "Striped Lobster" },
-        { name: "Ghost Lobster" },
-        { name: "Cunning Lobster" },
-        { name: "Spotted Mackibut" },
-        { name: "Whitespot Mackibut" },
-        { name: "Blue Jack Mackibut" },
-        { name: "Streaked Mackibut" },
-        { name: "Horse Mackibut" },
-        { name: "Chub Mackibut" },
-        { name: "Blue Mackibut" },
-        { name: "Wahoo Mackibut" },
-        { name: "Etway Mackibut" },
-        { name: "King Mackibut" },
-        { name: "Beach Oyster" },
-        { name: "Signal Oyster" },
-        { name: "Speckled Oyster" },
-        { name: "Rusty Oyster" },
-        { name: "Sandy Pufferfish" },
-        { name: "Lonely Pufferfish" },
-        { name: "Lemon Pufferfish" },
-        { name: "Figure Eight Pufferfish" },
-        { name: "Rubber Pufferfish" },
-        { name: "Merry Old Pufferfish" },
-        { name: "High Tide Pufferfish" },
-        { name: "Unicorn Pufferfish" },
-        { name: "Common Ray" },
-        { name: "Dim Ray" },
-        { name: "Soldier Ray" },
-        { name: "Nimble Ray" },
-        { name: "Tiger Ray" },
-        { name: "Broad Ray" },
-        { name: "Jade Ray" },
-        { name: "Prime Ray" },
-        { name: "Idle Sturlet" },
-        { name: "Flathead Sturlet" },
-        { name: "Striped Sturlet" },
-        { name: "Thick Lipped Sturlet" },
-        { name: "Wandering Sturlet" },
-        { name: "Silver Sturlet" },
-        { name: "Western Sturlet" },
-        { name: "Blond Sturlet" },
-        { name: "Bullet Sturlet" },
-        { name: "Mighty Sturlet" },
-        { name: "Ballan Wraddock" },
-        { name: "Goldsinny Wraddock" },
-        { name: "Cuckoo Wraddock" },
-        { name: "Cleaner Wraddock" },
-        { name: "Ornate Wraddock" },
-        { name: "Six Line Wraddock" },
-        { name: "Corkwing Wraddock" },
-        { name: "Mega Wraddock" },
-        ]
-    },
-    {
-        name: 'Forager\'s warehouse',
-        location: [1899.35,2236.74],
-        actions: [{ name: "Basket" },
-        { name: "Bottle" },
-        { name: "Bucket" },
-        { name: "Crate" },
-        { name: "Jar" },
-        { name: "Sack" },
-        { name: "Secateurs" },
-        { name: "Trowel" },
-        { name: "Pond Net" },]
-    },
-    {
-        name: 'Zeltay Tramagan (Potion Reagents)',
-        location: [1398.76,2166.89],
-        actions: [
-            { name: "Blue Aboredon Egg" },
-            { name: "Stoneshell Aboredon Egg" },
-            { name: "Bitter Acorn" },
-            { name: "Sweet Acorn" },
-            { name: "Beadlet Anemone" },
-            { name: "Strawberry Anemone" },
-            { name: "Dhalia Anemone" },
-            { name: "Snakelocks Anemone" },
-            { name: "Elegant Anemone" },
-            { name: "Tad Apple" },
-            { name: "Myrtle Apple" },
-            { name: "Golden Scrumptious Apple" },
-            { name: "Chipped Beastman Claws" },
-            { name: "Shaggy Beastman Claws" },
-            { name: "Yellowing Beastman Claws" },
-            { name: "Thick Beastman Claws" },
-            { name: "Heavy Beastman Claws" },
-            { name: "Salt Beetle" },
-            { name: "Star Beetle" },
-            { name: "Mauve Bellplant" },
-            { name: "Crimson Bellplant" },
-            { name: "Starshine Bellplant" },
-            { name: "Slothful Bug" },
-            { name: "Lowburrow Bug" },
-            { name: "Pine Bug" },
-            { name: "Blood Bug" },
-            { name: "Sour Bug" },
-            { name: "Red Cabbage" },
-            { name: "Napa Cabbage" },
-            { name: "Bristled Catkin" },
-            { name: "Fuzzy Catkin" },
-            { name: "Gray Cave Moss" },
-            { name: "Brown Cave Moss" },
-            { name: "Yellow Cave Moss" },
-            { name: "Green Cave Moss" },
-            { name: "Dark Cave Moss" },
-            { name: "Orange Centipede" },
-            { name: "Scuttling Centipede" },
-            { name: "Dewkin Chestnut" },
-            { name: "Lowbrunch Chestnut" },
-            { name: "Klamit Cinnamon Sticks" },
-            { name: "Vorshalt Cinnamon Sticks" },
-            { name: "Brown Kelp" },
-            { name: "White Periwinkle" },
-            { name: "Creamy Wallplant" },]
-    },
-    {
-        name: "The Delectable Dab Kitchen",
-        location: [1126.84,2360.90],
-        actions: [
-            { name: "Cooking Stations", type: PROFESSIONS.CHEF },
-            { name: "Fish Dishes", type: PROFESSIONS.CHEF },
-            { name: "Ingredients", type: PROFESSIONS.STORAGE },
-            { name: "Head Chef", type: PROFESSIONS.SELLER },
-            { name: "Chef's Bounty Board", type: PROFESSIONS.CHEF }
-        ]
-    },
-    {
-        name: "The Delectable Dab Restaurant",
-        location: [1282.00,2335.98],
-        actions: []
-    },
-    {
-        name: "Brannof's Chamber",
-        location: [1022.35,2265.82],
-        actions: []
-    },
-    {
-        name: "Brannof's Dining Room",
-        location: [914.71,2171.05],
-        actions: []
-    },
-    {
-        name: "Brannof Hall's Hallway",
-        location: [1019.57,2169.64],
-        actions: []
-    },
-    {
-        name: "The Hooked Hand",
-        location: [1293.96,1867.88],
-        actions: []
-    },
-    {
-        name: "Thieves' Den",
-        location: [1644.54,2022.27],
-        actions: []
-    },
-    {
-        name: "Captain Degreene's Office",
-        location: [1303.40,2733.17],
-        actions: []
-    },
-    {
-        name: "Barracks",
-        location: [1451.72,2745.46],
-        actions: []
-    },
-    {
-        name: "Infirmary",
-        location: [1514.81,2617.63],
-        actions: []
-    },
-    {
-        name: "Training Ground",
-        location: [1309.14,2575.84],
-        actions: []
-    },
-    {
-        name: "Wilhope Crossing",
-        location: [1547.13,1904.17],
-        actions: [
-            { name: "Pufferfish", type: PROFESSIONS.FISHER }
-        ]
-    },
-    {
-        name: "Monob Row",
-        location: [1712.66,2002.65],
-        actions: []
-    },
-    {
-        name: "Naybeth's House",
-        location: [2023.82,2037.22],
-        actions: []
-    },
-    {
-        name: "Pipe Alley",
-        location: [1841.52,2276.09],
-        actions: []
-    },
-    //HOPE FOREST
-    {
-        name: "Two Headed Bear Clearing",
-        location: [2317.02, 2846.08],
-        actions: [
-            { name: "Goat Horn", type: PROFESSIONS.FORAGER },
-            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Yew Branches", type: PROFESSIONS.GATHERER }
-        ]
-    },
-    {
-        name: "Bear Behind",
-        location: [2081.39, 2629.58],
-        actions: [
-            { name: "Bear", type: PROFESSIONS.SCOUT },
-            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Yew Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Bear Clearing",
-        location: [2278.75, 2629.58],
-        actions: [
-            { name: "Bear", type: PROFESSIONS.SCOUT },
-            { name: "Goat Horn", type: PROFESSIONS.FORAGER },
-            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Yew Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Road to Hopeport",
-        location: [2325.80, 2130.35],
-        actions: [
-            { name: "Globeplant", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Forest Clearing",
-        location: [2539.16, 2137.21],
-        actions: [
-            { name: "Outlaw", type: PROFESSIONS.SCOUT },
-            { name: "Globeplant", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Forest Path",
-        location: [2805.40, 2190.46],
-        actions: [
-            { name: "Outlaw", type: PROFESSIONS.SCOUT }
-        ]
-    },
-    {
-        name: "Goblin Camp",
-        location: [2814.96, 2054.61],
-        actions: [
-            { name: "Goblin", type: PROFESSIONS.SCOUT },
-            { name: "Obelisk", type: PROFESSIONS.OBELISK }
-        ]
-    },
-    {
-        name: "Mushroom Glade",
-        location: [2396.49, 1904.42],
-        actions: [
-            { name: "Dandelion", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Huntsman's Clearing",
-        location: [2604.70, 1924.90],
-        actions: [
-            { name: "Wild Boar", type: PROFESSIONS.SCOUT },
-            { name: "Dandelion", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Timberwell Supplies",
-        location: [2408.96, 1603.58],
-        actions: [
-            { name: "Basket" },
-            { name: "Bottle" },
-            { name: "Bucket" },
-            { name: "Crate" },
-            { name: "Jar" },
-            { name: "Sack" },
-            { name: "Hand Rake" },
-            { name: "Sickle" },
-            { name: "Tier 2 Sickle" },
-            { name: "Tier 2 Hand Rake" },
-            { name: "Tier 3 Hand Rake" },
-            { name: "Tier 3 Sickle" },
-        ]
-    },
-    {
-        name: "Timberwell Road",
-        location: [2658.77, 1654.70],
-        actions: [
-            { name: "Ash Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Ash Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Timberwell Side Road",
-        location: [2380.10, 1470.84],
-        actions: [
-            { name: "Apple", type: PROFESSIONS.FORAGER },
-            { name: "Ash Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Ash Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "The Color Wheel",
-        location: [2178.74, 1468.99],
-        actions: [
-            { name: "Dyes", type: PROFESSIONS.SELLER }
-        ]
-    },
-    {
-        name: "Mr McGrish's Garden",
-        location: [2237.28, 1279.37],
-        actions: [
-            { name: "Apple", type: PROFESSIONS.FORAGER },
-            { name: "Ash Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Ash Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Gwen's Lumber",
-        location: [2485.44, 1361.81],
-        actions: [
-            { name: "Coarse Ash Log" },
-            { name: "Coarse Oak Log" },
-            { name: "Coarse Pine Log" },
-            { name: "Coarse Hickory Log" },
-            { name: "Coarse Juniper Log" },
-            { name: "Coarse Poplar Log" },
-            { name: "Coarse Suave Log" },
-            { name: "Coarse Yew Log" },
-            { name: "Rugged Ash Log" },
-            { name: "Rugged Oak Log" },
-            { name: "Rugged Pine Log" },
-            { name: "Rugged Hickory Log" },
-            { name: "Rugged Juniper Log" },
-            { name: "Rugged Poplar Log" },
-            { name: "Rugged Suave Log" },
-            { name: "Rugged Yew Log" },
-            { name: "Average Ash Log" },
-            { name: "Average Oak Log" },
-            { name: "Average Pine Log" },
-            { name: "Average Hickory Log" },
-            { name: "Average Juniper Log" },
-            { name: "Average Poplar Log" },
-            { name: "Average Suave Log" },
-            { name: "Average Yew Log" },
-            { name: "Fine Ash Log" },
-            { name: "Fine Oak Log" },
-            { name: "Fine Pine Log" },
-            { name: "Fine Hickory Log" },
-            { name: "Fine Juniper Log" },
-            { name: "Fine Poplar Log" },
-            { name: "Fine Suave Log" },
-            { name: "Fine Yew Log" },
-            { name: "Sturdy Ash Log" },
-            { name: "Sturdy Oak Log" },
-            { name: "Sturdy Pine Log" },
-            { name: "Sturdy Hickory Log" },
-            { name: "Sturdy Juniper Log" },
-            { name: "Sturdy Poplar Log" },
-            { name: "Sturdy Suave Log" },
-            { name: "Sturdy Yew Log" },
-            { name: "Perfect Ash Log" },
-            { name: "Perfect Oak Log" },
-            { name: "Perfect Pine Log" },
-            { name: "Perfect Hickory Log" },
-            { name: "Perfect Juniper Log" },
-            { name: "Perfect Poplar Log" },
-            { name: "Perfect Suave Log" },
-            { name: "Perfect Yew Log" },
-        ]
-    },
-    {
-        name: "Timberwell Green",
-        location: [2646.21, 1322.24],
-        actions: [
-            { name: "Catkin", type: PROFESSIONS.FORAGER },
-            { name: "Ash Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Ash Branches", type: PROFESSIONS.WOODCUTTER },
-            { name: "Morauce\'s Pointy Implements", type: PROFESSIONS.SELLER },
-            { name: "Timber", type: PROFESSIONS.STORAGE }
-        ]
-    },
-    {
-        name: "Morauce\'s Point Implements",
-        location: [2646.21, 1322.24],
-        actions: [
-            { name: "Hand Saw" },
-            { name: "Hatchet" },
-            { name: "Two Person Saw" },
-            { name: "Tree Loppers" }
-        ]
-    },
-    {
-        name: "Timber Merchant",
-        location: [2626.42, 1043.57],
-        actions: [
-            { name: "Coarse Ash Plank" },
-            { name: "Coarse Oak Pole" },
-            { name: "Coarse Pine Pole" },
-            { name: "Coarse Hickory Pole" },
-            { name: "Coarse Juniper Stave" },
-            { name: "Coarse Poplar Pole" },
-            { name: "Coarse Suave Pole" },
-            { name: "Coarse Yew Pole" },
-            { name: "Rugged Ash Plank" },
-            { name: "Rugged Oak Pole" },
-            { name: "Rugged Pine Pole" },
-            { name: "Rugged Hickory Pole" },
-            { name: "Rugged Juniper Stave" },
-            { name: "Rugged Poplar Pole" },
-            { name: "Rugged Suave Log" },
-            { name: "Rugged Yew Pole" },
-            { name: "Average Ash Plank" },
-            { name: "Average Oak Pole" },
-            { name: "Average Pine Pole" },
-            { name: "Average Hickory Pole" },
-            { name: "Average Juniper Stave" },
-            { name: "Average Poplar Pole" },
-            { name: "Average Suave Log" },
-            { name: "Average Yew Pole" },
-            { name: "Fine Ash Plank" },
-            { name: "Fine Oak Pole" },
-            { name: "Fine Pine Pole" },
-            { name: "Fine Hickory Pole" },
-            { name: "Fine Juniper Stave" },
-            { name: "Fine Poplar Pole" },
-            { name: "Fine Suave Log" },
-            { name: "Fine Yew Pole" },
-            { name: "Sturdy Ash Plank" },
-            { name: "Sturdy Oak Pole" },
-            { name: "Sturdy Pine Pole" },
-            { name: "Sturdy Hickory Pole" },
-            { name: "Sturdy Juniper Stave" },
-            { name: "Sturdy Poplar Pole" },
-            { name: "Sturdy Suave Log" },
-            { name: "Sturdy Yew Pole" },
-            { name: "Perfect Ash Plank" },
-            { name: "Perfect Oak Pole" },
-            { name: "Perfect Pine Pole" },
-            { name: "Perfect Hickory Pole" },
-            { name: "Perfect Juniper Stave" },
-            { name: "Perfect Poplar Pole" },
-            { name: "Perfect Suave Log" },
-            { name: "Perfect Yew Pole" }
-        ]
-    },
-    {
-        name: "Carpenter's Workshop",
-        location: [2626.42, 1043.57],
-        actions: [
-            { name: "Lumber", type: PROFESSIONS.STORAGE },
-            { name: "Sawmill", type: PROFESSIONS.CARPENTER },
-            { name: "Furniture Assembly Station", type: PROFESSIONS.CARPENTER },
-            { name: "Workbench", type: PROFESSIONS.CARPENTER },
-            { name: "Timber Merchant", type: PROFESSIONS.SELLER }
-        ]
-    },
-    {
-        name: "Thin Trail",
-        location: [2687.04, 2837.96],
-        actions: [
-            { name: "Leek", type: PROFESSIONS.FORAGER },
-            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Yew Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Narrow Path",
-        location: [2684.77, 2689.04],
-        actions: [
-            { name: "Leek", type: PROFESSIONS.GATHERER },
-            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Yew Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Leafy Junction",
-        location: [2490.49, 2587.74],
-        actions: [
-            { name: "Wildman", type: PROFESSIONS.SCOUT },
-            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Yew Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Leafy Lane",
-        location: [2485.12, 2391.76],
-        actions: [
-            { name: "Yew Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Yew Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Secluded Dead End",
-        location: [2622.73, 2487.20],
-        actions: [
-            { name: "Satyr", type: PROFESSIONS.SCOUT },
-            { name: "Hickory Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Hickory Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Secluded Path",
-        location: [2758.13, 2456.13],
-        actions: [
-            { name: "Tangfruit", type: PROFESSIONS.FORAGER },
-            { name: "Hickory Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Hickory Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Secluded Junction",
-        location: [2915.71, 2452.80],
-        actions: [
-            { name: "Orchid", type: PROFESSIONS.FORAGER },
-            { name: "Hickory Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Hickory Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Dryad Glade",
-        location: [2702.64, 2339.60],
-        actions: [
-            { name: "Tangfruit", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Luscious Glade",
-        location: [2907.95, 2346.26],
-        actions: [
-            { name: "Orchid", type: PROFESSIONS.FORAGER },
-            { name: "Hickory Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Hickory Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "North Central Path",
-        location: [3036.68, 2371.78],
-        actions: [
-            { name: "Hickory Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Hickory Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Wooded Clifftop",
-        location: [2903.39, 3258.93],
-        actions: [
-            { name: "Bramblelith", type: PROFESSIONS.SCOUT }
-        ]
-    },
-    {
-        name: "Rising Trail",
-        location: [2912.41, 3119.57],
-        actions: [
-            { name: "Bramblelith", type: PROFESSIONS.SCOUT }
-        ]
-    },
-    {
-        name: "North Peat Bog",
-        location: [3036.19, 3338.44],
-        actions: [
-            { name: "Dock Leaf", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Peat Bog",
-        location: [3036.19, 3235.97],
-        actions: [
-            { name: "Dock Leaf", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Hopeforest North Portal Stone",
-        location: [3194.40, 3104.00],
-        actions: [
-            { name: "Portal Stone", type: PROFESSIONS.PORTALSTONE }
-        ]
-    },
-    {
-        name: "Treeway Clearing",
-        location: [2978.81, 2983.50],
-        actions: [
-            { name: "Oak Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Oak Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Berry Glade",
-        location: [3187.04, 2951.50],
-        actions: [
-            { name: "Haleberries", type: PROFESSIONS.FORAGER },
-            { name: "Oak Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Oak Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Tangled Path",
-        location: [2849.92, 2596.53],
-        actions: [
-            { name: "Storage Rift", type: PROFESSIONS.STORAGERIFT },
-        ]
-    },
-    {
-        name: "Canopy Junction",
-        location: [2947.90, 2833.41],
-        actions: [
-            { name: "Oak Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Oak Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Treeway Junction",
-        location: [3049.12, 2828.03],
-        actions: [
-            { name: "Spriggan", type: PROFESSIONS.SCOUT }
-        ]
-    },
-    {
-        name: "Canopy Lane",
-        location: [2870.38, 2738.66],
-        actions: [
-            { name: "Beetroot", type: PROFESSIONS.FORAGER },
-            { name: "Hazelnut", type: PROFESSIONS.FORAGER },
-            { name: "Worms", type: PROFESSIONS.FORAGER },
-            { name: "Oak Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Oak Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Treeway Trail",
-        location: [3219.01, 2836.80],
-        actions: [
-            { name: "Spriggan", type: PROFESSIONS.SCOUT },
-            { name: "Haleberries", type: PROFESSIONS.FORAGER },
-            { name: "Oak Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Oak Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Twisted Road",
-        location: [3466.72, 2799.17],
-        actions: [
-            { name: "Shade", type: PROFESSIONS.SCOUT },
-            { name: "Suave Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Stump Clearing",
-        location: [3024.38, 2640.08],
-        actions: [
-            { name: "Moss Monster", type: PROFESSIONS.SCOUT },
-            { name: "Oak Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Oak Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Cutters Clearing",
-        location: [3244.92, 2724.74],
-        actions: [
-            { name: "Oak Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Oak Branches", type: PROFESSIONS.WOODCUTTER },
-            { name: "Split Wood for Murphy", type: PROFESSIONS.WOODCUTTER },
-            { name: "Bones", type: PROFESSIONS.STORAGE }
-        ]
-    },
-    {
-        name: "Shortcut",
-        location: [3400.68, 2567.44],
-        actions: [
-            { name: "Brambles", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Stumped Path",
-        location: [3233.04, 2566.44],
-        actions: [
-            { name: "Oak Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Oak Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Twisted Junction",
-        location: [3531.39, 2589.39],
-        actions: [
-            { name: "Shade", type: PROFESSIONS.SCOUT }
-        ]
-    },
-    {
-        name: "Wolves' Den",
-        location: [3743.64, 2843.60],
-        actions: [
-            { name: "Wolf", type: PROFESSIONS.SCOUT },
-            { name: "Femur Shard", type: PROFESSIONS.FORAGER },
-            { name: "Suave Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Gnarled Path",
-        location: [3671.84, 2718.26],
-        actions: [
-            { name: "Femur Shard", type: PROFESSIONS.FORAGER },
-            { name: "Suave Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Overgrown Trail",
-        location: [3698.61, 2578.32],
-        actions: [
-            { name: "Bone Spike", type: PROFESSIONS.FORAGER },
-            { name: "Suave Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Branches", type: PROFESSIONS.WOODCUTTER },
-            { name: "Storage Rift", type: PROFESSIONS.STORAGERIFT }
-        ]
-    },
-    {
-        name: "Crystal Clearing",
-        location: [3909.13, 2567.37],
-        actions: [
-            { name: "Bone Spike", type: PROFESSIONS.FORAGER },
-            { name: "Suave Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Bramble Path",
-        location: [3705.91, 2463.93],
-        actions: [
-            { name: "Brambles", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Mushroom Grove",
-        location: [3703.48, 2355.63],
-        actions: [
-            { name: "Acorn", type: PROFESSIONS.FORAGER },
-            { name: "Ancient Coin", type: PROFESSIONS.FORAGER },
-            { name: "Sheep Rib", type: PROFESSIONS.FORAGER },
-            { name: "Suave Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Suave Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Logging Area",
-        location: [3221.44, 2355.77],
-        actions: [
-            { name: "Thistle", type: PROFESSIONS.FORAGER },
-            { name: "Poplar Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Poplar Branches", type: PROFESSIONS.WOODCUTTER },
-            { name: "Split Wood for Claude", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Snakes Path",
-        location: [3402.12, 2376.40],
-        actions: [
-            { name: "Viper", type: PROFESSIONS.SCOUT },
-            { name: "Snake Scale", type: PROFESSIONS.FORAGER },
-            { name: "Poplar Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Poplar Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Snakes Clearing",
-        location: [3372.42, 2194.06],
-        actions: [
-            { name: "Viper", type: PROFESSIONS.SCOUT },
-            { name: "Chestnut", type: PROFESSIONS.FORAGER },
-            { name: "Snake Scale", type: PROFESSIONS.FORAGER },
-            { name: "Poplar Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Poplar Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Central Junction",
-        location: [3171.94, 2199.02],
-        actions: [
-            { name: "Chestnut", type: PROFESSIONS.FORAGER },
-            { name: "Poplar Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Poplar Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Central Crossroads",
-        location: [3011.05, 2198.19],
-        actions: [
-            { name: "Beetle", type: PROFESSIONS.FORAGER },
-            { name: "Bug", type: PROFESSIONS.FORAGER },
-            { name: "Lichen", type: PROFESSIONS.FORAGER },
-            { name: "Poplar Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Poplar Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Ivy Path",
-        location: [3015.60,2014.66],
-        actions: []
-    },
-    {
-        name: "Hopeforest Central Portal Stone",
-        location: [3119.65, 2013.34],
-        actions: [
-            { name: "Portal Stone", type: PROFESSIONS.PORTALSTONE }
-        ]
-    },
-    {
-        name: "Cliffside Junction",
-        location: [3327.17, 1953.30],
-        actions: [
-            { name: "Tree Cat", type: PROFESSIONS.SCOUT },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Cyclops Path",
-        location: [3496.85, 1966.35],
-        actions: [
-            { name: "Rams Horn", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Ivy Junction",
-        location: [3007.40, 1838.44],
-        actions: [
-            { name: "Wendigo", type: PROFESSIONS.SCOUT },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Ivy Trail",
-        location: [3179.69, 1846.27],
-        actions: [
-            { name: "Wendigo", type: PROFESSIONS.SCOUT },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Cliffside Shortcut",
-        location: [3327.17, 1818.86],
-        actions: [
-            { name: "Brambles", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Quiet Grove",
-        location: [3483.80, 1871.07],
-        actions: [
-            { name: "Rams Horn", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Huntsman's Path",
-        location: [2807.70, 1838.44],
-        actions: [
-            { name: "Storage Rift", type: PROFESSIONS.STORAGERIFT }
-        ]
-    },
-    {
-        name: "Lumber Clearing",
-        location: [2857.43, 1660.44],
-        actions: [
-            { name: "Clover", type: PROFESSIONS.FORAGER },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER },
-            { name: "Split Wood for Hanna", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Fern Junction",
-        location: [3024.20, 1708.08],
-        actions: [
-            { name: "Clover", type: PROFESSIONS.FORAGER },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Path of Good Intentions",
-        location: [3207.99, 1701.28],
-        actions: [
-            { name: "Bitterfruit", type: PROFESSIONS.FORAGER },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Cliffside Path",
-        location: [3274.93, 1576.48],
-        actions: [
-            { name: "Bitterfruit", type: PROFESSIONS.FORAGER },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Mine Road West",
-        location: [2841.55, 1489.13],
-        actions: [
-            { name: "Catkin", type: PROFESSIONS.FORAGER },
-            { name: "Aboreden Egg", type: PROFESSIONS.FORAGER },
-            { name: "Shoot", type: PROFESSIONS.FORAGER },
-            { name: "Stalks", type: PROFESSIONS.FORAGER }
-        ]
-    },
-    {
-        name: "Mine Road East",
-        location: [3083.20, 1453.96],
-        actions: [
-            { name: "Giant Fly", type: PROFESSIONS.SCOUT },
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Barricades",
-        location: [3294.21, 1439.21],
-        actions: [
-            { name: "Pine Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Pine Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Tree Lined Trail",
-        location: [2857.61, 1305.41],
-        actions: [
-            { name: "Aboreden", type: PROFESSIONS.SCOUT },
-            { name: "Juniper Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Juniper Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Tree Lined Track",
-        location: [2843.58, 1059.75],
-        actions: [
-            { name: "Juniper Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Juniper Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Small Clearing",
-        location: [3013.65, 1369.65],
-        actions: [
-            { name: "Juniper Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Juniper Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Acidic Avenue",
-        location: [3021.09, 1202.20],
-        actions: []
-    },
-    {
-        name: "Pool of Rainbows",
-        location: [3008.84, 985.89],
-        actions: [
-            { name: "Juniper Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Juniper Branches", type: PROFESSIONS.WOODCUTTER },
-            { name: "Storage Rift", type: PROFESSIONS.STORAGERIFT }
-        ]
-    },
-    {
-        name: "Hopeforest Ferry",
-        location: [2790.13, 855.25],
-        actions: [
-            { name: "Juniper Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Juniper Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Ferry South Shore",
-        location: [2808.79, 547.78],
-        actions: [
-            { name: "Sage", type: PROFESSIONS.FORAGER },
-            { name: "Juniper Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Juniper Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    {
-        name: "Himatik Ruins",
-        location: [2822.50, 376.37],
-        actions: [
-            { name: "Sage", type: PROFESSIONS.FORAGER },
-            { name: "Juniper Log", type: PROFESSIONS.WOODCUTTER },
-            { name: "Juniper Branches", type: PROFESSIONS.WOODCUTTER }
-        ]
-    },
-    // MINE OF MANTUBAN
-    {
-        name: 'Mine Back Entrance',
-        location: [3469.16,1747.71],
-        actions: [{ name: 'Minecrawler', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Rugged Tunnel', 
-        location: [3608.55,1735.71],
-        actions: [{ name: 'Minecrawler', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Mine Cart Cave',
-        location: [3445.15,1593.54],
-        actions: [{ name: 'Mine Cart Work', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Northwest Mining Cavern',
-        location: [3563.32,1579.69],
-        actions: [{ name: 'Limestone', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Jagged Junction',
-        location: [3670.41,1645.24],
-        actions: [{ name: 'Basalt', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'North Mining Cavern',
-        location: [3800.57,1644.31],
-        actions: [{ name: 'Basalt', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Rat Infested Tunnel',
-        location: [3677.79,1552.00],
-        actions: []
-    },
-    {
-        name: 'Cave of the Past',
-        location: [3967.67,1681.24],
-        actions: [{ name: 'Fossil Assembly', type: PROFESSIONS.BONEWRIGHT }]
-    },
-    {
-        name: 'Mine Entrance',
-        location: [3436.85,1446.76],
-        actions: []
-    },
-    {
-        name: 'Abandoned Mine Cavern',
-        location: [3554.09,1445.83],
-        actions: [{ name: 'Flint', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Rat Infested Junction',
-        location: [3687.95,1438.45],
-        actions: [{ name: 'Flint', type: PROFESSIONS.MINER }, { name: 'Beastman', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Goblin Loot Stash',
-        location: [3832.89,1503.07],
-        actions: []
-    },
-    {
-        name: 'Goblin Sleeping Area 3',
-        location: [3834.73,1420.91],
-        actions: []
-    },
-    {
-        name: 'Goblin Sleeping Area 2',
-        location: [3935.36,1353.52],
-        actions: [{ name: 'Goblin Miner', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Communal Goblin Area',
-        location: [3831.89,1296.12],
-        actions: [{ name: 'Goblin Miner' }]
-    },
-    {
-        name: 'Chuncrates Chamber',
-        location: [4044.29,1348.90],
-        actions: []
-    },
-    {
-        name: 'Ratty Terminus',
-        location: [3690.72,1331.36],
-        actions: [{ name: 'Giant Rat', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Mine Cart Tunnel',
-        location: [3525.47,1316.59],
-        actions: [{ name: 'Storage Rift', type: PROFESSIONS.STORAGERIFT }]
-    },
-    {
-        name: 'Dilapidated Mining Cavern',
-        location: [3419.34,1276.86],
-        actions: [{ name: 'Iron Ore', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Bridge Cavern',
-        location: [3484.89,1156.84],
-        actions: [{ name: 'Jangle\'s Bone Shop', type: PROFESSIONS.SELLER }, { name: 'Iron Ore', type: PROFESSIONS.MINER }, { name: 'Building Materials', type: PROFESSIONS.STORAGE }]
-    },
-    //TODO
-    {
-        name: 'Jangle\'s Bone Shop',
-        location: [3484.89,1156.84],
-        actions: []
-    },
-    {
-        name: 'Bone Vats',
-        location: [3233.00,1075.76],
-        actions: [{ name: 'Timber', type: PROFESSIONS.STORAGE }, { name: 'Bonemeal Cement', type: PROFESSIONS.BONEWRIGHT }, { name: 'Knickknacks', type: PROFESSIONS.BONEWRIGHT }, { name: 'Bones', type: PROFESSIONS.STORAGE }]
-    },
-    {
-        name: 'Leech Pools',
-        location: [3356.42,1005.61],
-        actions: [{ name: 'Gas Leeches', type: PROFESSIONS.STONEMASON }]
-    },
-    {
-        name: 'Bat Cave',
-        location: [3466.85,1006.26],
-        actions: [{ name: 'Giant Bat', type: PROFESSIONS.MINEFIGHTER}]
-    },
-    {
-        name: 'Boneworks',
-        location: [3229.76,939.36],
-        actions: [{ name: 'Bone Weapon Stations', type: PROFESSIONS.BONEWRIGHT }]
-    },
-    {
-        name: 'Andesite Site',
-        location: [3484.03,859.74],
-        actions: [{ name: 'Andesite', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Stalagmite Nook',
-        location: [3359.32,807.78],
-        actions: [{ name: 'Andesite', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Purpladium Vein',
-        location: [3503.86,752.55],
-        actions: [{ name: 'Electric Snail', type: PROFESSIONS.MINEFIGHTER }, { name: 'Purpladium', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Gassy Cave',
-        location: [3629.23,844.14],
-        actions: [{ name: 'Floor Tentacle', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Gassy Grotto',
-        location: [3771.48,785.03],
-        actions: [{ name: 'Soapstone', type: PROFESSIONS.MINER }, { name: 'Gas Vents', type: PROFESSIONS.STONEMASON }]
-    },
-    {
-        name: 'Big River Cavern',
-        location: [3633.81,1149.79],
-        actions: [{ name: 'Gold', type: PROFESSIONS.MINER  }, { name: 'Corrupted Miner', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Riverside Goblin Cavern',
-        location: [3819.59,1158.23],
-        actions: [{ name: 'Alabaster', type: PROFESSIONS.MINER  }]
-    },
-    {
-        name: 'Upstream Goblin Cavern',
-        location: [3962.49,1154.33],
-        actions: [{ name: 'Flantium Ore', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'River Bend',
-        location: [4142.42,1184.21],
-        actions: [{ name: 'Flantium Ore', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Mine of Mantuban Obelisk',
-        location: [4165.75,1013.19],
-        actions: [{ name: 'Obelisk', type: PROFESSIONS.OBELISK }]
-    },
-    {
-        name: 'Waterfall',
-        location: [4183.28,1314.58],
-        actions: []
-    },
-    {
-        name: 'Kobold Cavern',
-        location: [3906.23,1011.74],
-        actions: [{ name: 'Kobold', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Grachnid Cave',
-        location: [4015.61,910.58],
-        actions: []
-    },
-    {
-        name: 'Rocky Passage',
-        location: [3595.71,1004.35],
-        actions: []
-    },
-    {
-        name: 'Mossy Corner',
-        location: [3658.51,1026.96],
-        actions: []
-    },
-    {
-        name: 'Tenebrous Tunnel',
-        location: [3766.53,999.95],
-        actions: [{ name: 'Cabranese Ore', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Central Mining Cavern',
-        location: [3760.88,913.91],
-        actions: [{ name: 'Cabranese Ore', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Moderate Mineshaft',
-        location: [3670.40,650.71],
-        actions: [{ name: 'Floor tentacle', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Rugged Passage',
-        location: [3775.08,613.33],
-        actions: [{ name: 'Shinerium', type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Strange Junction',
-        location: [3908.17,604.85],
-        actions: [{ name: 'Fire Toad', type: PROFESSIONS.MINEFIGHTER  }]
-    },
-    {
-        name: 'Outside Hollow',
-        location: [4072.66,584.42],
-        actions: [{ name: 'Fire Toad', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Forsaken Mine Workings',
-        location: [4023.32,415.44],
-        actions: [{ name: 'Skeleton Miner', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Wretched Excavation',
-        location: [4140.46,425.40],
-        actions: [{ name: 'Skeleton Miner', type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Lost and Found',
-        location: [3917.98,497.88],
-        actions: []
-    },
-    {
-        name: 'Strange Stairway',
-        location: [3930.94,374.76],
-        actions: []
-    },
-    {
-        name: 'Podium Cave',
-        location: [3994.75,185.34],
-        actions: []
-    },
-    {
-        name: 'Goblin Well',
-        location: [3622.39,479.44],
-        actions: []
-    },
-    {
-        name: 'Goblin Storage Cave',
-        location: [3485.31,480.93],
-        actions: []
-    },
-    {
-        name: 'Mine Southwest Portal',
-        location: [3350.22,483.92],
-        actions: [{ name: 'Portal Stone',type: PROFESSIONS.PORTALSTONE }]
-    },
-    {
-        name: 'Market Tunnel',
-        location: [3471.85,380.05],
-        actions: []
-    },
-    {
-        name: 'Goblin Marketplace',
-        location: [3323.55,248.69],
-        actions: [{ name: 'Bobble\'s Oresome Ores',type: PROFESSIONS.SELLER }, { name: 'Pans and Pickaxes',type: PROFESSIONS.SELLER }, { name: 'Poffit\'s Interesting Rocks',type: PROFESSIONS.SELLER }, { name: 'Mogorob\'s Stoneware Assortment',type: PROFESSIONS.SELLER }]
-    },
-    {
-        name: 'Cave of the Future',
-        location:  [3340.00,96.70],
-        actions: [{ name: 'Divination',type: PROFESSIONS.BONEWRIGHT }]
-    },
-    {
-        name: 'Stonemasonry Room',
-        location: [3535.90,230.29],
-        actions: [{ name: 'Timber',type: PROFESSIONS.STORAGE }, { name: 'Stone',type: PROFESSIONS.STORAGE }, { name: 'Stone Weapon Stations',type: PROFESSIONS.STONEMASON }]
-    },
-    {
-        name: 'Polished Tunnel',
-        location: [3581.17,378.38],
-        actions: []
-    },
-    {
-        name: 'Goblin Living Quarters',
-        location: [3676.33,397.93],
-        actions: []
-    },
-    {
-        name: 'Sculpting Room',
-        location: [3707.60,234.76],
-        actions: [{ name: 'T.E.A. Machine',type: PROFESSIONS.STONEMASON }, { name: 'Stone Sculpting Cart',type: PROFESSIONS.STONEMASON }, { name: 'Stoneware Bench',type: PROFESSIONS.STONEMASON }]
-    },
-    {
-        name: 'Goblin Workshop',
-        location:  [3790.02,461.63],
-        actions: [{ name: 'Timber',type: PROFESSIONS.STORAGE }, { name: 'Ore and Ingots',type: PROFESSIONS.STORAGE }, { name: 'Goblin Forge',type: PROFESSIONS.BLACKSMITH }, { name: 'Goblin Smelter',type: PROFESSIONS.BLACKSMITH }]
-    },
-    {
-        name: 'Upper River Bend',
-        location: [4195.26,1448.01],
-        actions: [{ name: 'Granite',type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Rockling Cave',
-        location: [4151.07,1583.11],
-        actions: [{ name: 'Rockling',type: PROFESSIONS.MINEFIGHTER }, { name: 'Storage Rift', type:PROFESSIONS.STORAGERIFT }]
-    },
-    {
-        name: 'Skallek\'s Dwelling',
-        location: [4320.16,1575.46],
-        actions: []
-    },
-    {
-        name: 'Upper Bridge',
-        location:  [4317.61,1454.81],
-        actions: [{ name: 'Dread Shell',type: PROFESSIONS.MINEFIGHTER }, { name: 'Granite',type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Gnome Dwelling',
-        location: [4311.66,1315.46],
-        actions: [{ name: 'Torreli Jewelry Trading',type: PROFESSIONS.SELLER  }]
-    },
-    {
-        name: 'Damp Tunnel',
-        location: [4444.21,1499.84],
-        actions: [{ name: 'Metalith',type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Crumbling Passage',
-        location: [4470.10,1299.85],
-        actions: [{ name: 'Stonewurm',type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Rubble Cave',
-        location: [4474.37,1142.73],
-        actions: [{ name: 'Adathril Ore',type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Bronze Gate',
-        location: [4450.34,987.58],
-        actions: [{ name: 'Adathril Ore',type: PROFESSIONS.MINER }, { name: 'Brimstone',type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Stonewurm Nests',
-        location: [4603.12,1297.43],
-        actions: [{ name: 'Stonewurm',type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Rock Strewn Tunnel',
-        location: [4592.36,1484.64],
-        actions: [{ name: 'Metalith',type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Cockroach Lair',
-        location: [4710.71,1567.48],
-        actions: [{ name: 'Cockroach',type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Mutant Cockroaches',
-        location: [4715.01,1433.00],
-        actions: [{ name: 'Cockroach',type: PROFESSIONS.MINEFIGHTER }]
-    },
-    {
-        name: 'Cave of the Crystal',
-        location: [4836.59,1441.60],
-        actions: [{ name: 'Marble',type: PROFESSIONS.MINER }]
-    },
-    {
-        name: 'Gnome Forge',
-        location: [4866.71,1630.96],
-        actions: [{ name: 'Timber',type: PROFESSIONS.STORAGE }, { name: 'Ore and Ingots',type: PROFESSIONS.STORAGE }, { name: 'Gnome Forge',type: PROFESSIONS.BLACKSMITH }, { name: 'Gnome Smelter',type: PROFESSIONS.BLACKSMITH }, { name: 'Jewelry Bench',type: PROFESSIONS.BLACKSMITH }]
-    },
-    {
-        name: 'Gnomic Silver Mine',
-        location: [5008.08,1621.28],
-        actions: [{ name: 'Silver',type: PROFESSIONS.MINER }]
-    },
-    //CRENOPOLIS
-    {
-        name: "Unicorn Farm",
-        location: [3928.89,2197.64],
-        actions: [
-            { name: "Cheese Shop", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Cyclops Store Cave",
-        location: [4057.50,2130.85],
-        actions: [
-            { name: "Victor T Cyclops", type: PROFESSIONS.MERCHANT},
-            { name: "???", type: PROFESSIONS.DETECTIVE}
-        ]
-    },
-    {
-        name: "Cyclops Sleeping Cave",
-        location: [4064.08,2228.83],
-        actions: []
-    },
-    {
-        name: "Cyclops Living Area",
-        location: [4155.45,2139.71],
-        actions: []
-    },
-    {
-        name: "Shrubby Canyon",
-        location: [3785.47,2141.97],
-        actions: [
-            { name: "Gremlin", type: PROFESSIONS.WATCHPERSON}
-        ]
-    },
-    {
-        name: "Boulder Canyon",
-        location: [3801.26,2024.66],
-        actions: []
-    },
-    {
-        name: "Cyclops Canyon",
-        location: [3903.91,2022.41],
-        actions: []
-    },
-    {
-        name: "Stony Canyon",
-        location: [4055.06,2019.02],
-        actions: [
-            { name: "Sabertooth Tiger", type: PROFESSIONS.WATCHPERSON}
-        ]
-    },
-    {
-        name: "Stony Gorge",
-        location: [4240.05,2015.64],
-        actions: [
-            { name: "Sabertooth Tiger", type: PROFESSIONS.WATCHPERSON}
-        ]
-    },
-    {
-        name: "Stony Ravine",
-        location: [4316.75,2118.28],
-        actions: []
-    },
-    {
-        name: "Cyclops East Pass",
-        location: [4434.06,2120.54],
-        actions: []
-    },
-    {
-        name: "Rugged Canyon",
-        location: [3685.08,1962.62],
-        actions: []
-    },
-    {
-        name: "Crenopolis Outskirts Portal Stone",
-        location: [4470.15,2013.38],
-        actions: [
-            { name: "Portal Stone", type: PROFESSIONS.PORTALSTONE }
-        ]
-    },
-    {
-        name: "Road to Crenopolis",
-        location: [4496.10,2229.95],
-        actions: []
-    },
-    {
-        name: "Fortunehold",
-        location: [4596.45,2947.09],
-        actions: []
-    },
-    {
-        name: "Fortunehold Farm",
-        location: [4571.59,2794.13],
-        actions: [
-            { name: "Fortunehold Farm", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Fortunehold Meadow",
-        location: [4456.87,2597.20],
-        actions: []
-    },
-    {
-        name: "Rockbird Clearing",
-        location: [4548.34,2387.30],
-        actions: [
-            { name: "Rockbird", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "West Gate",
-        location: [4630.15,2218.15],
-        actions: [
-            { name: "Cinnamon Sticks", type: PROFESSIONS.MERCHANT },
-            { name: "Grapes", type: PROFESSIONS.MERCHANT }
-        ]
-    },
-    {
-        name: "Sewer Pipes",
-        location: [4875.56,3075.07],
-        actions: [
-            { name: "Sewer Fiend", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Southwest Sewer",
-        location: [4866.64,2951.05],
-        actions: [
-            { name: "Sewer Fiend", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Dismal Drainage",
-        location: [4987.98,2952.84],
-        actions: [
-            { name: "Mawchest", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Sewer Entrance",
-        location: [5108.42,2954.62],
-        actions: [
-            { name: "Mawchest", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Sewer Pool",
-        location: [5244.92,3101.83],
-        actions: [
-            { name: "Spectral Stalker", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Southeast Sewer",
-        location: [5227.97,2971.57],
-        actions: [
-            { name: "Spectral Stalker", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Sewer Gate",
-        location: [5110.20,2857.38],
-        actions: []
-    },
-    {
-        name: "Crenobelisk",
-        location: [4984.41,2736.04],
-        actions: [
-            { name: "Obelisk", type: PROFESSIONS.OBELISK }
-        ]
-    },
-    {
-        name: "Sludge Street",
-        location: [5110.20,2760.13],
-        actions: []
-    },
-    {
-        name: "Meggrit's Market",
-        location: [4840.69,2634.45],
-        actions: [
-            { name: "Francesca's Fruit Stall", type: PROFESSIONS.MERCHANT },
-            { name: "Snitch's Watches", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Murkwell Court",
-        location: [4980.08,2601.85],
-        actions: [
-            { name: "Storage Rift", type: PROFESSIONS.STORAGERIFT }
-        ]
-    },
-    {
-        name: "Ratmen Den",
-        location: [4836.24,2468.35],
-        actions: [
-            { name: "Ratman Chief", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Rat Alley",
-        location: [4964.24,2452.14],
-        actions: [
-            { name: "Ratman Grunt", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Soap Shop",
-        location: [5273.15,2669.74],
-        actions: [
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.MERCHANT }
-        ]
-    },
-    {
-        name: "Dawkin Court",
-        location:[5451.50,2621.10],
-        actions: [
-            { name: "Street Hag", type: PROFESSIONS.WATCHPERSON },
-            { name: "Gangsters' Stakeout", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Dawkin Lane",
-        location: [5289.37,2580.99],
-        actions: [
-            { name: "Street Hag", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Investigation Hall",
-        location: [5336.30,2440.19],
-        actions: [
-            { name: "Investigations", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Guard's Archive",
-        location: [5427.61,2440.19],
-        actions: [
-            { name: "Evidence Fling", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Bladrick's Armory",
-        location: [4787.53,2326.55],
-        actions: [
-            { name: "Bladrick's Armory", type: PROFESSIONS.SELLER }
-        ]
-    },
-    {
-        name: "Hopton Corner",
-        location: [4951.63,2334.85],
-        actions: [
-            { name: "Spice Stall", type: PROFESSIONS.MERCHANT },
-            { name: "Spice Stall", type: PROFESSIONS.MERCHANT }
-        ]
-    },
-    {
-        name: "Forensics Lab",
-        location: [5112.78,2320.63],
-        actions: [
-            { name: "Potions", type: PROFESSIONS.STORAGE },
-            { name: "Forensics", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Guardhouse Lobby",
-        location: [5325.14,2322.73],
-        actions: [
-            { name: "Detective Depot", type: PROFESSIONS.SELLER }
-        ]
-    },
-    {
-        name: "Interrogation Room",
-        location: [5447.43,2319.55],
-        actions: [
-            { name: "Interrogation", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Lord's Road West",
-        location: [4823.91,2212.34],
-        actions: [
-            { name: "Butchers Stall", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Lord's Road Central",
-        location: [5071.25,2210.46],
-        actions: [
-            { name: "Vase Stall", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Lord's Road East",
-        location: [5288.39,2199.92],
-        actions: [
-            { name: "Penny's Clockwork", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE },
-            { name: "Wanted Posters", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Lord's Road New",
-        location: [5449.20,2209.32],
-        actions: [
-            { name: "Leather Goods", type: PROFESSIONS.SELLER }
-        ]
-    },
-    {
-        name: "Cobble Corner",
-        location: [4791.12,2046.27],
-        actions: [
-            { name: "Hermar's Homeware", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Greengrocers",
-        location: [5026.32,2117.40],
-        actions: [
-            { name: "Greengrocers", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Cabbage Stall", type: PROFESSIONS.SELLER },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Dusty Nook",
-        location: [4888.64,1899.41],
-        actions: [
-            { name: "Brute", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Dusty Alley",
-        location: [4991.90,1901.71],
-        actions: [
-            { name: "Zombie", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Twiddle Corner",
-        location: [4999.93,2019.88],
-        actions: []
-    },
-    {
-        name: "Four Winds Bar",
-        location: [5209.89,1925.80],
-        actions: [
-            { name: "Muggers' Stakeout", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Snag Alley",
-        location: [5295.94,2050.86],
-        actions: [
-            { name: "Street Brawler", type: PROFESSIONS.WATCHPERSON },
-            { name: "Muggers' Stakeout", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Goose Inn Guest Room 1",
-        location: [5465.75,2101.34],
-        actions: []
-    },
-    {
-        name: "Goose Inn Guest Room 2",
-        location: [5451.98,1991.20],
-        actions: []
-    },
-    {
-        name: "Dusty Corner",
-        location: [4986.14,1821.72],
-        actions: [
-            { name: "Zombie", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Morose Lane West",
-        location: [5107.70,1818.95],
-        actions: []
-    },
-    {
-        name: "Morose Lane East",
-        location: [5316.75,1829.08],
-        actions: []
-    },
-    {
-        name: "Lani's Curiosities",
-        location: [5194.27,1741.60],
-        actions: [
-            { name: "Clock Stall", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT }
-        ]
-    },
-    {
-        name: "Thimble Lane",
-        location: [5492.51,1826.75],
-        actions: [
-            { name: "Smugglers' Stakeout", type: PROFESSIONS.DETECTIVE },
-            { name: "Storage Rift", type: PROFESSIONS.STORAGERIFT }
-        ]
-    },
-    {
-        name: "Geld Family Residence",
-        location: [5429.89,1739.26],
-        actions: [
-            { name: "Smugglers' Den", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Geld Family Logistics",
-        location: [5534.88,1729.13],
-        actions: [
-            { name: "Smugglers' Den", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "The Frog and Barnacle",
-        location: [5318.74,1621.08],
-        actions: []
-    },
-    {
-        name: "Waterfront Market",
-        location: [5475.71,1621.08],
-        actions: [
-            { name: "Jenneira's Wines", type: PROFESSIONS.MERCHANT },
-            { name: "Textile Stall", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE },
-            { name: "???", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Waterfront",
-        location: [5682.09,1608.00],
-        actions: [
-            { name: "Hide Stall", type: PROFESSIONS.SELLER },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE },
-            { name: "Building Materials", type: PROFESSIONS.STORAGE }
-        ]
-    },
-    {
-        name: "Tanners Road",
-        location: [5882.66,1609.45],
-        actions: [
-            { name: "Toy Stall", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Tannery",
-        location: [6086.14,1612.36],
-        actions: [
-            { name: "Tanning Stations", type: PROFESSIONS.LEATHERWORKER },
-            { name: "Hides", type: PROFESSIONS.STORAGE }
-        ]
-    },
-    {
-        name: "Pier Two",
-        location: [5583.21,1408.22],
-        actions: [
-            { name: "Bricks", type: PROFESSIONS.MERCHANT },
-            { name: "Tiles", type: PROFESSIONS.MERCHANT }
-        ]
-    },
-    {
-        name: "Pier One",
-        location: [5796.25,1400.29],
-        actions: []
-    },
-    {
-        name: "Quibble Lane",
-        location: [6020.62,1473.94],
-        actions: [
-            { name: "Spiky Ball", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Smuggler's Cove",
-        location: [6045.55,1325.50],
-        actions: [
-            { name: "Giant Slug", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Goose Inn Bar",
-        location: [5552.68,2045.02],
-        actions: []
-    },
-    {
-        name: "Goose Inn Kitchen",
-        location: [5594.26,1925.81],
-        actions: [
-            { name: "Chef", type: PROFESSIONS.MERCHANT }
-        ]
-    },
-    {
-        name: "Bobbin Road North",
-        location: [5667.26,2044.09],
-        actions: []
-    },
-    {
-        name: "Leatherworks",
-        location: [5766.14,2033.00],
-        actions: [
-            { name: "Knickknacks", type: PROFESSIONS.LEATHERWORKER },
-            { name: "Upholstery", type: PROFESSIONS.LEATHERWORKER },
-            { name: "Leathers", type: PROFESSIONS.STORAGE }
-        ]
-    },
-    {
-        name: "Ratmore Rise",
-        location: [5868.71,1963.70],
-        actions: [
-            { name: "Trash Heap Monster", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "West Player Market",
-        location: [5967.58,2179.01],
-        actions: [
-            { name: "Counterfeiters' Stakeout", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Oscen's Warehouse",
-        location: [5974.05,2023.76],
-        actions: [
-            { name: "Burglars' Den", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "South Player Market",
-        location:  [6098.80,2090.29],
-        actions: [
-            { name: "Burglars' Stakeout", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Market Chambers",
-        location: [6094.18,1931.35 ],
-        actions: [
-            { name: "Burglars' Den", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Bobbin Road South",
-        location: [5671.88,1831.56],
-        actions: [
-            { name: "Candice's Candles", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Ratmore Road",
-        location: [5954.65,1781.66],
-        actions: [
-            { name: "Burglars' Stakeout", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "City Dyes",
-        location: [6086.79,1790.90],
-        actions: [
-            { name: "Dyes", type: PROFESSIONS.SELLER }
-        ]
-    },
-    {
-        name: "Peacock Road South",
-        location: [5653.10,2428.11],
-        actions: [
-            { name: "Pearl Stall", type: PROFESSIONS.SELLER },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Slant Street",
-        location: [5811.44,2449.06],
-        actions: [
-            { name: "Counterfeiters' Stakeout", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Slant Street Cart House",
-        location: [5839.38,2348.94],
-        actions: [
-            { name: "Counterfeiters' Den", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Dilapidated Warehouse",
-        location: [5973.27,2461.87],
-        actions: [
-            { name: "Counterfeiters' Den", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Thadwick Square",
-        location: [5626.32,2222.03],
-        actions: [
-            { name: "Hallick's Street Food", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Outer Market",
-        location: [5800.96,2216.21],
-        actions: [
-            { name: "Leather Stall", type: PROFESSIONS.SELLER },
-            { name: "Leather Offcuts", type: PROFESSIONS.MERCHANT },
-            { name: "Souvenir Stall", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "North Player Market",
-        location: [6109.49,2400.16],
-        actions: []
-    },
-    {
-        name: "Merchants' Guild",
-        location: [6106.00,2242.99],
-        actions: [
-            { name: "Janessa's Delicacies", type: PROFESSIONS.MERCHANT },
-            { name: "Guild Bounty Board", type: PROFESSIONS.MERCHANT }
-        ]
-    },
-    {
-        name: "East Player Market",
-        location: [6242.21,2244.15],
-        actions: []
-    },
-    {
-        name: "Henderson's Meat Storehouse",
-        location: [6356.31,2322.16],
-        actions: [
-            { name: "Henderson's Meat", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Bert's Gallery",
-        location: [6367.95,2177.79],
-        actions: [
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Council Office",
-        location: [6239.89,2436.26],
-        actions: [
-            { name: "Change Name", type: PROFESSIONS.SELLER }
-        ]
-    },
-    {
-        name: "Crenopolis Market Portal Stone",
-        location: [6253.36,2028.37],
-        actions: [
-            { name: "Portal Stone", type: PROFESSIONS.PORTALSTONE }
-        ]
-    },
-    {
-        name: "Peacock Road Central",
-        location: [5652.61,2639.61],
-        actions: [
-            { name: "Tommy Shoes' Wines", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE },
-            { name: "???", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Private Road",
-        location: [5800.47,2723.43],
-        actions: [
-            { name: "Storage Rift", type: PROFESSIONS.STORAGERIFT }
-        ]
-    },
-    {
-        name: "Bogg's Antiques",
-        location: [5816.77,2582.56],
-        actions: [
-            { name: "Bogg's Antiques", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT }
-        ]
-    },
-    {
-        name: "East Courtyard",
-        location: [6109.00,2716.45],
-        actions: []
-    },
-    {
-        name: "Helfar's Wall",
-        location: [5957.64,2701.31],
-        actions: []
-    },
-    {
-        name: "Peacock Road North",
-        location: [5648.03,2935.24],
-        actions: [
-            { name: "Olives", type: PROFESSIONS.MERCHANT },
-            { name: "Monocle Market", type: PROFESSIONS.MERCHANT },
-            { name: "Stall Assistant", type: PROFESSIONS.MERCHANT },
-            { name: "Olive Stall", type: PROFESSIONS.SELLER },
-            { name: "Spotting Thieves", type: PROFESSIONS.DETECTIVE }
-        ]
-    },
-    {
-        name: "Hamila Jimore's Garden",
-        location: [5771.44,2973.67],
-        actions: [
-            { name: "Giant Wasp", type: PROFESSIONS.WATCHPERSON }
-        ]
-    },
-    {
-        name: "Hamila Jimore's Hallway",
-        location: [5770.28,2850.25],
-        actions: []
-    },
-    {
-        name: "Helfar's Gate",
-        location: [5992.65,2857.24],
-        actions: []
-    },
-    {
-        name: "Fountain of Delight",
-        location: [5656.49,3424.71],
-        actions: []
-    },
-    {
-        name: "Kaynat's Hall",
-        location: [5657.81,3300.63],
-        actions: []
-    },
-    {
-        name: "Kaynat's Garden",
-        location: [5659.13,3176.55],
-        actions: []
-    },
-    {
-        name: "Fillan's Storeroom",
-        location: [5513.93,3152.13],
-        actions: []
-    },
-    {
-        name: "Fillan's Living Room",
-        location: [5560.62,3054.17],
-        actions: []
-    },
-    {
-        name: "Fillan's Bedroom",
-        location: [5448.88,3050.37],
-        actions: []
-    },
-    {
-        name: "Vestere Drive",
-        location: [5806.44,3076.14],
-        actions: [
-            { name: "Giant Wasp", type: PROFESSIONS.WATCHPERSON }
+        "name": "Rocky Road",
+        "location": [
+            1623,
+            10693
+        ],
+        "actions": [
+            {
+                "name": "Punkupine",
+                "type": "Guard"
+            }
+        ]
+    },
+    {
+        "name": "Collapsed Hovels",
+        "location": [
+            1118,
+            10035
+        ],
+        "actions": [
+            {
+                "name": "Ghoul",
+                "type": "Guard"
+            },
+            {
+                "name": "Feather",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Maggots",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Moth Wing",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Wasteland",
+        "location": [
+            1623,
+            9344
+        ],
+        "actions": [
+            {
+                "name": "Ghoul",
+                "type": "Guard"
+            },
+            {
+                "name": "Monument Piece",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Overgrow Road",
+        "location": [
+            2391,
+            8945
+        ],
+        "actions": [
+            {
+                "name": "Hairbeast",
+                "type": "Guard"
+            },
+            {
+                "name": "Nettle",
+                "type": "Gatherer"
+            },
+            {
+                "name": "WaterLily",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Crater",
+        "location": [
+            1704,
+            8207
+        ],
+        "actions": [
+            {
+                "name": "Giant Ant",
+                "type": "Guard"
+            },
+            {
+                "name": "Hogberries",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Monument Piece",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Pirate Hideout",
+        "location": [
+            754,
+            8167
+        ],
+        "actions": [
+            {
+                "name": "Pirate",
+                "type": "Guard"
+            },
+            {
+                "name": "Gurnard",
+                "type": "Fisher"
+            },
+            {
+                "name": "Limpet",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Wrack",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Ray Bay",
+        "location": [
+            916,
+            7297
+        ],
+        "actions": [
+            {
+                "name": "Limpet",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Ray",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Starfish Point",
+        "location": [
+            849,
+            6513
+        ],
+        "actions": [
+            {
+                "name": "Wrack",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Starfish",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Cod",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Jellyfish Landing",
+        "location": [
+            1650,
+            6612
+        ],
+        "actions": [
+            {
+                "name": "Jellyfish",
+                "type": "Guard"
+            },
+            {
+                "name": "Kelp",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Starfish",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Fallen Monument",
+        "location": [
+            1644,
+            7317
+        ],
+        "actions": [
+            {
+                "name": "Carnivorous Plant",
+                "type": "Guard"
+            },
+            {
+                "name": "Hogberries",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Potato",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Monument Piece",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Fallen Monument",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Rubble Road",
+        "location": [
+            2513,
+            8074
+        ],
+        "actions": [
+            {
+                "name": "Hairbeast",
+                "type": "Guard"
+            },
+            {
+                "name": "Bellplant",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Water lilly",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Overgrown Pond",
+        "location": [
+            3186,
+            7815
+        ],
+        "actions": [
+            {
+                "name": "Bugman",
+                "type": "Guard"
+            },
+            {
+                "name": "Nettle",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Pond Weed",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Overgrown Field",
+        "location": [
+            2486,
+            7317
+        ],
+        "actions": [
+            {
+                "name": "Carnivorous Plant",
+                "type": "Guard"
+            },
+            {
+                "name": "Bellplant",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Potato",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Seashells Seashore",
+        "location": [
+            2540,
+            6493
+        ],
+        "actions": [
+            {
+                "name": "Bass",
+                "type": "Fisher"
+            },
+            {
+                "name": "Shell",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Anemone",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Sea Potato",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Sea Slug",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "East Beach",
+        "location": [
+            3274,
+            6360
+        ],
+        "actions": [
+            {
+                "name": "Crab",
+                "type": "Guard"
+            },
+            {
+                "name": "Flounder",
+                "type": "Fisher"
+            },
+            {
+                "name": "Kelp",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Shell",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Sea Road",
+        "location": [
+            3449,
+            6858
+        ],
+        "actions": [
+            {
+                "name": "The Seaside Rock Shop",
+                "type": "Seller"
+            },
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Scrapyard",
+        "location": [
+            4109,
+            7450
+        ],
+        "actions": [
+            {
+                "name": "Scrap Merchant",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "West Waterfront",
+        "location": [
+            4482,
+            6647
+        ],
+        "actions": [
+            {
+                "name": "Lobster",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Little Lucy",
+        "location": [
+            4572,
+            5846
+        ],
+        "actions": [
+            {
+                "name": "Wraddock",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Central Waterfront",
+        "location": [
+            5369,
+            6652
+        ],
+        "actions": [
+            {
+                "name": "Bream",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Boardwalk",
+        "location": [
+            6299,
+            6626
+        ],
+        "actions": [
+            {
+                "name": "Herring",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "East Waterfront",
+        "location": [
+            7182,
+            6631
+        ],
+        "actions": [
+            {
+                "name": "Oyster",
+                "type": "Fisher"
+            },
+            {
+                "name": "Scrap Metal",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Vacant Pier",
+        "location": [
+            7000,
+            5914
+        ],
+        "actions": [
+            {
+                "name": "Dab",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Vincible",
+        "location": [
+            7738,
+            5719
+        ],
+        "actions": [
+            {
+                "name": "Sturlet",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Salty Swine",
+        "location": [
+            5230,
+            5830
+        ],
+        "actions": [
+            {
+                "name": "Mackibut",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Eel Street",
+        "location": [
+            5546,
+            7243
+        ],
+        "actions": [
+            {
+                "name": "The Frequently Fresh Fish Stall",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Eel street Bridge",
+        "location": [
+            5551,
+            7918
+        ],
+        "actions": [
+            {
+                "name": "Eel",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Hopeport Obelisk",
+        "location": [
+            4836,
+            7934
+        ],
+        "actions": [
+            {
+                "name": "Obelisk",
+                "type": "Obelisk"
+            }
+        ]
+    },
+    {
+        "name": "Brannof Boulevard",
+        "location": [
+            4746,
+            8566
+        ],
+        "actions": [
+            {
+                "name": "Periwinkle",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Town Square",
+        "location": [
+            5567,
+            8507
+        ],
+        "actions": [
+            {
+                "name": "Potion Reagents",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Stone Street",
+        "location": [
+            5712,
+            9228
+        ],
+        "actions": [
+            {
+                "name": "Kevin's Ingredients",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Apothecary",
+        "location": [
+            6293,
+            9203
+        ],
+        "actions": [
+            {
+                "name": "Potion Stations",
+                "type": "Alchemist"
+            },
+            {
+                "name": "Passive Potion Stations",
+                "type": "Alchemist"
+            },
+            {
+                "name": "Work for Ebsworth",
+                "type": "Alchemist"
+            },
+            {
+                "name": "Potion Reagents",
+                "type": "Storage"
+            },
+            {
+                "name": "Potions",
+                "type": "Storage"
+            },
+            {
+                "name": "The Apothecary Shop",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Melvs Fishing Supplies",
+        "location": [
+            6172,
+            8744
+        ],
+        "actions": [
+            {
+                "name": "Fishing Bait",
+                "type": "Storage"
+            },
+            {
+                "name": "Fishing Supplies",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Hairdresser",
+        "location": [
+            6653,
+            8729
+        ],
+        "actions": [
+            {
+                "name": "Hairdresser",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Old Street West",
+        "location": [
+            6393,
+            8369
+        ],
+        "actions": [
+            {
+                "name": "Wallplant",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Wilhope Passage",
+        "location": [
+            6563,
+            7534
+        ],
+        "actions": [
+            {
+                "name": "Street Louse",
+                "type": "Guard"
+            }
+        ]
+    },
+    {
+        "name": "Tim's Alley",
+        "location": [
+            7138,
+            7895
+        ],
+        "actions": [
+            {
+                "name": "Thief",
+                "type": "Guard"
+            }
+        ]
+    },
+    {
+        "name": "Limpet Lane",
+        "location": [
+            7138,
+            7075
+        ],
+        "actions": [
+            {
+                "name": "Thief",
+                "type": "Guard"
+            }
+        ]
+    },
+    {
+        "name": "Little Square",
+        "location": [
+            7128,
+            7475
+        ],
+        "actions": [
+            {
+                "name": "Louse",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Shimmerbean",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Spinseed",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Sprey",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Nook Alley",
+        "location": [
+            7484,
+            7154
+        ],
+        "actions": [
+            {
+                "name": "Scrap Metal",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Murk Close",
+        "location": [
+            7824,
+            7480
+        ],
+        "actions": [
+            {
+                "name": "Thug",
+                "type": "Guard"
+            },
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Hopeport Portal Stone",
+        "location": [
+            4641,
+            10820
+        ],
+        "actions": [
+            {
+                "name": "Portal Stone",
+                "type": "Portal Stone"
+            }
+        ]
+    },
+    {
+        "name": "Sparring Area",
+        "location": [
+            4286,
+            10075
+        ],
+        "actions": [
+            {
+                "name": "Sparring Guard",
+                "type": "Guard"
+            }
+        ]
+    },
+    {
+        "name": "Quartermaster",
+        "location": [
+            6058,
+            9892
+        ],
+        "actions": [
+            {
+                "name": "Quartermaster",
+                "type": "Storage"
+            },
+            {
+                "name": "Quartermaster Shop",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Old Street East",
+        "location": [
+            7329,
+            8361
+        ],
+        "actions": [
+            {
+                "name": "Deathcrow",
+                "type": "Guard"
+            },
+            {
+                "name": "Wallplant",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "The Cloakroom",
+        "location": [
+            7034,
+            8732
+        ],
+        "actions": [
+            {
+                "name": "Capes",
+                "type": "Storage"
+            },
+            {
+                "name": "Cape Shop",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "The Forager's Warehouse",
+        "location": [
+            7559,
+            8781
+        ],
+        "actions": [
+            {
+                "name": "The Forager's Warehouse",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Enchantress Shop",
+        "location": [
+            7389,
+            7927
+        ],
+        "actions": [
+            {
+                "name": "Enchantress",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Town Gates",
+        "location": [
+            8209,
+            8352
+        ],
+        "actions": [
+            {
+                "name": "Deathcrow",
+                "type": "Guard"
+            }
+        ]
+    },
+    {
+        "name": "South Walls",
+        "location": [
+            8479,
+            7701
+        ],
+        "actions": [
+            {
+                "name": "Goblin Chief",
+                "type": "Guard"
+            }
+        ]
+    },
+    {
+        "name": "North Walls",
+        "location": [
+            8439,
+            9009
+        ],
+        "actions": [
+            {
+                "name": "Goblin Soldier",
+                "type": "Guard"
+            }
+        ]
+    },
+    {
+        "name": "Kevin's Ingredients ",
+        "location": [
+            5600,
+            9447
+        ],
+        "actions": [
+            {
+                "name": "Bread"
+            },
+            {
+                "name": "Butter"
+            },
+            {
+                "name": "Cabbage"
+            },
+            {
+                "name": "Raw Chicken"
+            },
+            {
+                "name": "Cream"
+            },
+            {
+                "name": "Gelatin"
+            },
+            {
+                "name": "Lemon Juice"
+            },
+            {
+                "name": "Pastry"
+            },
+            {
+                "name": "Raw Sausages"
+            },
+            {
+                "name": "Soy Sauce"
+            },
+            {
+                "name": "Stock"
+            },
+            {
+                "name": "Wine"
+            },
+            {
+                "name": "Basic Raw Bacon"
+            },
+            {
+                "name": "Appetizing Raw Bacon"
+            },
+            {
+                "name": "Fine Raw Bacon"
+            },
+            {
+                "name": "Tasty Raw Bacon"
+            },
+            {
+                "name": "Delicious Raw Bacon"
+            },
+            {
+                "name": "Gourmet Raw Bacon"
+            },
+            {
+                "name": "Golbranth Beetroot"
+            },
+            {
+                "name": "Tarang Beetroot"
+            },
+            {
+                "name": "Kalb Beetroot"
+            },
+            {
+                "name": "Flexhair Beetroot"
+            },
+            {
+                "name": "Zing Beetroot"
+            },
+            {
+                "name": "Oldclay Beetroot"
+            },
+            {
+                "name": "Furtop Beetroot"
+            },
+            {
+                "name": "Olgrave Beetroot"
+            },
+            {
+                "name": "Volbarn Beetroot"
+            },
+            {
+                "name": "Jamato Beetroot"
+            },
+            {
+                "name": "Basic Eggs"
+            },
+            {
+                "name": "Appetizing Eggs"
+            },
+            {
+                "name": "Tasty Eggs"
+            },
+            {
+                "name": "Delicious Eggs"
+            },
+            {
+                "name": "Gourmet Eggs"
+            },
+            {
+                "name": "Deepside Garlic"
+            },
+            {
+                "name": "Firevein Garlic"
+            },
+            {
+                "name": "Langard Garlic"
+            },
+            {
+                "name": "Shelkram Garlic"
+            },
+            {
+                "name": "Grotto Garlic"
+            },
+            {
+                "name": "Amberflesh Garlic"
+            },
+            {
+                "name": "Weldbulb Garlic"
+            },
+            {
+                "name": "Valent Leek"
+            },
+            {
+                "name": "Basic Mixed Vegetables"
+            },
+            {
+                "name": "Appetizing Mixed Vegetables"
+            },
+            {
+                "name": "Fine Mixed Vegetables"
+            },
+            {
+                "name": "Tasty Mixed Vegetables"
+            },
+            {
+                "name": "Delicious Mixed Vegetables"
+            },
+            {
+                "name": "Gourmet Mixed Vegetables"
+            },
+            {
+                "name": "Piper Potato"
+            },
+            {
+                "name": "King Phelwan Potato"
+            },
+            {
+                "name": "Calystra Potato"
+            },
+            {
+                "name": "Colawan Potato"
+            },
+            {
+                "name": "Bitterbide Potato"
+            },
+            {
+                "name": "Greengrail Potato"
+            },
+            {
+                "name": "Galimeer Potato"
+            }
+        ]
+    },
+    {
+        "name": "Ebsworth",
+        "location": [
+            6344,
+            9260
+        ],
+        "actions": [
+            {
+                "name": "Bottle"
+            },
+            {
+                "name": "+1 Potion Boost Level"
+            },
+            {
+                "name": "+2 Potion Boost level"
+            },
+            {
+                "name": "3 Minute Potion Fear"
+            },
+            {
+                "name": "6 Minute Potion Fear"
+            },
+            {
+                "name": "20% Potion Healing"
+            },
+            {
+                "name": "25% Potion Healing"
+            }
+        ]
+    },
+    {
+        "name": "Melv",
+        "location": [
+            6161,
+            8707
+        ],
+        "actions": [
+            {
+                "name": "Bucket"
+            },
+            {
+                "name": "Crate"
+            },
+            {
+                "name": "Fishing Spear"
+            },
+            {
+                "name": "Tier 2 Fishing Spear"
+            },
+            {
+                "name": "Tier 3 Fishing Spear"
+            },
+            {
+                "name": "Tier 4 Fishing Spear"
+            },
+            {
+                "name": "Tier 5 Fishing Spear"
+            },
+            {
+                "name": "Tier 6 Fishing Spear"
+            },
+            {
+                "name": "Fishing Rod"
+            },
+            {
+                "name": "Tier 2 Fishing Rod"
+            },
+            {
+                "name": "Tier 3 Fishing Rod"
+            },
+            {
+                "name": "Tier 4 Fishing Rod"
+            },
+            {
+                "name": "Tier 5 Fishing Rod"
+            },
+            {
+                "name": "Tier 6 Fishing Rod"
+            },
+            {
+                "name": "Cast Net"
+            },
+            {
+                "name": "Lobster Pot"
+            },
+            {
+                "name": "Oyster Net"
+            },
+            {
+                "name": "Tier 2 Cast Net"
+            },
+            {
+                "name": "Tier 2 Lobster Pot"
+            },
+            {
+                "name": "Tier 2 Oyster Net"
+            },
+            {
+                "name": "Grubby Grubs"
+            },
+            {
+                "name": "Hobrin Grubs"
+            },
+            {
+                "name": "Shvelt Grubs"
+            },
+            {
+                "name": "Meldan Grubs"
+            },
+            {
+                "name": "Cellandale Grubs"
+            },
+            {
+                "name": "Blotchy Maggots"
+            },
+            {
+                "name": "Pasty Maggots"
+            },
+            {
+                "name": "Icky Maggots"
+            },
+            {
+                "name": "Rosy Maggots"
+            },
+            {
+                "name": "Writhing Maggots"
+            },
+            {
+                "name": "Slippy Sea Slug"
+            },
+            {
+                "name": "Black Sea Slug"
+            },
+            {
+                "name": "Brown Sea Slug"
+            },
+            {
+                "name": "Gunky Sea Slug"
+            },
+            {
+                "name": "Juicy Sea Slug"
+            },
+            {
+                "name": "Feast Worms"
+            },
+            {
+                "name": "Pine Needle Worms"
+            },
+            {
+                "name": "Red Worms"
+            },
+            {
+                "name": "Squirm Worms"
+            }
+        ]
+    },
+    {
+        "name": "Frequently Fresh Fish Shop",
+        "location": [
+            5436,
+            7351
+        ],
+        "actions": [
+            {
+                "name": "Placid Bass"
+            },
+            {
+                "name": "Striped Bass"
+            },
+            {
+                "name": "Emerald Bass"
+            },
+            {
+                "name": "Dropthe Bass"
+            },
+            {
+                "name": "Giant Bass"
+            },
+            {
+                "name": "Leathery Bream"
+            },
+            {
+                "name": "Black Bream"
+            },
+            {
+                "name": "Surf Bream"
+            },
+            {
+                "name": "Graceful Bream"
+            },
+            {
+                "name": "Cream Bream"
+            },
+            {
+                "name": "Gilt-Headed Bream"
+            },
+            {
+                "name": "Brilliant Bream"
+            },
+            {
+                "name": "Slight Cod"
+            },
+            {
+                "name": "Waltzing Cod"
+            },
+            {
+                "name": "Teal Cod"
+            },
+            {
+                "name": "Pearly Cod"
+            },
+            {
+                "name": "Mosaic Cod"
+            },
+            {
+                "name": "Burly Cod"
+            },
+            {
+                "name": "Emperor Cod"
+            },
+            {
+                "name": "Common Dab"
+            },
+            {
+                "name": "Small Dab"
+            },
+            {
+                "name": "Dancing Dab"
+            },
+            {
+                "name": "Summer Dab"
+            },
+            {
+                "name": "Smooth Dab"
+            },
+            {
+                "name": "Screaming Ab Dab"
+            },
+            {
+                "name": "Spotted Dab"
+            },
+            {
+                "name": "Mighty Dab"
+            },
+            {
+                "name": "Lesser Eel"
+            },
+            {
+                "name": "Gray Eel"
+            },
+            {
+                "name": "Rocky Eel"
+            },
+            {
+                "name": "Rord Eel"
+            },
+            {
+                "name": "Moray Eel"
+            },
+            {
+                "name": "Conger Eel"
+            },
+            {
+                "name": "Leopard Eel"
+            },
+            {
+                "name": "Greater Eel"
+            },
+            {
+                "name": "Mottled Flounder"
+            },
+            {
+                "name": "Olive Flounder"
+            },
+            {
+                "name": "Stone Flounder"
+            },
+            {
+                "name": "Arrowtooth Flounder"
+            },
+            {
+                "name": "Flowery Flounder"
+            },
+            {
+                "name": "Jelly Flounder"
+            },
+            {
+                "name": "Peacock Flounder"
+            },
+            {
+                "name": "Starry Flounder"
+            },
+            {
+                "name": "Black Flounder"
+            },
+            {
+                "name": "Yellowtail Gurnard"
+            },
+            {
+                "name": "Bigeye Gurnard"
+            },
+            {
+                "name": "Blackfin Gurnard"
+            },
+            {
+                "name": "Shiny Gurnard"
+            },
+            {
+                "name": "Torpedo Gurnard"
+            },
+            {
+                "name": "Grand Gurnard"
+            },
+            {
+                "name": "Ridged Herring"
+            },
+            {
+                "name": "Gray Herring"
+            },
+            {
+                "name": "Red Herring"
+            },
+            {
+                "name": "Ochre Herring"
+            },
+            {
+                "name": "Wishful Herring"
+            },
+            {
+                "name": "Hope Herring"
+            },
+            {
+                "name": "Shimmering Herring"
+            },
+            {
+                "name": "Orange Lobster"
+            },
+            {
+                "name": "Striped Lobster"
+            },
+            {
+                "name": "Ghost Lobster"
+            },
+            {
+                "name": "Cunning Lobster"
+            },
+            {
+                "name": "Spotted Mackibut"
+            },
+            {
+                "name": "Whitespot Mackibut"
+            },
+            {
+                "name": "Blue Jack Mackibut"
+            },
+            {
+                "name": "Streaked Mackibut"
+            },
+            {
+                "name": "Horse Mackibut"
+            },
+            {
+                "name": "Chub Mackibut"
+            },
+            {
+                "name": "Blue Mackibut"
+            },
+            {
+                "name": "Wahoo Mackibut"
+            },
+            {
+                "name": "Etway Mackibut"
+            },
+            {
+                "name": "King Mackibut"
+            },
+            {
+                "name": "Beach Oyster"
+            },
+            {
+                "name": "Signal Oyster"
+            },
+            {
+                "name": "Speckled Oyster"
+            },
+            {
+                "name": "Rusty Oyster"
+            },
+            {
+                "name": "Sandy Pufferfish"
+            },
+            {
+                "name": "Lonely Pufferfish"
+            },
+            {
+                "name": "Lemon Pufferfish"
+            },
+            {
+                "name": "Figure Eight Pufferfish"
+            },
+            {
+                "name": "Rubber Pufferfish"
+            },
+            {
+                "name": "Merry Old Pufferfish"
+            },
+            {
+                "name": "High Tide Pufferfish"
+            },
+            {
+                "name": "Unicorn Pufferfish"
+            },
+            {
+                "name": "Common Ray"
+            },
+            {
+                "name": "Dim Ray"
+            },
+            {
+                "name": "Soldier Ray"
+            },
+            {
+                "name": "Nimble Ray"
+            },
+            {
+                "name": "Tiger Ray"
+            },
+            {
+                "name": "Broad Ray"
+            },
+            {
+                "name": "Jade Ray"
+            },
+            {
+                "name": "Prime Ray"
+            },
+            {
+                "name": "Idle Sturlet"
+            },
+            {
+                "name": "Flathead Sturlet"
+            },
+            {
+                "name": "Striped Sturlet"
+            },
+            {
+                "name": "Thick Lipped Sturlet"
+            },
+            {
+                "name": "Wandering Sturlet"
+            },
+            {
+                "name": "Silver Sturlet"
+            },
+            {
+                "name": "Western Sturlet"
+            },
+            {
+                "name": "Blond Sturlet"
+            },
+            {
+                "name": "Bullet Sturlet"
+            },
+            {
+                "name": "Mighty Sturlet"
+            },
+            {
+                "name": "Ballan Wraddock"
+            },
+            {
+                "name": "Goldsinny Wraddock"
+            },
+            {
+                "name": "Cuckoo Wraddock"
+            },
+            {
+                "name": "Cleaner Wraddock"
+            },
+            {
+                "name": "Ornate Wraddock"
+            },
+            {
+                "name": "Six Line Wraddock"
+            },
+            {
+                "name": "Corkwing Wraddock"
+            },
+            {
+                "name": "Mega Wraddock"
+            }
+        ]
+    },
+    {
+        "name": "Forager's warehouse",
+        "location": [
+            7559,
+            8781
+        ],
+        "actions": [
+            {
+                "name": "Basket"
+            },
+            {
+                "name": "Bottle"
+            },
+            {
+                "name": "Bucket"
+            },
+            {
+                "name": "Crate"
+            },
+            {
+                "name": "Jar"
+            },
+            {
+                "name": "Sack"
+            },
+            {
+                "name": "Secateurs"
+            },
+            {
+                "name": "Trowel"
+            },
+            {
+                "name": "Pond Net"
+            }
+        ]
+    },
+    {
+        "name": "Zeltay Tramagan (Potion Reagents)",
+        "location": [
+            5567,
+            8507
+        ],
+        "actions": [
+            {
+                "name": "Blue Aboredon Egg"
+            },
+            {
+                "name": "Stoneshell Aboredon Egg"
+            },
+            {
+                "name": "Bitter Acorn"
+            },
+            {
+                "name": "Sweet Acorn"
+            },
+            {
+                "name": "Beadlet Anemone"
+            },
+            {
+                "name": "Strawberry Anemone"
+            },
+            {
+                "name": "Dhalia Anemone"
+            },
+            {
+                "name": "Snakelocks Anemone"
+            },
+            {
+                "name": "Elegant Anemone"
+            },
+            {
+                "name": "Tad Apple"
+            },
+            {
+                "name": "Myrtle Apple"
+            },
+            {
+                "name": "Golden Scrumptious Apple"
+            },
+            {
+                "name": "Chipped Beastman Claws"
+            },
+            {
+                "name": "Shaggy Beastman Claws"
+            },
+            {
+                "name": "Yellowing Beastman Claws"
+            },
+            {
+                "name": "Thick Beastman Claws"
+            },
+            {
+                "name": "Heavy Beastman Claws"
+            },
+            {
+                "name": "Salt Beetle"
+            },
+            {
+                "name": "Star Beetle"
+            },
+            {
+                "name": "Mauve Bellplant"
+            },
+            {
+                "name": "Crimson Bellplant"
+            },
+            {
+                "name": "Starshine Bellplant"
+            },
+            {
+                "name": "Slothful Bug"
+            },
+            {
+                "name": "Lowburrow Bug"
+            },
+            {
+                "name": "Pine Bug"
+            },
+            {
+                "name": "Blood Bug"
+            },
+            {
+                "name": "Sour Bug"
+            },
+            {
+                "name": "Red Cabbage"
+            },
+            {
+                "name": "Napa Cabbage"
+            },
+            {
+                "name": "Bristled Catkin"
+            },
+            {
+                "name": "Fuzzy Catkin"
+            },
+            {
+                "name": "Gray Cave Moss"
+            },
+            {
+                "name": "Brown Cave Moss"
+            },
+            {
+                "name": "Yellow Cave Moss"
+            },
+            {
+                "name": "Green Cave Moss"
+            },
+            {
+                "name": "Dark Cave Moss"
+            },
+            {
+                "name": "Orange Centipede"
+            },
+            {
+                "name": "Scuttling Centipede"
+            },
+            {
+                "name": "Dewkin Chestnut"
+            },
+            {
+                "name": "Lowbrunch Chestnut"
+            },
+            {
+                "name": "Klamit Cinnamon Sticks"
+            },
+            {
+                "name": "Vorshalt Cinnamon Sticks"
+            },
+            {
+                "name": "Brown Kelp"
+            },
+            {
+                "name": "White Periwinkle"
+            },
+            {
+                "name": "Creamy Wallplant"
+            }
+        ]
+    },
+    {
+        "name": "The Delectable Dab Kitchen",
+        "location": [
+            4485,
+            9269
+        ],
+        "actions": [
+            {
+                "name": "Cooking Stations",
+                "type": "Chef"
+            },
+            {
+                "name": "Fish Dishes",
+                "type": "Chef"
+            },
+            {
+                "name": "Ingredients",
+                "type": "Storage"
+            },
+            {
+                "name": "Head Chef",
+                "type": "Seller"
+            },
+            {
+                "name": "Chef's Bounty Board",
+                "type": "Chef"
+            }
+        ]
+    },
+    {
+        "name": "The Delectable Dab Restaurant",
+        "location": [
+            5102,
+            9171
+        ],
+        "actions": []
+    },
+    {
+        "name": "Brannof's Chamber",
+        "location": [
+            4069,
+            8895
+        ],
+        "actions": []
+    },
+    {
+        "name": "Brannof's Dining Room",
+        "location": [
+            3640,
+            8523
+        ],
+        "actions": []
+    },
+    {
+        "name": "Brannof Hall's Hallway",
+        "location": [
+            4058,
+            8518
+        ],
+        "actions": []
+    },
+    {
+        "name": "The Hooked Hand",
+        "location": [
+            5150,
+            7333
+        ],
+        "actions": []
+    },
+    {
+        "name": "Thieves' Den",
+        "location": [
+            6545,
+            7939
+        ],
+        "actions": []
+    },
+    {
+        "name": "Captain Degreene's Office",
+        "location": [
+            5187,
+            10730
+        ],
+        "actions": []
+    },
+    {
+        "name": "Barracks",
+        "location": [
+            5778,
+            10778
+        ],
+        "actions": []
+    },
+    {
+        "name": "Infirmary",
+        "location": [
+            6029,
+            10276
+        ],
+        "actions": []
+    },
+    {
+        "name": "Training Ground",
+        "location": [
+            5210,
+            10112
+        ],
+        "actions": []
+    },
+    {
+        "name": "Wilhope Crossing",
+        "location": [
+            6157,
+            7475
+        ],
+        "actions": [
+            {
+                "name": "Pufferfish",
+                "type": "Fisher"
+            }
+        ]
+    },
+    {
+        "name": "Monob Row",
+        "location": [
+            6816,
+            7862
+        ],
+        "actions": []
+    },
+    {
+        "name": "Naybeth's House",
+        "location": [
+            8055,
+            7998
+        ],
+        "actions": []
+    },
+    {
+        "name": "Pipe Alley",
+        "location": [
+            7329,
+            8936
+        ],
+        "actions": []
+    },
+    {
+        "name": "Two Headed Bear Clearing",
+        "location": [
+            9221,
+            11173
+        ],
+        "actions": [
+            {
+                "name": "Goat Horn",
+                "type": "Forager"
+            },
+            {
+                "name": "Yew Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Yew Branches",
+                "type": "Gatherer"
+            }
+        ]
+    },
+    {
+        "name": "Bear Behind",
+        "location": [
+            8284,
+            10323
+        ],
+        "actions": [
+            {
+                "name": "Bear",
+                "type": "Scout"
+            },
+            {
+                "name": "Yew Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Yew Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Bear Clearing",
+        "location": [
+            9069,
+            10323
+        ],
+        "actions": [
+            {
+                "name": "Bear",
+                "type": "Scout"
+            },
+            {
+                "name": "Goat Horn",
+                "type": "Forager"
+            },
+            {
+                "name": "Yew Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Yew Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Road to Hopeport",
+        "location": [
+            9256,
+            8363
+        ],
+        "actions": [
+            {
+                "name": "Globeplant",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Forest Clearing",
+        "location": [
+            10106,
+            8390
+        ],
+        "actions": [
+            {
+                "name": "Outlaw",
+                "type": "Scout"
+            },
+            {
+                "name": "Globeplant",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Forest Path",
+        "location": [
+            11165,
+            8599
+        ],
+        "actions": [
+            {
+                "name": "Outlaw",
+                "type": "Scout"
+            }
+        ]
+    },
+    {
+        "name": "Goblin Camp",
+        "location": [
+            11203,
+            8066
+        ],
+        "actions": [
+            {
+                "name": "Goblin",
+                "type": "Scout"
+            },
+            {
+                "name": "Obelisk",
+                "type": "Obelisk"
+            }
+        ]
+    },
+    {
+        "name": "Mushroom Glade",
+        "location": [
+            9538,
+            7476
+        ],
+        "actions": [
+            {
+                "name": "Dandelion",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Huntsman's Clearing",
+        "location": [
+            10366,
+            7557
+        ],
+        "actions": [
+            {
+                "name": "Wild Boar",
+                "type": "Scout"
+            },
+            {
+                "name": "Dandelion",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Timberwell Supplies",
+        "location": [
+            9587,
+            6295
+        ],
+        "actions": [
+            {
+                "name": "Basket"
+            },
+            {
+                "name": "Bottle"
+            },
+            {
+                "name": "Bucket"
+            },
+            {
+                "name": "Crate"
+            },
+            {
+                "name": "Jar"
+            },
+            {
+                "name": "Sack"
+            },
+            {
+                "name": "Hand Rake"
+            },
+            {
+                "name": "Sickle"
+            },
+            {
+                "name": "Tier 2 Sickle"
+            },
+            {
+                "name": "Tier 2 Hand Rake"
+            },
+            {
+                "name": "Tier 3 Hand Rake"
+            },
+            {
+                "name": "Tier 3 Sickle"
+            }
+        ]
+    },
+    {
+        "name": "Timberwell Road",
+        "location": [
+            10582,
+            6496
+        ],
+        "actions": [
+            {
+                "name": "Ash Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Ash Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Timberwell Side Road",
+        "location": [
+            9472,
+            5774
+        ],
+        "actions": [
+            {
+                "name": "Apple",
+                "type": "Forager"
+            },
+            {
+                "name": "Ash Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Ash Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "The Color Wheel",
+        "location": [
+            8671,
+            5767
+        ],
+        "actions": [
+            {
+                "name": "Dyes",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Mr McGrish's Garden",
+        "location": [
+            8904,
+            5023
+        ],
+        "actions": [
+            {
+                "name": "Apple",
+                "type": "Forager"
+            },
+            {
+                "name": "Ash Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Ash Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Gwen's Lumber",
+        "location": [
+            9892,
+            5346
+        ],
+        "actions": [
+            {
+                "name": "Coarse Ash Log"
+            },
+            {
+                "name": "Coarse Oak Log"
+            },
+            {
+                "name": "Coarse Pine Log"
+            },
+            {
+                "name": "Coarse Hickory Log"
+            },
+            {
+                "name": "Coarse Juniper Log"
+            },
+            {
+                "name": "Coarse Poplar Log"
+            },
+            {
+                "name": "Coarse Suave Log"
+            },
+            {
+                "name": "Coarse Yew Log"
+            },
+            {
+                "name": "Rugged Ash Log"
+            },
+            {
+                "name": "Rugged Oak Log"
+            },
+            {
+                "name": "Rugged Pine Log"
+            },
+            {
+                "name": "Rugged Hickory Log"
+            },
+            {
+                "name": "Rugged Juniper Log"
+            },
+            {
+                "name": "Rugged Poplar Log"
+            },
+            {
+                "name": "Rugged Suave Log"
+            },
+            {
+                "name": "Rugged Yew Log"
+            },
+            {
+                "name": "Average Ash Log"
+            },
+            {
+                "name": "Average Oak Log"
+            },
+            {
+                "name": "Average Pine Log"
+            },
+            {
+                "name": "Average Hickory Log"
+            },
+            {
+                "name": "Average Juniper Log"
+            },
+            {
+                "name": "Average Poplar Log"
+            },
+            {
+                "name": "Average Suave Log"
+            },
+            {
+                "name": "Average Yew Log"
+            },
+            {
+                "name": "Fine Ash Log"
+            },
+            {
+                "name": "Fine Oak Log"
+            },
+            {
+                "name": "Fine Pine Log"
+            },
+            {
+                "name": "Fine Hickory Log"
+            },
+            {
+                "name": "Fine Juniper Log"
+            },
+            {
+                "name": "Fine Poplar Log"
+            },
+            {
+                "name": "Fine Suave Log"
+            },
+            {
+                "name": "Fine Yew Log"
+            },
+            {
+                "name": "Sturdy Ash Log"
+            },
+            {
+                "name": "Sturdy Oak Log"
+            },
+            {
+                "name": "Sturdy Pine Log"
+            },
+            {
+                "name": "Sturdy Hickory Log"
+            },
+            {
+                "name": "Sturdy Juniper Log"
+            },
+            {
+                "name": "Sturdy Poplar Log"
+            },
+            {
+                "name": "Sturdy Suave Log"
+            },
+            {
+                "name": "Sturdy Yew Log"
+            },
+            {
+                "name": "Perfect Ash Log"
+            },
+            {
+                "name": "Perfect Oak Log"
+            },
+            {
+                "name": "Perfect Pine Log"
+            },
+            {
+                "name": "Perfect Hickory Log"
+            },
+            {
+                "name": "Perfect Juniper Log"
+            },
+            {
+                "name": "Perfect Poplar Log"
+            },
+            {
+                "name": "Perfect Suave Log"
+            },
+            {
+                "name": "Perfect Yew Log"
+            }
+        ]
+    },
+    {
+        "name": "Timberwell Green",
+        "location": [
+            10532,
+            5191
+        ],
+        "actions": [
+            {
+                "name": "Catkin",
+                "type": "Forager"
+            },
+            {
+                "name": "Ash Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Ash Branches",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Morauce's Pointy Implements",
+                "type": "Seller"
+            },
+            {
+                "name": "Timber",
+                "type": "Storage"
+            }
+        ]
+    },
+    {
+        "name": "Morauce's Point Implements",
+        "location": [
+            10532,
+            5191
+        ],
+        "actions": [
+            {
+                "name": "Hand Saw"
+            },
+            {
+                "name": "Hatchet"
+            },
+            {
+                "name": "Two Person Saw"
+            },
+            {
+                "name": "Tree Loppers"
+            }
+        ]
+    },
+    {
+        "name": "Timber Merchant",
+        "location": [
+            10453,
+            4097
+        ],
+        "actions": [
+            {
+                "name": "Coarse Ash Plank"
+            },
+            {
+                "name": "Coarse Oak Pole"
+            },
+            {
+                "name": "Coarse Pine Pole"
+            },
+            {
+                "name": "Coarse Hickory Pole"
+            },
+            {
+                "name": "Coarse Juniper Stave"
+            },
+            {
+                "name": "Coarse Poplar Pole"
+            },
+            {
+                "name": "Coarse Suave Pole"
+            },
+            {
+                "name": "Coarse Yew Pole"
+            },
+            {
+                "name": "Rugged Ash Plank"
+            },
+            {
+                "name": "Rugged Oak Pole"
+            },
+            {
+                "name": "Rugged Pine Pole"
+            },
+            {
+                "name": "Rugged Hickory Pole"
+            },
+            {
+                "name": "Rugged Juniper Stave"
+            },
+            {
+                "name": "Rugged Poplar Pole"
+            },
+            {
+                "name": "Rugged Suave Log"
+            },
+            {
+                "name": "Rugged Yew Pole"
+            },
+            {
+                "name": "Average Ash Plank"
+            },
+            {
+                "name": "Average Oak Pole"
+            },
+            {
+                "name": "Average Pine Pole"
+            },
+            {
+                "name": "Average Hickory Pole"
+            },
+            {
+                "name": "Average Juniper Stave"
+            },
+            {
+                "name": "Average Poplar Pole"
+            },
+            {
+                "name": "Average Suave Log"
+            },
+            {
+                "name": "Average Yew Pole"
+            },
+            {
+                "name": "Fine Ash Plank"
+            },
+            {
+                "name": "Fine Oak Pole"
+            },
+            {
+                "name": "Fine Pine Pole"
+            },
+            {
+                "name": "Fine Hickory Pole"
+            },
+            {
+                "name": "Fine Juniper Stave"
+            },
+            {
+                "name": "Fine Poplar Pole"
+            },
+            {
+                "name": "Fine Suave Log"
+            },
+            {
+                "name": "Fine Yew Pole"
+            },
+            {
+                "name": "Sturdy Ash Plank"
+            },
+            {
+                "name": "Sturdy Oak Pole"
+            },
+            {
+                "name": "Sturdy Pine Pole"
+            },
+            {
+                "name": "Sturdy Hickory Pole"
+            },
+            {
+                "name": "Sturdy Juniper Stave"
+            },
+            {
+                "name": "Sturdy Poplar Pole"
+            },
+            {
+                "name": "Sturdy Suave Log"
+            },
+            {
+                "name": "Sturdy Yew Pole"
+            },
+            {
+                "name": "Perfect Ash Plank"
+            },
+            {
+                "name": "Perfect Oak Pole"
+            },
+            {
+                "name": "Perfect Pine Pole"
+            },
+            {
+                "name": "Perfect Hickory Pole"
+            },
+            {
+                "name": "Perfect Juniper Stave"
+            },
+            {
+                "name": "Perfect Poplar Pole"
+            },
+            {
+                "name": "Perfect Suave Log"
+            },
+            {
+                "name": "Perfect Yew Pole"
+            }
+        ]
+    },
+    {
+        "name": "Carpenter's Workshop",
+        "location": [
+            10453,
+            4097
+        ],
+        "actions": [
+            {
+                "name": "Lumber",
+                "type": "Storage"
+            },
+            {
+                "name": "Sawmill",
+                "type": "Carpenter"
+            },
+            {
+                "name": "Furniture Assembly Station",
+                "type": "Carpenter"
+            },
+            {
+                "name": "Workbench",
+                "type": "Carpenter"
+            },
+            {
+                "name": "Timber Merchant",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Thin Trail",
+        "location": [
+            10694,
+            11141
+        ],
+        "actions": [
+            {
+                "name": "Leek",
+                "type": "Forager"
+            },
+            {
+                "name": "Yew Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Yew Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Narrow Path",
+        "location": [
+            10685,
+            10557
+        ],
+        "actions": [
+            {
+                "name": "Leek",
+                "type": "Gatherer"
+            },
+            {
+                "name": "Yew Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Yew Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Leafy Junction",
+        "location": [
+            9912,
+            10159
+        ],
+        "actions": [
+            {
+                "name": "Wildman",
+                "type": "Scout"
+            },
+            {
+                "name": "Yew Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Yew Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Leafy Lane",
+        "location": [
+            9890,
+            9390
+        ],
+        "actions": [
+            {
+                "name": "Yew Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Yew Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Secluded Dead End",
+        "location": [
+            10438,
+            9764
+        ],
+        "actions": [
+            {
+                "name": "Satyr",
+                "type": "Scout"
+            },
+            {
+                "name": "Hickory Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Hickory Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Secluded Path",
+        "location": [
+            10977,
+            9642
+        ],
+        "actions": [
+            {
+                "name": "Tangfruit",
+                "type": "Forager"
+            },
+            {
+                "name": "Hickory Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Hickory Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Secluded Junction",
+        "location": [
+            11604,
+            9629
+        ],
+        "actions": [
+            {
+                "name": "Orchid",
+                "type": "Forager"
+            },
+            {
+                "name": "Hickory Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Hickory Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Dryad Glade",
+        "location": [
+            10756,
+            9185
+        ],
+        "actions": [
+            {
+                "name": "Tangfruit",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Luscious Glade",
+        "location": [
+            11573,
+            9211
+        ],
+        "actions": [
+            {
+                "name": "Orchid",
+                "type": "Forager"
+            },
+            {
+                "name": "Hickory Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Hickory Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "North Central Path",
+        "location": [
+            12086,
+            9311
+        ],
+        "actions": [
+            {
+                "name": "Hickory Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Hickory Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Wooded Clifftop",
+        "location": [
+            11555,
+            12794
+        ],
+        "actions": [
+            {
+                "name": "Bramblelith",
+                "type": "Scout"
+            }
+        ]
+    },
+    {
+        "name": "Rising Trail",
+        "location": [
+            11591,
+            12247
+        ],
+        "actions": [
+            {
+                "name": "Bramblelith",
+                "type": "Scout"
+            }
+        ]
+    },
+    {
+        "name": "North Peat Bog",
+        "location": [
+            12084,
+            13106
+        ],
+        "actions": [
+            {
+                "name": "Dock Leaf",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Peat Bog",
+        "location": [
+            12084,
+            12704
+        ],
+        "actions": [
+            {
+                "name": "Dock Leaf",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Hopeforest North Portal Stone",
+        "location": [
+            12713,
+            12186
+        ],
+        "actions": [
+            {
+                "name": "Portal Stone",
+                "type": "Portal Stone"
+            }
+        ]
+    },
+    {
+        "name": "Treeway Clearing",
+        "location": [
+            11855,
+            11713
+        ],
+        "actions": [
+            {
+                "name": "Oak Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Oak Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Berry Glade",
+        "location": [
+            12684,
+            11587
+        ],
+        "actions": [
+            {
+                "name": "Haleberries",
+                "type": "Forager"
+            },
+            {
+                "name": "Oak Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Oak Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Tangled Path",
+        "location": [
+            11342,
+            10194
+        ],
+        "actions": [
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Canopy Junction",
+        "location": [
+            11732,
+            11124
+        ],
+        "actions": [
+            {
+                "name": "Oak Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Oak Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Treeway Junction",
+        "location": [
+            12135,
+            11102
+        ],
+        "actions": [
+            {
+                "name": "Spriggan",
+                "type": "Scout"
+            }
+        ]
+    },
+    {
+        "name": "Canopy Lane",
+        "location": [
+            11424,
+            10752
+        ],
+        "actions": [
+            {
+                "name": "Beetroot",
+                "type": "Forager"
+            },
+            {
+                "name": "Hazelnut",
+                "type": "Forager"
+            },
+            {
+                "name": "Worms",
+                "type": "Forager"
+            },
+            {
+                "name": "Oak Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Oak Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Treeway Trail",
+        "location": [
+            12811,
+            11137
+        ],
+        "actions": [
+            {
+                "name": "Spriggan",
+                "type": "Scout"
+            },
+            {
+                "name": "Haleberries",
+                "type": "Forager"
+            },
+            {
+                "name": "Oak Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Oak Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Twisted Road",
+        "location": [
+            13797,
+            10989
+        ],
+        "actions": [
+            {
+                "name": "Shade",
+                "type": "Scout"
+            },
+            {
+                "name": "Suave Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Stump Clearing",
+        "location": [
+            12037,
+            10365
+        ],
+        "actions": [
+            {
+                "name": "Moss Monster",
+                "type": "Scout"
+            },
+            {
+                "name": "Oak Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Oak Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Cutters Clearing",
+        "location": [
+            12914,
+            10697
+        ],
+        "actions": [
+            {
+                "name": "Oak Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Oak Branches",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Split Wood for Murphy",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Bones",
+                "type": "Storage"
+            }
+        ]
+    },
+    {
+        "name": "Shortcut",
+        "location": [
+            13534,
+            10079
+        ],
+        "actions": [
+            {
+                "name": "Brambles",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Stumped Path",
+        "location": [
+            12867,
+            10075
+        ],
+        "actions": [
+            {
+                "name": "Oak Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Oak Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Twisted Junction",
+        "location": [
+            14054,
+            10166
+        ],
+        "actions": [
+            {
+                "name": "Shade",
+                "type": "Scout"
+            }
+        ]
+    },
+    {
+        "name": "Wolves' Den",
+        "location": [
+            14899,
+            11164
+        ],
+        "actions": [
+            {
+                "name": "Wolf",
+                "type": "Scout"
+            },
+            {
+                "name": "Femur Shard",
+                "type": "Forager"
+            },
+            {
+                "name": "Suave Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Gnarled Path",
+        "location": [
+            14613,
+            10671
+        ],
+        "actions": [
+            {
+                "name": "Femur Shard",
+                "type": "Forager"
+            },
+            {
+                "name": "Suave Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Overgrown Trail",
+        "location": [
+            14720,
+            10122
+        ],
+        "actions": [
+            {
+                "name": "Bone Spike",
+                "type": "Forager"
+            },
+            {
+                "name": "Suave Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Branches",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Crystal Clearing",
+        "location": [
+            15558,
+            10079
+        ],
+        "actions": [
+            {
+                "name": "Bone Spike",
+                "type": "Forager"
+            },
+            {
+                "name": "Suave Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Bramble Path",
+        "location": [
+            14749,
+            9673
+        ],
+        "actions": [
+            {
+                "name": "Brambles",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Mushroom Grove",
+        "location": [
+            14739,
+            9248
+        ],
+        "actions": [
+            {
+                "name": "Acorn",
+                "type": "Forager"
+            },
+            {
+                "name": "Ancient Coin",
+                "type": "Forager"
+            },
+            {
+                "name": "Sheep Rib",
+                "type": "Forager"
+            },
+            {
+                "name": "Suave Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Suave Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Logging Area",
+        "location": [
+            12821,
+            9248
+        ],
+        "actions": [
+            {
+                "name": "Thistle",
+                "type": "Forager"
+            },
+            {
+                "name": "Poplar Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Poplar Branches",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Split Wood for Claude",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Snakes Path",
+        "location": [
+            13540,
+            9329
+        ],
+        "actions": [
+            {
+                "name": "Viper",
+                "type": "Scout"
+            },
+            {
+                "name": "Snake Scale",
+                "type": "Forager"
+            },
+            {
+                "name": "Poplar Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Poplar Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Snakes Clearing",
+        "location": [
+            13422,
+            8614
+        ],
+        "actions": [
+            {
+                "name": "Viper",
+                "type": "Scout"
+            },
+            {
+                "name": "Chestnut",
+                "type": "Forager"
+            },
+            {
+                "name": "Snake Scale",
+                "type": "Forager"
+            },
+            {
+                "name": "Poplar Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Poplar Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Central Junction",
+        "location": [
+            12624,
+            8633
+        ],
+        "actions": [
+            {
+                "name": "Chestnut",
+                "type": "Forager"
+            },
+            {
+                "name": "Poplar Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Poplar Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Central Crossroads",
+        "location": [
+            11984,
+            8630
+        ],
+        "actions": [
+            {
+                "name": "Beetle",
+                "type": "Forager"
+            },
+            {
+                "name": "Bug",
+                "type": "Forager"
+            },
+            {
+                "name": "Lichen",
+                "type": "Forager"
+            },
+            {
+                "name": "Poplar Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Poplar Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Ivy Path",
+        "location": [
+            12002,
+            7909
+        ],
+        "actions": []
+    },
+    {
+        "name": "Hopeforest Central Portal Stone",
+        "location": [
+            12416,
+            7904
+        ],
+        "actions": [
+            {
+                "name": "Portal Stone",
+                "type": "Portal Stone"
+            }
+        ]
+    },
+    {
+        "name": "Cliffside Junction",
+        "location": [
+            13242,
+            7668
+        ],
+        "actions": [
+            {
+                "name": "Tree Cat",
+                "type": "Scout"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Cyclops Path",
+        "location": [
+            13917,
+            7720
+        ],
+        "actions": [
+            {
+                "name": "Rams Horn",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Ivy Junction",
+        "location": [
+            11969,
+            7217
+        ],
+        "actions": [
+            {
+                "name": "Wendigo",
+                "type": "Scout"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Ivy Trail",
+        "location": [
+            12655,
+            7248
+        ],
+        "actions": [
+            {
+                "name": "Wendigo",
+                "type": "Scout"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Cliffside Shortcut",
+        "location": [
+            13242,
+            7141
+        ],
+        "actions": [
+            {
+                "name": "Brambles",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Quiet Grove",
+        "location": [
+            13865,
+            7346
+        ],
+        "actions": [
+            {
+                "name": "Rams Horn",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Huntsman's Path",
+        "location": [
+            11174,
+            7217
+        ],
+        "actions": [
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Lumber Clearing",
+        "location": [
+            11372,
+            6519
+        ],
+        "actions": [
+            {
+                "name": "Clover",
+                "type": "Forager"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Split Wood for Hanna",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Fern Junction",
+        "location": [
+            12036,
+            6706
+        ],
+        "actions": [
+            {
+                "name": "Clover",
+                "type": "Forager"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Path of Good Intentions",
+        "location": [
+            12767,
+            6679
+        ],
+        "actions": [
+            {
+                "name": "Bitterfruit",
+                "type": "Forager"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Cliffside Path",
+        "location": [
+            13034,
+            6189
+        ],
+        "actions": [
+            {
+                "name": "Bitterfruit",
+                "type": "Forager"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Mine Road West",
+        "location": [
+            11309,
+            5846
+        ],
+        "actions": [
+            {
+                "name": "Catkin",
+                "type": "Forager"
+            },
+            {
+                "name": "Aboreden Egg",
+                "type": "Forager"
+            },
+            {
+                "name": "Shoot",
+                "type": "Forager"
+            },
+            {
+                "name": "Stalks",
+                "type": "Forager"
+            }
+        ]
+    },
+    {
+        "name": "Mine Road East",
+        "location": [
+            12271,
+            5708
+        ],
+        "actions": [
+            {
+                "name": "Giant Fly",
+                "type": "Scout"
+            },
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Barricades",
+        "location": [
+            13111,
+            5650
+        ],
+        "actions": [
+            {
+                "name": "Pine Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Pine Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Tree Lined Trail",
+        "location": [
+            11373,
+            5125
+        ],
+        "actions": [
+            {
+                "name": "Aboreden",
+                "type": "Scout"
+            },
+            {
+                "name": "Juniper Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Juniper Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Tree Lined Track",
+        "location": [
+            11317,
+            4160
+        ],
+        "actions": [
+            {
+                "name": "Juniper Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Juniper Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Small Clearing",
+        "location": [
+            11994,
+            5377
+        ],
+        "actions": [
+            {
+                "name": "Juniper Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Juniper Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Acidic Avenue",
+        "location": [
+            12024,
+            4720
+        ],
+        "actions": []
+    },
+    {
+        "name": "Pool of Rainbows",
+        "location": [
+            11975,
+            3870
+        ],
+        "actions": [
+            {
+                "name": "Juniper Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Juniper Branches",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Hopeforest Ferry",
+        "location": [
+            11104,
+            3358
+        ],
+        "actions": [
+            {
+                "name": "Juniper Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Juniper Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Ferry South Shore",
+        "location": [
+            11179,
+            2150
+        ],
+        "actions": [
+            {
+                "name": "Sage",
+                "type": "Forager"
+            },
+            {
+                "name": "Juniper Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Juniper Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Himatik Ruins",
+        "location": [
+            11233,
+            1478
+        ],
+        "actions": [
+            {
+                "name": "Sage",
+                "type": "Forager"
+            },
+            {
+                "name": "Juniper Log",
+                "type": "Woodcutter"
+            },
+            {
+                "name": "Juniper Branches",
+                "type": "Woodcutter"
+            }
+        ]
+    },
+    {
+        "name": "Mine Back Entrance",
+        "location": [
+            13807,
+            6861
+        ],
+        "actions": [
+            {
+                "name": "Minecrawler",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Rugged Tunnel",
+        "location": [
+            14362,
+            6814
+        ],
+        "actions": [
+            {
+                "name": "Minecrawler",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Mine Cart Cave",
+        "location": [
+            13711,
+            6256
+        ],
+        "actions": [
+            {
+                "name": "Mine Cart Work",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Northwest Mining Cavern",
+        "location": [
+            14182,
+            6202
+        ],
+        "actions": [
+            {
+                "name": "Limestone",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Jagged Junction",
+        "location": [
+            14608,
+            6459
+        ],
+        "actions": [
+            {
+                "name": "Basalt",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "North Mining Cavern",
+        "location": [
+            15126,
+            6455
+        ],
+        "actions": [
+            {
+                "name": "Basalt",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Rat Infested Tunnel",
+        "location": [
+            14637,
+            6093
+        ],
+        "actions": []
+    },
+    {
+        "name": "Cave of the Past",
+        "location": [
+            15791,
+            6600
+        ],
+        "actions": [
+            {
+                "name": "Fossil Assembly",
+                "type": "Bonewright"
+            }
+        ]
+    },
+    {
+        "name": "Mine Entrance",
+        "location": [
+            13678,
+            5680
+        ],
+        "actions": []
+    },
+    {
+        "name": "Abandoned Mine Cavern",
+        "location": [
+            14145,
+            5676
+        ],
+        "actions": [
+            {
+                "name": "Flint",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Rat Infested Junction",
+        "location": [
+            14678,
+            5647
+        ],
+        "actions": [
+            {
+                "name": "Flint",
+                "type": "Miner"
+            },
+            {
+                "name": "Beastman",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Goblin Loot Stash",
+        "location": [
+            15254,
+            5901
+        ],
+        "actions": []
+    },
+    {
+        "name": "Goblin Sleeping Area 3",
+        "location": [
+            15262,
+            5578
+        ],
+        "actions": []
+    },
+    {
+        "name": "Goblin Sleeping Area 2",
+        "location": [
+            15662,
+            5314
+        ],
+        "actions": [
+            {
+                "name": "Goblin Miner",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Communal Goblin Area",
+        "location": [
+            15250,
+            5088
+        ],
+        "actions": [
+            {
+                "name": "Goblin Miner"
+            }
+        ]
+    },
+    {
+        "name": "Chuncrates Chamber",
+        "location": [
+            16096,
+            5296
+        ],
+        "actions": []
+    },
+    {
+        "name": "Ratty Terminus",
+        "location": [
+            14689,
+            5227
+        ],
+        "actions": [
+            {
+                "name": "Giant Rat",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Mine Cart Tunnel",
+        "location": [
+            14031,
+            5169
+        ],
+        "actions": [
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Dilapidated Mining Cavern",
+        "location": [
+            13609,
+            5013
+        ],
+        "actions": [
+            {
+                "name": "Iron Ore",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Bridge Cavern",
+        "location": [
+            13869,
+            4542
+        ],
+        "actions": [
+            {
+                "name": "Jangle's Bone Shop",
+                "type": "Seller"
+            },
+            {
+                "name": "Iron Ore",
+                "type": "Miner"
+            },
+            {
+                "name": "Building Materials",
+                "type": "Storage"
+            }
+        ]
+    },
+    {
+        "name": "Jangle's Bone Shop",
+        "location": [
+            13869,
+            4542
+        ],
+        "actions": []
+    },
+    {
+        "name": "Bone Vats",
+        "location": [
+            12867,
+            4223
+        ],
+        "actions": [
+            {
+                "name": "Timber",
+                "type": "Storage"
+            },
+            {
+                "name": "Bonemeal Cement",
+                "type": "Bonewright"
+            },
+            {
+                "name": "Knickknacks",
+                "type": "Bonewright"
+            },
+            {
+                "name": "Bones",
+                "type": "Storage"
+            }
+        ]
+    },
+    {
+        "name": "Leech Pools",
+        "location": [
+            13358,
+            3948
+        ],
+        "actions": [
+            {
+                "name": "Gas Leeches",
+                "type": "Stonemason"
+            }
+        ]
+    },
+    {
+        "name": "Bat Cave",
+        "location": [
+            13798,
+            3950
+        ],
+        "actions": [
+            {
+                "name": "Giant Bat",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Boneworks",
+        "location": [
+            12854,
+            3688
+        ],
+        "actions": [
+            {
+                "name": "Bone Weapon Stations",
+                "type": "Bonewright"
+            }
+        ]
+    },
+    {
+        "name": "Andesite Site",
+        "location": [
+            13866,
+            3375
+        ],
+        "actions": [
+            {
+                "name": "Andesite",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Stalagmite Nook",
+        "location": [
+            13370,
+            3171
+        ],
+        "actions": [
+            {
+                "name": "Andesite",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Purpladium Vein",
+        "location": [
+            13945,
+            2954
+        ],
+        "actions": [
+            {
+                "name": "Electric Snail",
+                "type": "Minefighter"
+            },
+            {
+                "name": "Purpladium",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Gassy Cave",
+        "location": [
+            14444,
+            3314
+        ],
+        "actions": [
+            {
+                "name": "Floor Tentacle",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Gassy Grotto",
+        "location": [
+            15010,
+            3082
+        ],
+        "actions": [
+            {
+                "name": "Soapstone",
+                "type": "Miner"
+            },
+            {
+                "name": "Gas Vents",
+                "type": "Stonemason"
+            }
+        ]
+    },
+    {
+        "name": "Big River Cavern",
+        "location": [
+            14462,
+            4514
+        ],
+        "actions": [
+            {
+                "name": "Gold",
+                "type": "Miner"
+            },
+            {
+                "name": "Corrupted Miner",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Riverside Goblin Cavern",
+        "location": [
+            15201,
+            4547
+        ],
+        "actions": [
+            {
+                "name": "Alabaster",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Upstream Goblin Cavern",
+        "location": [
+            15770,
+            4532
+        ],
+        "actions": [
+            {
+                "name": "Flantium Ore",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "River Bend",
+        "location": [
+            16486,
+            4649
+        ],
+        "actions": [
+            {
+                "name": "Flantium Ore",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Mine of Mantuban Obelisk",
+        "location": [
+            16579,
+            3978
+        ],
+        "actions": [
+            {
+                "name": "Obelisk",
+                "type": "Obelisk"
+            }
+        ]
+    },
+    {
+        "name": "Waterfall",
+        "location": [
+            16649,
+            5161
+        ],
+        "actions": []
+    },
+    {
+        "name": "Kobold Cavern",
+        "location": [
+            15546,
+            3972
+        ],
+        "actions": [
+            {
+                "name": "Kobold",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Grachnid Cave",
+        "location": [
+            15982,
+            3575
+        ],
+        "actions": []
+    },
+    {
+        "name": "Rocky Passage",
+        "location": [
+            14310,
+            3943
+        ],
+        "actions": []
+    },
+    {
+        "name": "Mossy Corner",
+        "location": [
+            14560,
+            4032
+        ],
+        "actions": []
+    },
+    {
+        "name": "Tenebrous Tunnel",
+        "location": [
+            14990,
+            3926
+        ],
+        "actions": [
+            {
+                "name": "Cabranese Ore",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Central Mining Cavern",
+        "location": [
+            14968,
+            3588
+        ],
+        "actions": [
+            {
+                "name": "Cabranese Ore",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Moderate Mineshaft",
+        "location": [
+            14608,
+            2555
+        ],
+        "actions": [
+            {
+                "name": "Floor tentacle",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Rugged Passage",
+        "location": [
+            15024,
+            2408
+        ],
+        "actions": [
+            {
+                "name": "Shinerium",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Strange Junction",
+        "location": [
+            15554,
+            2375
+        ],
+        "actions": [
+            {
+                "name": "Fire Toad",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Outside Hollow",
+        "location": [
+            16209,
+            2294
+        ],
+        "actions": [
+            {
+                "name": "Fire Toad",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Forsaken Mine Workings",
+        "location": [
+            16012,
+            1631
+        ],
+        "actions": [
+            {
+                "name": "Skeleton Miner",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Wretched Excavation",
+        "location": [
+            16478,
+            1670
+        ],
+        "actions": [
+            {
+                "name": "Skeleton Miner",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Lost and Found",
+        "location": [
+            15593,
+            1955
+        ],
+        "actions": []
+    },
+    {
+        "name": "Strange Stairway",
+        "location": [
+            15645,
+            1471
+        ],
+        "actions": []
+    },
+    {
+        "name": "Podium Cave",
+        "location": [
+            15899,
+            728
+        ],
+        "actions": []
+    },
+    {
+        "name": "Goblin Well",
+        "location": [
+            14417,
+            1882
+        ],
+        "actions": []
+    },
+    {
+        "name": "Goblin Storage Cave",
+        "location": [
+            13871,
+            1888
+        ],
+        "actions": []
+    },
+    {
+        "name": "Mine Southwest Portal",
+        "location": [
+            13333,
+            1900
+        ],
+        "actions": [
+            {
+                "name": "Portal Stone",
+                "type": "Portal Stone"
+            }
+        ]
+    },
+    {
+        "name": "Market Tunnel",
+        "location": [
+            13817,
+            1492
+        ],
+        "actions": []
+    },
+    {
+        "name": "Goblin Marketplace",
+        "location": [
+            13227,
+            976
+        ],
+        "actions": [
+            {
+                "name": "Bobble's Oresome Ores",
+                "type": "Seller"
+            },
+            {
+                "name": "Pans and Pickaxes",
+                "type": "Seller"
+            },
+            {
+                "name": "Poffit's Interesting Rocks",
+                "type": "Seller"
+            },
+            {
+                "name": "Mogorob's Stoneware Assortment",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Cave of the Future",
+        "location": [
+            13293,
+            380
+        ],
+        "actions": [
+            {
+                "name": "Divination",
+                "type": "Bonewright"
+            }
+        ]
+    },
+    {
+        "name": "Stonemasonry Room",
+        "location": [
+            14072,
+            904
+        ],
+        "actions": [
+            {
+                "name": "Timber",
+                "type": "Storage"
+            },
+            {
+                "name": "Stone",
+                "type": "Storage"
+            },
+            {
+                "name": "Stone Weapon Stations",
+                "type": "Stonemason"
+            }
+        ]
+    },
+    {
+        "name": "Polished Tunnel",
+        "location": [
+            14253,
+            1485
+        ],
+        "actions": []
+    },
+    {
+        "name": "Goblin Living Quarters",
+        "location": [
+            14631,
+            1562
+        ],
+        "actions": []
+    },
+    {
+        "name": "Sculpting Room",
+        "location": [
+            14756,
+            922
+        ],
+        "actions": [
+            {
+                "name": "T.E.A. Machine",
+                "type": "Stonemason"
+            },
+            {
+                "name": "Stone Sculpting Cart",
+                "type": "Stonemason"
+            },
+            {
+                "name": "Stoneware Bench",
+                "type": "Stonemason"
+            }
+        ]
+    },
+    {
+        "name": "Goblin Workshop",
+        "location": [
+            15084,
+            1812
+        ],
+        "actions": [
+            {
+                "name": "Timber",
+                "type": "Storage"
+            },
+            {
+                "name": "Ore and Ingots",
+                "type": "Storage"
+            },
+            {
+                "name": "Goblin Forge",
+                "type": "Blacksmith"
+            },
+            {
+                "name": "Goblin Smelter",
+                "type": "Blacksmith"
+            }
+        ]
+    },
+    {
+        "name": "Upper River Bend",
+        "location": [
+            16697,
+            5685
+        ],
+        "actions": [
+            {
+                "name": "Granite",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Rockling Cave",
+        "location": [
+            16521,
+            6215
+        ],
+        "actions": [
+            {
+                "name": "Rockling",
+                "type": "Minefighter"
+            },
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Skallek's Dwelling",
+        "location": [
+            17194,
+            6185
+        ],
+        "actions": []
+    },
+    {
+        "name": "Upper Bridge",
+        "location": [
+            17183,
+            5711
+        ],
+        "actions": [
+            {
+                "name": "Dread Shell",
+                "type": "Minefighter"
+            },
+            {
+                "name": "Granite",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Gnome Dwelling",
+        "location": [
+            17160,
+            5164
+        ],
+        "actions": [
+            {
+                "name": "Torreli Jewelry Trading",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Damp Tunnel",
+        "location": [
+            17687,
+            5888
+        ],
+        "actions": [
+            {
+                "name": "Metalith",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Crumbling Passage",
+        "location": [
+            17790,
+            5103
+        ],
+        "actions": [
+            {
+                "name": "Stonewurm",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Rubble Cave",
+        "location": [
+            17807,
+            4486
+        ],
+        "actions": [
+            {
+                "name": "Adathril Ore",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Bronze Gate",
+        "location": [
+            17712,
+            3877
+        ],
+        "actions": [
+            {
+                "name": "Adathril Ore",
+                "type": "Miner"
+            },
+            {
+                "name": "Brimstone",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Stonewurm Nests",
+        "location": [
+            18320,
+            5094
+        ],
+        "actions": [
+            {
+                "name": "Stonewurm",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Rock Strewn Tunnel",
+        "location": [
+            18277,
+            5828
+        ],
+        "actions": [
+            {
+                "name": "Metalith",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Cockroach Lair",
+        "location": [
+            18748,
+            6154
+        ],
+        "actions": [
+            {
+                "name": "Cockroach",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Mutant Cockroaches",
+        "location": [
+            18765,
+            5626
+        ],
+        "actions": [
+            {
+                "name": "Cockroach",
+                "type": "Minefighter"
+            }
+        ]
+    },
+    {
+        "name": "Cave of the Crystal",
+        "location": [
+            19249,
+            5659
+        ],
+        "actions": [
+            {
+                "name": "Marble",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Gnome Forge",
+        "location": [
+            19369,
+            6403
+        ],
+        "actions": [
+            {
+                "name": "Timber",
+                "type": "Storage"
+            },
+            {
+                "name": "Ore and Ingots",
+                "type": "Storage"
+            },
+            {
+                "name": "Gnome Forge",
+                "type": "Blacksmith"
+            },
+            {
+                "name": "Gnome Smelter",
+                "type": "Blacksmith"
+            },
+            {
+                "name": "Jewelry Bench",
+                "type": "Blacksmith"
+            }
+        ]
+    },
+    {
+        "name": "Gnomic Silver Mine",
+        "location": [
+            19931,
+            6365
+        ],
+        "actions": [
+            {
+                "name": "Silver",
+                "type": "Miner"
+            }
+        ]
+    },
+    {
+        "name": "Unicorn Farm",
+        "location": [
+            15636,
+            8628
+        ],
+        "actions": [
+            {
+                "name": "Cheese Shop",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Cyclops Store Cave",
+        "location": [
+            16148,
+            8365
+        ],
+        "actions": [
+            {
+                "name": "Victor T Cyclops",
+                "type": "Merchant"
+            },
+            {
+                "name": "???",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Cyclops Sleeping Cave",
+        "location": [
+            16174,
+            8750
+        ],
+        "actions": []
+    },
+    {
+        "name": "Cyclops Living Area",
+        "location": [
+            16538,
+            8400
+        ],
+        "actions": []
+    },
+    {
+        "name": "Shrubby Canyon",
+        "location": [
+            15066,
+            8409
+        ],
+        "actions": [
+            {
+                "name": "Gremlin",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Boulder Canyon",
+        "location": [
+            15128,
+            7949
+        ],
+        "actions": []
+    },
+    {
+        "name": "Cyclops Canyon",
+        "location": [
+            15537,
+            7940
+        ],
+        "actions": []
+    },
+    {
+        "name": "Stony Canyon",
+        "location": [
+            16139,
+            7926
+        ],
+        "actions": [
+            {
+                "name": "Sabertooth Tiger",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Stony Gorge",
+        "location": [
+            16875,
+            7913
+        ],
+        "actions": [
+            {
+                "name": "Sabertooth Tiger",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Stony Ravine",
+        "location": [
+            17180,
+            8316
+        ],
+        "actions": []
+    },
+    {
+        "name": "Cyclops East Pass",
+        "location": [
+            17647,
+            8325
+        ],
+        "actions": []
+    },
+    {
+        "name": "Rugged Canyon",
+        "location": [
+            14666,
+            7705
+        ],
+        "actions": []
+    },
+    {
+        "name": "Crenopolis Outskirts Portal Stone",
+        "location": [
+            17791,
+            7904
+        ],
+        "actions": [
+            {
+                "name": "Portal Stone",
+                "type": "Portal Stone"
+            }
+        ]
+    },
+    {
+        "name": "Road to Crenopolis",
+        "location": [
+            17894,
+            8754
+        ],
+        "actions": []
+    },
+    {
+        "name": "Fortunehold",
+        "location": [
+            18293,
+            11570
+        ],
+        "actions": []
+    },
+    {
+        "name": "Fortunehold Farm",
+        "location": [
+            18194,
+            10969
+        ],
+        "actions": [
+            {
+                "name": "Fortunehold Farm",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Fortunehold Meadow",
+        "location": [
+            17738,
+            10196
+        ],
+        "actions": []
+    },
+    {
+        "name": "Rockbird Clearing",
+        "location": [
+            18102,
+            9372
+        ],
+        "actions": [
+            {
+                "name": "Rockbird",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "West Gate",
+        "location": [
+            18427,
+            8708
+        ],
+        "actions": [
+            {
+                "name": "Cinnamon Sticks",
+                "type": "Merchant"
+            },
+            {
+                "name": "Grapes",
+                "type": "Merchant"
+            }
+        ]
+    },
+    {
+        "name": "Sewer Pipes",
+        "location": [
+            19404,
+            12072
+        ],
+        "actions": [
+            {
+                "name": "Sewer Fiend",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Southwest Sewer",
+        "location": [
+            19369,
+            11585
+        ],
+        "actions": [
+            {
+                "name": "Sewer Fiend",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Dismal Drainage",
+        "location": [
+            19851,
+            11592
+        ],
+        "actions": [
+            {
+                "name": "Mawchest",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Sewer Entrance",
+        "location": [
+            20331,
+            11599
+        ],
+        "actions": [
+            {
+                "name": "Mawchest",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Sewer Pool",
+        "location": [
+            20874,
+            12177
+        ],
+        "actions": [
+            {
+                "name": "Spectral Stalker",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Southeast Sewer",
+        "location": [
+            20807,
+            11666
+        ],
+        "actions": [
+            {
+                "name": "Spectral Stalker",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Sewer Gate",
+        "location": [
+            20338,
+            11218
+        ],
+        "actions": []
+    },
+    {
+        "name": "Crenobelisk",
+        "location": [
+            19837,
+            10741
+        ],
+        "actions": [
+            {
+                "name": "Obelisk",
+                "type": "Obelisk"
+            }
+        ]
+    },
+    {
+        "name": "Sludge Street",
+        "location": [
+            20338,
+            10836
+        ],
+        "actions": []
+    },
+    {
+        "name": "Meggrit's Market",
+        "location": [
+            19265,
+            10342
+        ],
+        "actions": [
+            {
+                "name": "Francesca's Fruit Stall",
+                "type": "Merchant"
+            },
+            {
+                "name": "Snitch's Watches",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Murkwell Court",
+        "location": [
+            19820,
+            10214
+        ],
+        "actions": [
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Ratmen Den",
+        "location": [
+            19248,
+            9690
+        ],
+        "actions": [
+            {
+                "name": "Ratman Chief",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Rat Alley",
+        "location": [
+            19757,
+            9627
+        ],
+        "actions": [
+            {
+                "name": "Ratman Grunt",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Soap Shop",
+        "location": [
+            20986,
+            10481
+        ],
+        "actions": [
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Merchant"
+            }
+        ]
+    },
+    {
+        "name": "Dawkin Court",
+        "location": [
+            21696,
+            10290
+        ],
+        "actions": [
+            {
+                "name": "Street Hag",
+                "type": "Watchperson"
+            },
+            {
+                "name": "Gangsters' Stakeout",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Dawkin Lane",
+        "location": [
+            21051,
+            10133
+        ],
+        "actions": [
+            {
+                "name": "Street Hag",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Investigation Hall",
+        "location": [
+            21238,
+            9580
+        ],
+        "actions": [
+            {
+                "name": "Investigations",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Guard's Archive",
+        "location": [
+            21601,
+            9580
+        ],
+        "actions": [
+            {
+                "name": "Evidence Fling",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Bladrick's Armory",
+        "location": [
+            19054,
+            9134
+        ],
+        "actions": [
+            {
+                "name": "Bladrick's Armory",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Hopton Corner",
+        "location": [
+            19707,
+            9166
+        ],
+        "actions": [
+            {
+                "name": "Spice Stall",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spice Stall",
+                "type": "Merchant"
+            }
+        ]
+    },
+    {
+        "name": "Forensics Lab",
+        "location": [
+            20348,
+            9110
+        ],
+        "actions": [
+            {
+                "name": "Potions",
+                "type": "Storage"
+            },
+            {
+                "name": "Forensics",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Guardhouse Lobby",
+        "location": [
+            21193,
+            9119
+        ],
+        "actions": [
+            {
+                "name": "Detective Depot",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Interrogation Room",
+        "location": [
+            21680,
+            9106
+        ],
+        "actions": [
+            {
+                "name": "Interrogation",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Lord's Road West",
+        "location": [
+            19199,
+            8685
+        ],
+        "actions": [
+            {
+                "name": "Butchers Stall",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Lord's Road Central",
+        "location": [
+            20183,
+            8678
+        ],
+        "actions": [
+            {
+                "name": "Vase Stall",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Lord's Road East",
+        "location": [
+            21047,
+            8637
+        ],
+        "actions": [
+            {
+                "name": "Penny's Clockwork",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            },
+            {
+                "name": "Wanted Posters",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Lord's Road New",
+        "location": [
+            21687,
+            8673
+        ],
+        "actions": [
+            {
+                "name": "Leather Goods",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Cobble Corner",
+        "location": [
+            19068,
+            8033
+        ],
+        "actions": [
+            {
+                "name": "Hermar's Homeware",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Greengrocers",
+        "location": [
+            20004,
+            8313
+        ],
+        "actions": [
+            {
+                "name": "Greengrocers",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Cabbage Stall",
+                "type": "Seller"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Dusty Nook",
+        "location": [
+            19456,
+            7457
+        ],
+        "actions": [
+            {
+                "name": "Brute",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Dusty Alley",
+        "location": [
+            19867,
+            7466
+        ],
+        "actions": [
+            {
+                "name": "Zombie",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Twiddle Corner",
+        "location": [
+            19899,
+            7930
+        ],
+        "actions": []
+    },
+    {
+        "name": "Four Winds Bar",
+        "location": [
+            20735,
+            7560
+        ],
+        "actions": [
+            {
+                "name": "Muggers' Stakeout",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Snag Alley",
+        "location": [
+            21077,
+            8051
+        ],
+        "actions": [
+            {
+                "name": "Street Brawler",
+                "type": "Watchperson"
+            },
+            {
+                "name": "Muggers' Stakeout",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Goose Inn Guest Room 1",
+        "location": [
+            21753,
+            8250
+        ],
+        "actions": []
+    },
+    {
+        "name": "Goose Inn Guest Room 2",
+        "location": [
+            21698,
+            7817
+        ],
+        "actions": []
+    },
+    {
+        "name": "Dusty Corner",
+        "location": [
+            19844,
+            7152
+        ],
+        "actions": [
+            {
+                "name": "Zombie",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Morose Lane West",
+        "location": [
+            20328,
+            7141
+        ],
+        "actions": []
+    },
+    {
+        "name": "Morose Lane East",
+        "location": [
+            21160,
+            7181
+        ],
+        "actions": []
+    },
+    {
+        "name": "Lani's Curiosities",
+        "location": [
+            20672,
+            6837
+        ],
+        "actions": [
+            {
+                "name": "Clock Stall",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            }
+        ]
+    },
+    {
+        "name": "Thimble Lane",
+        "location": [
+            21859,
+            7172
+        ],
+        "actions": [
+            {
+                "name": "Smugglers' Stakeout",
+                "type": "Detective"
+            },
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Geld Family Residence",
+        "location": [
+            21610,
+            6828
+        ],
+        "actions": [
+            {
+                "name": "Smugglers' Den",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Geld Family Logistics",
+        "location": [
+            22028,
+            6788
+        ],
+        "actions": [
+            {
+                "name": "Smugglers' Den",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "The Frog and Barnacle",
+        "location": [
+            21168,
+            6364
+        ],
+        "actions": []
+    },
+    {
+        "name": "Waterfront Market",
+        "location": [
+            21793,
+            6364
+        ],
+        "actions": [
+            {
+                "name": "Jenneira's Wines",
+                "type": "Merchant"
+            },
+            {
+                "name": "Textile Stall",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            },
+            {
+                "name": "???",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Waterfront",
+        "location": [
+            22614,
+            6313
+        ],
+        "actions": [
+            {
+                "name": "Hide Stall",
+                "type": "Seller"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            },
+            {
+                "name": "Building Materials",
+                "type": "Storage"
+            }
+        ]
+    },
+    {
+        "name": "Tanners Road",
+        "location": [
+            23412,
+            6318
+        ],
+        "actions": [
+            {
+                "name": "Toy Stall",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Tannery",
+        "location": [
+            24222,
+            6330
+        ],
+        "actions": [
+            {
+                "name": "Tanning Stations",
+                "type": "Leatherworker"
+            },
+            {
+                "name": "Hides",
+                "type": "Storage"
+            }
+        ]
+    },
+    {
+        "name": "Pier Two",
+        "location": [
+            22220,
+            5528
+        ],
+        "actions": [
+            {
+                "name": "Bricks",
+                "type": "Merchant"
+            },
+            {
+                "name": "Tiles",
+                "type": "Merchant"
+            }
+        ]
+    },
+    {
+        "name": "Pier One",
+        "location": [
+            23068,
+            5497
+        ],
+        "actions": []
+    },
+    {
+        "name": "Quibble Lane",
+        "location": [
+            23961,
+            5786
+        ],
+        "actions": [
+            {
+                "name": "Spiky Ball",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Smuggler's Cove",
+        "location": [
+            24060,
+            5204
+        ],
+        "actions": [
+            {
+                "name": "Giant Slug",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Goose Inn Bar",
+        "location": [
+            22099,
+            8028
+        ],
+        "actions": []
+    },
+    {
+        "name": "Goose Inn Kitchen",
+        "location": [
+            22264,
+            7560
+        ],
+        "actions": [
+            {
+                "name": "Chef",
+                "type": "Merchant"
+            }
+        ]
+    },
+    {
+        "name": "Bobbin Road North",
+        "location": [
+            22555,
+            8025
+        ],
+        "actions": []
+    },
+    {
+        "name": "Leatherworks",
+        "location": [
+            22948,
+            7981
+        ],
+        "actions": [
+            {
+                "name": "Knickknacks",
+                "type": "Leatherworker"
+            },
+            {
+                "name": "Upholstery",
+                "type": "Leatherworker"
+            },
+            {
+                "name": "Leathers",
+                "type": "Storage"
+            }
+        ]
+    },
+    {
+        "name": "Ratmore Rise",
+        "location": [
+            23357,
+            7709
+        ],
+        "actions": [
+            {
+                "name": "Trash Heap Monster",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "West Player Market",
+        "location": [
+            23750,
+            8554
+        ],
+        "actions": [
+            {
+                "name": "Counterfeiters' Stakeout",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Oscen's Warehouse",
+        "location": [
+            23776,
+            7945
+        ],
+        "actions": [
+            {
+                "name": "Burglars' Den",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "South Player Market",
+        "location": [
+            24272,
+            8206
+        ],
+        "actions": [
+            {
+                "name": "Burglars' Stakeout",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Market Chambers",
+        "location": [
+            24254,
+            7582
+        ],
+        "actions": [
+            {
+                "name": "Burglars' Den",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Bobbin Road South",
+        "location": [
+            22573,
+            7190
+        ],
+        "actions": [
+            {
+                "name": "Candice's Candles",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Ratmore Road",
+        "location": [
+            23699,
+            6995
+        ],
+        "actions": [
+            {
+                "name": "Burglars' Stakeout",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "City Dyes",
+        "location": [
+            24225,
+            7031
+        ],
+        "actions": [
+            {
+                "name": "Dyes",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Peacock Road South",
+        "location": [
+            22499,
+            9532
+        ],
+        "actions": [
+            {
+                "name": "Pearl Stall",
+                "type": "Seller"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Slant Street",
+        "location": [
+            23129,
+            9615
+        ],
+        "actions": [
+            {
+                "name": "Counterfeiters' Stakeout",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Slant Street Cart House",
+        "location": [
+            23240,
+            9222
+        ],
+        "actions": [
+            {
+                "name": "Counterfeiters' Den",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Dilapidated Warehouse",
+        "location": [
+            23773,
+            9665
+        ],
+        "actions": [
+            {
+                "name": "Counterfeiters' Den",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Thadwick Square",
+        "location": [
+            22392,
+            8723
+        ],
+        "actions": [
+            {
+                "name": "Hallick's Street Food",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Outer Market",
+        "location": [
+            23087,
+            8700
+        ],
+        "actions": [
+            {
+                "name": "Leather Stall",
+                "type": "Seller"
+            },
+            {
+                "name": "Leather Offcuts",
+                "type": "Merchant"
+            },
+            {
+                "name": "Souvenir Stall",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "North Player Market",
+        "location": [
+            24315,
+            9423
+        ],
+        "actions": []
+    },
+    {
+        "name": "Merchants' Guild",
+        "location": [
+            24301,
+            8806
+        ],
+        "actions": [
+            {
+                "name": "Janessa's Delicacies",
+                "type": "Merchant"
+            },
+            {
+                "name": "Guild Bounty Board",
+                "type": "Merchant"
+            }
+        ]
+    },
+    {
+        "name": "East Player Market",
+        "location": [
+            24843,
+            8810
+        ],
+        "actions": []
+    },
+    {
+        "name": "Henderson's Meat Storehouse",
+        "location": [
+            25297,
+            9116
+        ],
+        "actions": [
+            {
+                "name": "Henderson's Meat",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Bert's Gallery",
+        "location": [
+            25344,
+            8550
+        ],
+        "actions": [
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Council Office",
+        "location": [
+            24834,
+            9564
+        ],
+        "actions": [
+            {
+                "name": "Change Name",
+                "type": "Seller"
+            }
+        ]
+    },
+    {
+        "name": "Crenopolis Market Portal Stone",
+        "location": [
+            24888,
+            7963
+        ],
+        "actions": [
+            {
+                "name": "Portal Stone",
+                "type": "Portal Stone"
+            }
+        ]
+    },
+    {
+        "name": "Peacock Road Central",
+        "location": [
+            22497,
+            10363
+        ],
+        "actions": [
+            {
+                "name": "Tommy Shoes' Wines",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            },
+            {
+                "name": "???",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Private Road",
+        "location": [
+            23085,
+            10692
+        ],
+        "actions": [
+            {
+                "name": "Storage Rift",
+                "type": "Storage Rift"
+            }
+        ]
+    },
+    {
+        "name": "Bogg's Antiques",
+        "location": [
+            23150,
+            10139
+        ],
+        "actions": [
+            {
+                "name": "Bogg's Antiques",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            }
+        ]
+    },
+    {
+        "name": "East Courtyard",
+        "location": [
+            24313,
+            10664
+        ],
+        "actions": []
+    },
+    {
+        "name": "Helfar's Wall",
+        "location": [
+            23711,
+            10605
+        ],
+        "actions": []
+    },
+    {
+        "name": "Peacock Road North",
+        "location": [
+            22478,
+            11523
+        ],
+        "actions": [
+            {
+                "name": "Olives",
+                "type": "Merchant"
+            },
+            {
+                "name": "Monocle Market",
+                "type": "Merchant"
+            },
+            {
+                "name": "Stall Assistant",
+                "type": "Merchant"
+            },
+            {
+                "name": "Olive Stall",
+                "type": "Seller"
+            },
+            {
+                "name": "Spotting Thieves",
+                "type": "Detective"
+            }
+        ]
+    },
+    {
+        "name": "Hamila Jimore's Garden",
+        "location": [
+            22970,
+            11674
+        ],
+        "actions": [
+            {
+                "name": "Giant Wasp",
+                "type": "Watchperson"
+            }
+        ]
+    },
+    {
+        "name": "Hamila Jimore's Hallway",
+        "location": [
+            22965,
+            11190
+        ],
+        "actions": []
+    },
+    {
+        "name": "Helfar's Gate",
+        "location": [
+            23850,
+            11217
+        ],
+        "actions": []
+    },
+    {
+        "name": "Fountain of Delight",
+        "location": [
+            22512,
+            13445
+        ],
+        "actions": []
+    },
+    {
+        "name": "Kaynat's Hall",
+        "location": [
+            22517,
+            12958
+        ],
+        "actions": []
+    },
+    {
+        "name": "Kaynat's Garden",
+        "location": [
+            22523,
+            12471
+        ],
+        "actions": []
+    },
+    {
+        "name": "Fillan's Storeroom",
+        "location": [
+            21945,
+            12375
+        ],
+        "actions": []
+    },
+    {
+        "name": "Fillan's Living Room",
+        "location": [
+            22131,
+            11990
+        ],
+        "actions": []
+    },
+    {
+        "name": "Fillan's Bedroom",
+        "location": [
+            21686,
+            11975
+        ],
+        "actions": []
+    },
+    {
+        "name": "Vestere Drive",
+        "location": [
+            23109,
+            12076
+        ],
+        "actions": [
+            {
+                "name": "Giant Wasp",
+                "type": "Watchperson"
+            }
         ]
     }
-    // More rooms as needed
-];
+]

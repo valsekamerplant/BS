@@ -29,10 +29,10 @@ export const PROFESSIONS = {
 
 
 export const combatProfessions = [PROFESSIONS.GUARD, PROFESSIONS.SCOUT, PROFESSIONS.MINEFIGHTER, PROFESSIONS.WATCHPERSON]
-export const legendItems = [PROFESSIONS.STORAGE, PROFESSIONS.OBELISK, PROFESSIONS.PORTALSTONE, PROFESSIONS.STORAGERIFT]
+export const legendItems = [ PROFESSIONS.STORAGE, PROFESSIONS.OBELISK, PROFESSIONS.PORTALSTONE, PROFESSIONS.STORAGERIFT]
 
 
-export const iconScale = 32 / 64;
+export const iconScale = 0.5;
 
 export const iconSpriteInfo: { [key: string]: { x: number; y: number; width: number; height: number } } = {
 	[PROFESSIONS.STORAGE]: { x: 330, y: 0, width: 66, height: 66 },

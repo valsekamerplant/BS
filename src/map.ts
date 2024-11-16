@@ -5,7 +5,7 @@ import { Icon, Style } from 'ol/style';
 
 export const map = new Map({
     target: 'map',
-    layers: [ backgroundLayer, highlightLayer,roomLayer,skillingLayer, ...Object.values(legendLayers)],
+    layers: [backgroundLayer, highlightLayer, roomLayer, skillingLayer, ...Object.values(legendLayers)],
     view: new View({
         projection: projection,
         resolutions: backgroundLayer.getSource()!.getTileGrid()!.getResolutions()!,
@@ -14,7 +14,6 @@ export const map = new Map({
         zoom: 0,
         minZoom: 0,
         maxZoom: maxZoom,
-        constrainResolution: true,
     }),
 });
 
@@ -112,16 +111,16 @@ map.on('pointermove', (event: any) => {
 map.getView().on('change:resolution', () => {
     const currentZoom = map.getView().getZoom()!;
     const maxZoom = map.getView().getMaxZoom();
-  
+
     // Calculate the scale based on current zoom level relative to max zoom
     const scaleFactor = Math.pow(2, currentZoom - maxZoom);
-  
+
     // Iterate over all features to update their scale dynamically
     skillingSource.getFeatures().forEach(feature => {
-      const iconStyle = feature.getStyle() as Style;
-      if (iconStyle && iconStyle.getImage() instanceof Icon) {
-        const icon = iconStyle.getImage() as Icon;
-        icon.setScale(scaleFactor); // Dynamically adjust scale relative to zoom level
-      }
+        const iconStyle = feature.getStyle() as Style;
+        if (iconStyle && iconStyle.getImage() instanceof Icon) {
+            const icon = iconStyle.getImage() as Icon;
+            icon.setScale(scaleFactor); // Dynamically adjust scale relative to zoom level
+        }
     });
-  });
+});

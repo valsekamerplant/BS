@@ -30,7 +30,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Sea Road" }
     },
     {
       "type": "Feature",
@@ -67,7 +67,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Salty Swine" }
     },
     {
       "type": "Feature",
@@ -88,7 +88,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Scrapyard" }
     },
     {
       "type": "Feature",
@@ -131,7 +131,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Overgrown Pond" }
     },
     {
       "type": "Feature",
@@ -152,7 +152,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "The Delectable Dab Restaurant" }
     },
     {
       "type": "Feature",
@@ -169,7 +169,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Gwen's Lumber" }
     },
     {
       "type": "Feature",
@@ -226,7 +226,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Timberwell Green" }
     },
     {
       "type": "Feature",
@@ -247,7 +247,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Vacant Pier" }
     },
     {
       "type": "Feature",
@@ -282,7 +282,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Vincible" }
     },
     {
       "type": "Feature",
@@ -309,7 +309,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "East Waterfront" }
     },
     {
       "type": "Feature",
@@ -349,7 +349,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Training Ground" }
     },
     {
       "type": "Feature",
@@ -382,7 +382,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Stone Street" }
     },
     {
       "type": "Feature",
@@ -413,7 +413,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Cliffside Shortcut" }
     },
     {
       "type": "Feature",
@@ -480,7 +480,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Huntsman's Clearing" }
     },
     {
       "type": "Feature",
@@ -525,7 +525,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Timberwell Side Road" }
     },
     {
       "type": "Feature",
@@ -544,7 +544,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Mine Road West" }
     },
     {
       "type": "Feature",
@@ -609,7 +609,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Goblin Camp" }
     },
     {
       "type": "Feature",
@@ -654,7 +654,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Logging Area" }
     },
     {
       "type": "Feature",
@@ -683,7 +683,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Cyclops Path" }
     },
     {
       "type": "Feature",
@@ -712,7 +712,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Cliffside Junction" }
     },
     {
       "type": "Feature",
@@ -755,7 +755,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Snakes Clearing" }
     },
     {
       "type": "Feature",
@@ -788,7 +788,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Overgrow Road" }
     },
     {
       "type": "Feature",
@@ -827,7 +827,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Seashells Seashore" }
     },
     {
       "type": "Feature",
@@ -864,7 +864,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Overgrown Field" }
     },
     {
       "type": "Feature",
@@ -885,7 +885,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "The Hooked Hand" }
     },
     {
       "type": "Feature",
@@ -914,7 +914,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Central Waterfront" }
     },
     {
       "type": "Feature",
@@ -931,7 +931,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Eel Street" }
     },
     {
       "type": "Feature",
@@ -958,7 +958,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Rubble Road" }
     },
     {
       "type": "Feature",
@@ -979,7 +979,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Brannof Boulevard" }
     },
     {
       "type": "Feature",
@@ -1000,7 +1000,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "The Delectable Dab Kitchen" }
     },
     {
       "type": "Feature",
@@ -1019,7 +1019,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Hopeport Portal Stone" }
     },
     {
       "type": "Feature",
@@ -1042,7 +1042,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Murk Close" }
     },
     {
       "type": "Feature",
@@ -1063,7 +1063,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Limpet Lane" }
     },
     {
       "type": "Feature",
@@ -1084,7 +1084,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Wilhope Crossing" }
     },
     {
       "type": "Feature",
@@ -1117,7 +1117,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Eel street Bridge" }
     },
     {
       "type": "Feature",
@@ -1152,7 +1152,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Town Square" }
     },
     {
       "type": "Feature",
@@ -1171,7 +1171,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Wilhope Passage" }
     },
     {
       "type": "Feature",
@@ -1204,7 +1204,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Little Square" }
     },
     {
       "type": "Feature",
@@ -1221,7 +1221,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Old Street East" }
     },
     {
       "type": "Feature",
@@ -1242,7 +1242,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Melvs Fishing Supplies" }
     },
     {
       "type": "Feature",
@@ -1263,7 +1263,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Captain Degreene's Office" }
     },
     {
       "type": "Feature",
@@ -1284,7 +1284,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Hairdresser" }
     },
     {
       "type": "Feature",
@@ -1305,7 +1305,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "The Cloakroom" }
     },
     {
       "type": "Feature",
@@ -1322,7 +1322,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Pipe Alley" }
     },
     {
       "type": "Feature",
@@ -1341,7 +1341,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "The Forager's Warehouse" }
     },
     {
       "type": "Feature",
@@ -1366,7 +1366,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "Secluded Dead End" }
     },
     {
       "type": "Feature",
@@ -1409,7 +1409,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Magic Cave" }
     },
     {
       "type": "Feature",
@@ -1446,7 +1446,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "Path of Good Intentions" }
     },
     {
       "type": "Feature",
@@ -1471,7 +1471,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Fern Junction" }
     },
     {
       "type": "Feature",
@@ -1498,7 +1498,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Quiet Grove" }
     },
     {
       "type": "Feature",
@@ -1539,7 +1539,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Ivy Junction" }
     },
     {
       "type": "Feature",
@@ -1568,7 +1568,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Stumped Path" }
     },
     {
       "type": "Feature",
@@ -1605,7 +1605,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Snakes Path" }
     },
     {
       "type": "Feature",
@@ -1632,7 +1632,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Cutters Clearing" }
     },
     {
       "type": "Feature",
@@ -1673,7 +1673,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Treeway Trail" }
     },
     {
       "type": "Feature",
@@ -1698,7 +1698,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "The Color Wheel" }
     },
     {
       "type": "Feature",
@@ -1745,7 +1745,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Mushroom Glade" }
     },
     {
       "type": "Feature",
@@ -1762,7 +1762,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "South Walls" }
     },
     {
       "type": "Feature",
@@ -1783,7 +1783,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Naybeth's House" }
     },
     {
       "type": "Feature",
@@ -1812,7 +1812,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Leafy Lane" }
     },
     {
       "type": "Feature",
@@ -1853,7 +1853,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Dryad Glade" }
     },
     {
       "type": "Feature",
@@ -1890,7 +1890,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Secluded Path" }
     },
     {
       "type": "Feature",
@@ -1911,7 +1911,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Tangled Path" }
     },
     {
       "type": "Feature",
@@ -1940,7 +1940,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Luscious Glade" }
     },
     {
       "type": "Feature",
@@ -1973,7 +1973,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Secluded Junction" }
     },
     {
       "type": "Feature",
@@ -2024,7 +2024,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Stump Clearing" }
     },
     {
       "type": "Feature",
@@ -2057,7 +2057,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Berry Glade" }
     },
     {
       "type": "Feature",
@@ -2092,7 +2092,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Ivy Path" }
     },
     {
       "type": "Feature",
@@ -2135,7 +2135,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Central Crossroads" }
     },
     {
       "type": "Feature",
@@ -2166,7 +2166,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Hopeforest Central Portal Stone" }
     },
     {
       "type": "Feature",
@@ -2195,7 +2195,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Shortcut" }
     },
     {
       "type": "Feature",
@@ -2260,7 +2260,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Twisted Road" }
     },
     {
       "type": "Feature",
@@ -2297,7 +2297,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Twisted Junction" }
     },
     {
       "type": "Feature",
@@ -2328,7 +2328,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Mushroom Grove" }
     },
     {
       "type": "Feature",
@@ -2351,7 +2351,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Bramble Path" }
     },
     {
       "type": "Feature",
@@ -2394,7 +2394,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Overgrown Trail" }
     },
     {
       "type": "Feature",
@@ -2425,7 +2425,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Gnarled Path" }
     },
     {
       "type": "Feature",
@@ -2474,7 +2474,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Wolves' Den" }
     },
     {
       "type": "Feature",
@@ -2525,7 +2525,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Crystal Clearing" }
     },
     {
       "type": "Feature",
@@ -2552,7 +2552,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Cliffside Trail" }
     },
     {
       "type": "Feature",
@@ -2587,7 +2587,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Central Junction" }
     },
     {
       "type": "Feature",
@@ -2614,7 +2614,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Ivy Trail" }
     },
     {
       "type": "Feature",
@@ -2637,7 +2637,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Small Clearing"}
     },
     {
       "type": "Feature",
@@ -2678,7 +2678,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "Barricades" }
     },
     {
       "type": "Feature",
@@ -2731,7 +2731,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "Cliffside Path" }
     },
     {
       "type": "Feature",
@@ -2764,7 +2764,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "North Central Path" }
     },
     {
       "type": "Feature",
@@ -2795,7 +2795,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Canopy Lane" }
     },
     {
       "type": "Feature",
@@ -2822,7 +2822,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Canopy Junction" }
     },
     {
       "type": "Feature",
@@ -2857,7 +2857,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Treeway Junction" }
     },
     {
       "type": "Feature",
@@ -2914,7 +2914,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Treeway Clearing" }
     },
     {
       "type": "Feature",
@@ -2947,7 +2947,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Road to Nowhere Much" }
     },
     {
       "type": "Feature",
@@ -2988,7 +2988,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Bear Clearing" }
     },
     {
       "type": "Feature",
@@ -3027,7 +3027,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Two Headed Bear Clearing" }
     },
     {
       "type": "Feature",
@@ -3066,7 +3066,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Leafy Junction" }
     },
     {
       "type": "Feature",
@@ -3111,7 +3111,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Bear Behind" }
     },
     {
       "type": "Feature",
@@ -3132,7 +3132,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Tangled Lane" }
     },
     {
       "type": "Feature",
@@ -3161,7 +3161,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Narrow Path" }
     },
     {
       "type": "Feature",
@@ -3188,7 +3188,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Thin Trail" }
     },
     {
       "type": "Feature",
@@ -3209,7 +3209,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "North Walls" }
     },
     {
       "type": "Feature",
@@ -3228,7 +3228,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Town Gates" }
     },
     {
       "type": "Feature",
@@ -3253,7 +3253,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Road to Hopeport" }
     },
     {
       "type": "Feature",
@@ -3296,7 +3296,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Forest Clearing" }
     },
     {
       "type": "Feature",
@@ -3323,7 +3323,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Forest Path" }
     },
     {
       "type": "Feature",
@@ -3340,7 +3340,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Huntsman's Lodge" }
     },
     {
       "type": "Feature",
@@ -3360,7 +3360,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Timberwell Supplies" }
     },
     {
       "type": "Feature",
@@ -3405,7 +3405,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Timberwell Road" }
     },
     {
       "type": "Feature",
@@ -3430,7 +3430,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Huntsman's Path" }
     },
     {
       "type": "Feature",
@@ -3453,7 +3453,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Apothecary" }
     },
     {
       "type": "Feature",
@@ -3478,7 +3478,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Quartermaster" }
     },
     {
       "type": "Feature",
@@ -3503,7 +3503,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "Infirmary" }
     },
     {
       "type": "Feature",
@@ -3526,7 +3526,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "Barracks" }
     },
     {
       "type": "Feature",
@@ -3543,7 +3543,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Old Street West" }
     },
     {
       "type": "Feature",
@@ -3560,7 +3560,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Monob Row" }
     },
     {
       "type": "Feature",
@@ -3577,7 +3577,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Tim's Alley" }
     },
     {
       "type": "Feature",
@@ -3598,7 +3598,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Enchantress Shop" }
     },
     {
       "type": "Feature",
@@ -3615,7 +3615,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Nook Alley" }
     },
     {
       "type": "Feature",
@@ -3651,7 +3651,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Mr McGrish's Garden" }
     },
     {
       "type": "Feature",
@@ -3682,7 +3682,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Ferry South Shore" }
     },
     {
       "type": "Feature",
@@ -3699,7 +3699,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Mr McGrish's House" }
     },
     {
       "type": "Feature",
@@ -3732,7 +3732,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Hopeforest Ferry" }
     },
     {
       "type": "Feature",
@@ -3767,7 +3767,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Himatik Ruins" }
     },
     {
       "type": "Feature",
@@ -3800,7 +3800,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Ferry Crossing" }
     },
     {
       "type": "Feature",
@@ -3825,7 +3825,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Carpenter's Workshop" }
     },
     {
       "type": "Feature",
@@ -3842,7 +3842,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Tarana And Aiden's Home" }
     },
     {
       "type": "Feature",
@@ -3877,7 +3877,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Tree Lined Track" }
     },
     {
       "type": "Feature",
@@ -3904,7 +3904,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Tree Lined Trail" }
     },
     {
       "type": "Feature",
@@ -3921,7 +3921,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "Brannof's Dining Room" }
     },
     {
       "type": "Feature",
@@ -3950,7 +3950,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Brannof Hall's Hallway" }
     },
     {
       "type": "Feature",
@@ -3967,7 +3967,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Brannof's Chamber" }
     },
     {
       "type": "Feature",
@@ -3988,7 +3988,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name":  "Sparring Area" }
     },
     {
       "type": "Feature",
@@ -4005,7 +4005,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Boardwalk" }
     },
     {
       "type": "Feature",
@@ -4034,7 +4034,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Little Lucy" }
     },
     {
       "type": "Feature",
@@ -4059,7 +4059,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "West Waterfront" }
     },
     {
       "type": "Feature",
@@ -4090,7 +4090,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "East Beach" }
     },
     {
       "type": "Feature",
@@ -4139,7 +4139,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Fallen Monument" }
     },
     {
       "type": "Feature",
@@ -4192,7 +4192,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Wasteland" }
     },
     {
       "type": "Feature",
@@ -4259,7 +4259,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Rocky Road" }
     },
     {
       "type": "Feature",
@@ -4298,7 +4298,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Starfish Point" }
     },
     {
       "type": "Feature",
@@ -4327,7 +4327,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Ray Bay" }
     },
     {
       "type": "Feature",
@@ -4372,7 +4372,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Pirate Hideout" }
     },
     {
       "type": "Feature",
@@ -4403,7 +4403,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Jellyfish Landing" }
     },
     {
       "type": "Feature",
@@ -4450,7 +4450,7 @@
           ]
         ]
       },
-      "properties": { "name": null }
+      "properties": { "name": "Crater" }
     }
   ]
 }

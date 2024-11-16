@@ -1,11 +1,11 @@
 import { Feature } from 'ol';
-import { getCenter } from 'ol/extent';
+import { getCenter, getHeight } from 'ol/extent';
 import { LineString, Point, Polygon } from 'ol/geom';
 import { Vector as VectorLayer } from 'ol/layer';
 import TileLayer from 'ol/layer/Tile';
 import { Projection } from 'ol/proj';
 import { Vector as VectorSource, Zoomify } from 'ol/source';
-import { Circle, Fill, Icon, Stroke, Style } from 'ol/style';
+import { Circle, Fill, Icon, Stroke, Style, Text } from 'ol/style';
 import { iconScale, iconSpriteInfo, legendItems } from './constants';
 import { map, tooltipElement, tooltipOverlay } from './map';
 import { rooms } from './rooms';
@@ -21,9 +21,10 @@ export const tileUnit = 48;
 const imageWidth = 19200 / scale; // Replace with the actual width of the original image
 const imageHeight = 14400 / scale;
 export const mapExtent = [0, 0, imageWidth, imageHeight];
-
+const oldExtent = [0, 0, 6754, 3668];
 export const resolutions = Array.from({ length: maxZoom + 1 }, (_, z) => Math.pow(2, maxZoom - z))
-
+const scaleFactorX = mapExtent[2] / oldExtent[2];  // New width / Old width
+const scaleFactorY = mapExtent[3] / oldExtent[3];
 export const projection = new Projection({
   code: 'shores',
   units: 'pixels',
@@ -51,45 +52,85 @@ function fillSourceFeatures(fileName: string, source: VectorSource, isGeo = fals
     .then(response => response.json())
     .then(data => {
       if (isGeo) {
-        const geojsonFeatures = new GeoJSON().readFeatures(data, {
+        const geojsonFeatures = new GeoJSON().readFeatures((data), {
           dataProjection: 'shores',
           featureProjection: projection,
         });
+        geojsonFeatures.forEach((feature, index: number) => {
+          // Extract name or label from the feature properties (assuming there is a 'name' property)
+          const featureName = feature.get('name') || index.toString();
+
+          // Create a style for the feature with a label
+          const featureStyle = new Style({
+            stroke: new Stroke({
+              color: '#ffcc33', // Color of the polygon border
+              width: 2,
+            }),
+            fill: new Fill({
+              color: 'rgba(255, 204, 51, 0.2)', // Semi-transparent fill color
+            }),
+            text: new Text({
+              font: '16px Calibri,sans-serif', // Font type and size for the label
+              text: featureName, // Use the feature's name as the label
+              fill: new Fill({ color: '#000' }), // Label text color (black)
+              stroke: new Stroke({ color: '#fff', width: 3 }), // Outline color and width for better visibility
+              overflow: true, // Allow text overflow for better placement
+            }),
+
+          });// Set the style for the feature
+          feature.setStyle(featureStyle);
+        });
         source.addFeatures(geojsonFeatures);
-        scaleVectorLayerToMatchTileUnits(source,48);
+        // Check each point and determine if it overlaps with any room (polygon)
+        
+        scaleVectorLayerToMatchTileUnits(source, 48);
+
+        rooms.forEach((point) => {
+          const pointCoords: [number, number] = [point.location[0], point.location[1]];
+          const matchingPolygon = findMatchingPolygonForPoint(pointCoords, geojsonFeatures);
+
+          if (matchingPolygon) {
+            console.log(matchingPolygon)
+            matchingPolygon.set("name",point.name)
+            console.log(`Point "${point.name}" is located inside "${matchingPolygon.getId()}".`);
+          } else {
+            console.log(`Point "${point.name}" does not match any room.`);
+          }
+        });
+        console.log(geojsonFeatures)
       }
       else {
-        console.log(data);
         const actions = data as Array<Marker>;
         actions.forEach((action: any) => {
-          console.log()
+          const { width, height } = extractTileSizeFromFilename(action.image);
+
+          // Calculate the center of the feature based on its tile coverage
+          const centerX = (action.x + width / 2);     // Center in x-axis
+          const centerY = imageHeight - (action.y + height / 2);  // Center in y-axis (flip Y axis)
+
           const feature = new Feature({
-            
-            geometry: new Point([action.x + 0.5, imageHeight - action.y -0.5 ]),
+            geometry: new Point([centerX, centerY]),
+            //geometry: new Point([action.x + 0.5, imageHeight - action.y - 0.5]),
             name: action.name,
-            
+
           });
-          console.log(`/icons/${action.image}`)
           const iconStyle = new Style({
             image: new Icon({
               src: `/icons/${action.image}`, // Set the icon image source
-              scale: 1,                 // Set scale to 1 to ensure no scaling of the icon
-      anchorXUnits: 'fraction', // Fractional anchoring
-      anchorYUnits: 'fraction', // Fractional anchoring
+              anchor: [0.5, height / 2],
+              scale: Math.pow(2, map.getView().getZoom()! - maxZoom),                 // Set scale to 1 to ensure no scaling of the icon
+              anchorXUnits: 'fraction', // Fractional anchoring
+              anchorYUnits: 'fraction', // Fractional anchoring
             }),
           });
-          
+
           // Set the style to the feature
           feature.setStyle(iconStyle);
           source.addFeature(feature);
-          
+
         })
-        scaleVectorLayerToMatchTileUnits(source,48, true);
+        scaleVectorLayerToMatchTileUnits(source, 48, true);
       }
-      
-      
-      console.log(source.getFeatures());
-      console.log("Vector Source Extent:", source.getExtent());
     })
 
     .catch(error => {
@@ -97,6 +138,18 @@ function fillSourceFeatures(fileName: string, source: VectorSource, isGeo = fals
     });
 }
 
+
+// Function to check if a point is within any of the polygons
+function findMatchingPolygonForPoint(point: [number, number], polygons: Feature[]): any | null {
+  for (const polygonFeature of polygons) {
+    const polygonGeometry = polygonFeature.getGeometry() as Polygon;
+    if (polygonGeometry.intersectsCoordinate(point)) {
+      const polygonName = polygonFeature.get('name');
+      return polygonFeature;
+    }
+  }
+  return null;
+}
 const roomSource = new VectorSource();
 fillSourceFeatures('hopeport_hopeforest', roomSource, true)
 // Step 3: Create a Vector Layer and Add Styles
@@ -205,12 +258,14 @@ legendItems.forEach((item) => {
   legendLayers[item] = layer;
 });
 
+
+
 // Add features to each legend layer only if the action type is in legendItems
 rooms.forEach((room) => {
   room.actions.forEach((action) => {
     if (action.type && legendItems.includes(action.type)) {
       const feature = new Feature({
-        geometry: new Point(room.location),
+        geometry: new Point([room.location[0] - 50, room.location[1] + 50]),
         name: room.name,
       });
       feature.set('actions', room.actions);
@@ -293,7 +348,7 @@ function scaleVectorLayerToMatchTileUnits(vectorSource: VectorSource, tileUnitSi
     console.error('Unable to determine vector source extent.');
     return;
   }
-console.log(inverse);
+
   const centerY = inverse ? imageHeight : 0;
   // Apply the scaling factor to all features in the vector source
   const features = vectorSource.getFeatures();
@@ -305,8 +360,20 @@ console.log(inverse);
       feature.setGeometry(geometry); // Update the feature with the new geometry
     }
   });
-
-  // Log the updated extent to verify correctness
-  console.log("Updated Vector Source Extent after scaling:", vectorSource.getExtent());
 }
-console.log("Map Extent:", mapExtent);
+
+
+
+// Function to extract tile size from the image name or default to 1x1
+function extractTileSizeFromFilename(filename: string) {
+  const regex = /_(\d+)x(\d+)/; // Match pattern like "_1x5" in the filename
+  const match = filename.match(regex);
+  if (match) {
+    const width = parseInt(match[2], 10);
+    const height = parseInt(match[1], 10);
+    return { width, height };
+  } else {
+    // Default to 1x1 if no size is provided in the filename
+    return { width: 1, height: 1 };
+  }
+}
