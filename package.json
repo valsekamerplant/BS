@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "create lookup table":"py ./scripts/create_lookup_table.py"
   },
   "devDependencies": {
     "typescript": "~5.6.2",

@@ -1,11 +1,13 @@
 import { Map, Overlay, View } from 'ol';
-import { backgroundLayer, highlightLayer, highlightTile, legendLayers, mapExtent, maxZoom, projection, resolutions, tileUnit, roomLayer, skillingLayer, skillingSource } from './layers';
 import { getCenter } from 'ol/extent';
 import { Icon, Style } from 'ol/style';
+import { backgroundLayer, createFeatureStyle, fillSourceFeatures, highlightLayer, highlightTile, mapExtent, maxZoom, projection, roomLayer, roomSource, skillingLayer, skillingSource } from './layers';
+import { centerMapOnRoom, setWikiInfo } from './controls';
+import { roomMarkerData } from './main';
 
 export const map = new Map({
     target: 'map',
-    layers: [backgroundLayer, highlightLayer, roomLayer, skillingLayer, ...Object.values(legendLayers)],
+    layers: [backgroundLayer, highlightLayer, roomLayer, skillingLayer],
     view: new View({
         projection: projection,
         resolutions: backgroundLayer.getSource()!.getTileGrid()!.getResolutions()!,
@@ -17,37 +19,30 @@ export const map = new Map({
     }),
 });
 
+fillSourceFeatures('rooms', roomSource)
+fillSourceFeatures('markers', skillingSource)
 
-// Find and highlight closest point on click
-// map.on('singleclick', function (event) {
-//     let closestFeature: any = null;
-//     let minDistance = Infinity;
+map.on('singleclick', function (event) {
+    const source = roomLayer.getSource()!;
 
-//     markerLayer.getSource()!.getFeatures().forEach((feature) => {
-//         const pointGeo = feature && feature.getGeometry() as Point;
-//         const featureCoords = pointGeo.getCoordinates();
-//         const distance = Math.hypot(featureCoords[0] - event.coordinate[0], featureCoords[1] - event.coordinate[1]);
+    // Get the closest feature to the clicked coordinate
+    const closestFeature = source.getClosestFeatureToCoordinate(event.coordinate);
 
-//         if (distance < minDistance) {
-//             minDistance = distance;
-//             closestFeature = feature;
-//         }
-//     });
+    if (closestFeature) {
+        const closestName = closestFeature.get('name') || closestFeature.getId();
+        // Perform other actions
+        console.log(closestFeature);
+        const selectedRoom = roomMarkerData.rooms.filter((room) => room.name == closestName)[0]
+        const center = getCenter(closestFeature!.getGeometry()!.getExtent());
+        setWikiInfo(selectedRoom)
+        centerMapOnRoom([center[0],center[1]])
+        updateUrlWithClosestPoint(closestName);
+    } else {
+        console.log('No polygon found near the clicked point.');
+    }
+});
 
-//     if (closestFeature) {
-//         const closestName = closestFeature.get('name');
-//         updateUrlWithClosestPoint(closestName);
-//     }
-// });
-
-
-// function updateUrlWithClosestPoint(name: string) {
-//     const url = new URL(window.location.href);
-//     url.searchParams.set('selectedRoom', name);
-//     window.history.pushState({}, '', url);
-// }
-
-function updateUrlWithClosestPoint(name: string) {
+export function updateUrlWithClosestPoint(name: string) {
     const url = new URL(window.location.href);
     url.searchParams.set('selectedRoom', name);
     window.history.pushState({}, '', url);
@@ -124,3 +119,14 @@ map.getView().on('change:resolution', () => {
         }
     });
 });
+
+map.on('moveend', () => {
+    const zoom = map.getView().getZoom()!; // Get the current zoom level
+  
+    roomSource.getFeatures().forEach((feature) => {
+      const featureName = feature.get('name') || 'Unnamed Feature'; // Replace with your feature's property key
+      const style = createFeatureStyle(featureName, zoom);
+      feature.setStyle(style);
+    });
+  });
+  
