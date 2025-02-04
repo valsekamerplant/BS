@@ -188,6 +188,28 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Giant Bat",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "minefighter",
+                            "theme-neutral"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            284,
+                            221
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Gas Leech",
                         "category": "Entity",
                         "size": [
@@ -242,7 +264,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Mine Cart Work",
+                        "name": "Flint Mine Cart Work",
                         "category": "Entity",
                         "size": [
                             1,
@@ -257,6 +279,90 @@
                         "coordinates": [
                             283,
                             172
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Iron Mine Cart Work",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "miner"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            283,
+                            168
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Basalt Mine Cart Work",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "miner"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            283,
+                            166
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Limestone Mine Cart Work",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "miner"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            286,
+                            164
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Fossils Mine Cart Work",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "miner"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            287,
+                            164
                         ]
                     }
                 }
@@ -532,7 +638,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            285,
+                            290,
                             221
                         ]
                     }
@@ -926,6 +1032,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Oak Tree",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "woodcutter"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            236,
+                            79
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Rotting Log",
                         "category": "Entity",
                         "size": [
@@ -1000,8 +1127,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            252,
-                            69
+                            254,
+                            63
                         ]
                     }
                 }
@@ -1082,7 +1209,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            239,
+                            242,
                             37
                         ]
                     }
@@ -1197,7 +1324,29 @@
                 267.7448979591837,
                 87.31632653061224
             ],
-            "markers": []
+            "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Oak Tree",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "woodcutter"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            265,
+                            85
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Cutters Clearing",
@@ -1223,7 +1372,7 @@
                         "type": "Point",
                         "coordinates": [
                             263,
-                            76
+                            71
                         ]
                     }
                 },
@@ -1252,7 +1401,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Wood Splitting Stump",
+                        "name": "Wood Splitting Stump (Murphy)",
                         "category": "Entity",
                         "size": [
                             3,
@@ -1339,8 +1488,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            275,
-                            65
+                            260,
+                            64
                         ]
                     }
                 },
@@ -1413,6 +1562,27 @@
                         "coordinates": [
                             267,
                             53
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Oak Tree",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "woodcutter"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            260,
+                            51
                         ]
                     }
                 }
@@ -1590,6 +1760,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Door",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            2
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            490,
+                            44
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Sideboard",
                         "category": "Entity",
                         "size": [
@@ -1763,6 +1954,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Smashed Window",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            490,
+                            35
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Hole",
                         "category": "Entity",
                         "size": [
@@ -1776,8 +1988,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            499,
-                            36
+                            493,
+                            32
                         ]
                     }
                 },
@@ -2087,6 +2299,48 @@
                             94
                         ]
                     }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Evidence Filing",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            3
+                        ],
+                        "classes": [
+                            "detective"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            449,
+                            99
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Files Smi-Val",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "detective"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            449,
+                            96
+                        ]
+                    }
                 }
             ]
         },
@@ -2114,8 +2368,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            441,
-                            85
+                            435,
+                            87
                         ]
                     }
                 }
@@ -2145,7 +2399,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            434,
+                            432,
                             56
                         ]
                     }
@@ -2178,27 +2432,6 @@
                         "coordinates": [
                             452,
                             101
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Evidence Filing",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            3
-                        ],
-                        "classes": [
-                            "detective"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            449,
-                            99
                         ]
                     }
                 },
@@ -2262,27 +2495,6 @@
                         "coordinates": [
                             454,
                             99
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Files Smi-Val",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "detective"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            449,
-                            96
                         ]
                     }
                 },
@@ -2388,6 +2600,27 @@
                         "coordinates": [
                             452,
                             97
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Safe Box",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            449,
+                            92
                         ]
                     }
                 }
@@ -2590,6 +2823,28 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Kaynat's Doorman",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "talk",
+                            "theme-interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            471,
+                            31
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Kaynat Wray",
                         "category": "Entity",
                         "size": [
@@ -2680,7 +2935,29 @@
                 471.0,
                 16.02173913043478
             ],
-            "markers": []
+            "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Fountain of Delight",
+                        "category": "Entity",
+                        "size": [
+                            2,
+                            2
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            470,
+                            12
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Quibble Lane",
@@ -2941,36 +3218,6 @@
                             141
                         ]
                     }
-                }
-            ]
-        },
-        {
-            "name": "City Dyes",
-            "center": [
-                507.21153846153845,
-                152.67307692307693
-            ],
-            "markers": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Hugh",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "talk"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            510,
-                            153
-                        ]
-                    }
                 },
                 {
                     "type": "Feature",
@@ -3011,6 +3258,36 @@
                         "coordinates": [
                             503,
                             151
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "City Dyes",
+            "center": [
+                507.21153846153845,
+                152.67307692307693
+            ],
+            "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Hugh",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "talk"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            510,
+                            153
                         ]
                     }
                 },
@@ -3749,6 +4026,27 @@
                             169
                         ]
                     }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Broken Window",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            446,
+                            168
+                        ]
+                    }
                 }
             ]
         },
@@ -3793,6 +4091,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Damaged Door",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            433,
+                            152
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Lani",
                         "category": "Entity",
                         "size": [
@@ -3820,27 +4139,6 @@
                 167.0
             ],
             "markers": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Broken Window",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "interactable"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            446,
-                            168
-                        ]
-                    }
-                },
                 {
                     "type": "Feature",
                     "properties": {
@@ -4343,7 +4641,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Ingot Mold",
+                        "name": "Ingot Mold (gnome)",
                         "category": "Entity",
                         "size": [
                             1,
@@ -4513,6 +4811,48 @@
                         "coordinates": [
                             367,
                             83
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Chalk Line",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            2
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            363,
+                            85
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Throwing Cushions",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            362,
+                            84
                         ]
                     }
                 }
@@ -4792,7 +5132,30 @@
                 358.32758620689657,
                 125.5
             ],
-            "markers": []
+            "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Cyclops Guard",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "talk",
+                            "theme-interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            365,
+                            126
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Crenopolis Outskirts Portal Stone",
@@ -4830,30 +5193,7 @@
                 368.7307692307692,
                 124.93589743589743
             ],
-            "markers": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Cyclops Guard",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "talk",
-                            "theme-interactable"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            365,
-                            126
-                        ]
-                    }
-                }
-            ]
+            "markers": []
         },
         {
             "name": "Road to Crenopolis",
@@ -5741,7 +6081,7 @@
                         "type": "Point",
                         "coordinates": [
                             305,
-                            253
+                            254
                         ]
                     }
                 }
@@ -5963,8 +6303,29 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            310,
-                            84
+                            301,
+                            83
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Storage Rift Marker",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "storage"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            307,
+                            85
                         ]
                     }
                 }
@@ -5993,8 +6354,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            312,
-                            72
+                            308,
+                            75
                         ]
                     }
                 }
@@ -6007,6 +6368,27 @@
                 160.22164948453607
             ],
             "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Big Flat Boulder",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            2
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            272,
+                            164
+                        ]
+                    }
+                },
                 {
                     "type": "Feature",
                     "properties": {
@@ -6044,7 +6426,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            260,
+                            269,
                             156
                         ]
                     }
@@ -6058,6 +6440,28 @@
                 181.5
             ],
             "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "To Mine of Mantuban",
+                        "link": "Mine of Mantuban",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            3
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            281,
+                            180
+                        ]
+                    }
+                },
                 {
                     "type": "Feature",
                     "properties": {
@@ -6127,8 +6531,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            268,
-                            151
+                            269,
+                            146
                         ]
                     }
                 }
@@ -6261,8 +6665,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            207,
-                            131
+                            202,
+                            128
                         ]
                     }
                 },
@@ -6486,7 +6890,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            262,
+                            257,
                             116
                         ]
                     }
@@ -6634,7 +7038,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Wood Splitting Stump",
+                        "name": "Wood Splitting Stump (Hanna)",
                         "category": "Entity",
                         "size": [
                             3,
@@ -6828,6 +7232,49 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Wallplant",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "forager"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            142,
+                            120
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Deathcrow",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "guard",
+                            "theme-neutral"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            145,
+                            120
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Cape Shop",
                         "category": "Entity",
                         "size": [
@@ -6878,6 +7325,28 @@
                 114.0
             ],
             "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Deathcrow",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "guard",
+                            "theme-neutral"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            152,
+                            120
+                        ]
+                    }
+                },
                 {
                     "type": "Feature",
                     "properties": {
@@ -7463,8 +7932,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            249,
-                            226
+                            243,
+                            213
                         ]
                     }
                 },
@@ -7553,6 +8022,27 @@
                         "classes": [
                             "talk",
                             "theme-bonewright"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            277,
+                            298
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Divination",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "bonewright"
                         ]
                     },
                     "geometry": {
@@ -8900,8 +9390,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            43,
-                            141
+                            45,
+                            153
                         ]
                     }
                 },
@@ -9106,6 +9596,28 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "To Stonemaw Hill",
+                        "link": "Stonemaw Hill",
+                        "category": "Entity",
+                        "size": [
+                            2,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            30,
+                            64
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Shapes Symbol",
                         "category": "Entity",
                         "size": [
@@ -9215,6 +9727,27 @@
                         "coordinates": [
                             47,
                             101
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Large Slab of Rock",
+                        "category": "Entity",
+                        "size": [
+                            2,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            46,
+                            98
                         ]
                     }
                 },
@@ -9401,7 +9934,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Ingot Mold",
+                        "name": "Ingot Mold (goblin)",
                         "category": "Entity",
                         "size": [
                             1,
@@ -10427,30 +10960,7 @@
                 471.0,
                 36.00909090909091
             ],
-            "markers": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Kaynat's Doorman",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "talk",
-                            "theme-interactable"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            471,
-                            31
-                        ]
-                    }
-                }
-            ]
+            "markers": []
         },
         {
             "name": "Slant Street",
@@ -10648,6 +11158,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Patched Up Door",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            480,
+                            60
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Giant Wasp",
                         "category": "Entity",
                         "size": [
@@ -10718,27 +11249,6 @@
                             44
                         ]
                     }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Door",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            2
-                        ],
-                        "classes": [
-                            "interactable"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            490,
-                            44
-                        ]
-                    }
                 }
             ]
         },
@@ -10803,27 +11313,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Patched Up Door",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "interactable"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            480,
-                            60
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Hamila Jimore",
                         "category": "Entity",
                         "size": [
@@ -10868,8 +11357,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            310,
-                            228
+                            308,
+                            223
                         ]
                     }
                 }
@@ -10881,7 +11370,29 @@
                 312.30645161290323,
                 219.6290322580645
             ],
-            "markers": []
+            "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Cabranese Ore",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "miner"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            313,
+                            217
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Sculpting Room",
@@ -11202,27 +11713,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Old Trunk",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "search"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            316,
-                            197
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Goblin Miner",
                         "category": "Entity",
                         "size": [
@@ -11237,7 +11727,28 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            317,
+                            323,
+                            190
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Old Trunk",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "search"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            316,
                             197
                         ]
                     }
@@ -11534,7 +12045,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            328,
+                            325,
                             190
                         ]
                     }
@@ -11979,29 +12490,7 @@
                 428.7391304347826,
                 149.95652173913044
             ],
-            "markers": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Damaged Door",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "interactable"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            433,
-                            152
-                        ]
-                    }
-                }
-            ]
+            "markers": []
         },
         {
             "name": "Thimble Lane",
@@ -12230,8 +12719,8 @@
                         "name": "Copper Sink",
                         "category": "Entity",
                         "size": [
-                            2,
-                            1
+                            1,
+                            2
                         ],
                         "classes": [
                             "interactable"
@@ -12517,6 +13006,28 @@
                         "coordinates": [
                             490,
                             134
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Burglar",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "watchperson",
+                            "theme-aggressive"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            494,
+                            132
                         ]
                     }
                 }
@@ -14288,27 +14799,6 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Wallplant",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "forager"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            142,
-                            120
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
                         "name": "Deathcrow",
                         "category": "Entity",
                         "size": [
@@ -14323,8 +14813,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            145,
-                            120
+                            147,
+                            124
                         ]
                     }
                 }
@@ -14438,7 +14928,29 @@
                 235.63333333333333,
                 85.46666666666667
             ],
-            "markers": []
+            "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Storage Rift Marker",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "storage"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            235,
+                            83
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Shortcut",
@@ -14871,6 +15383,28 @@
                             176
                         ]
                     }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Aboredon",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "scout",
+                            "theme-neutral"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            235,
+                            184
+                        ]
+                    }
                 }
             ]
         },
@@ -14898,8 +15432,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            235,
-                            184
+                            238,
+                            198
                         ]
                     }
                 },
@@ -14919,8 +15453,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            234,
-                            194
+                            233,
+                            191
                         ]
                     }
                 }
@@ -15103,8 +15637,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            251,
-                            151
+                            252,
+                            146
                         ]
                     }
                 }
@@ -15117,27 +15651,6 @@
                 118.88679245283019
             ],
             "markers": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Poplar Tree",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "woodcutter"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            270,
-                            117
-                        ]
-                    }
-                },
                 {
                     "type": "Feature",
                     "properties": {
@@ -15277,7 +15790,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Wood Splitting Stump",
+                        "name": "Wood Splitting Stump (Claude)",
                         "category": "Entity",
                         "size": [
                             1,
@@ -15343,8 +15856,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            240,
-                            119
+                            227,
+                            120
                         ]
                     }
                 }
@@ -15535,8 +16048,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            284,
-                            99
+                            279,
+                            95
                         ]
                     }
                 }
@@ -15852,7 +16365,7 @@
                         "type": "Point",
                         "coordinates": [
                             252,
-                            162
+                            156
                         ]
                     }
                 },
@@ -15938,6 +16451,27 @@
                 155.97916666666666
             ],
             "markers": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Door",
+                        "category": "Entity",
+                        "size": [
+                            2,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            287,
+                            150
+                        ]
+                    }
+                },
                 {
                     "type": "Feature",
                     "properties": {
@@ -16046,10 +16580,10 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Large Slab of Rock",
+                        "name": "Large Pile of Treasure",
                         "category": "Entity",
                         "size": [
-                            2,
+                            1,
                             1
                         ],
                         "classes": [
@@ -16059,8 +16593,29 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            46,
-                            98
+                            45,
+                            90
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Looted Inheritance Chest",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "interactable"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            47,
+                            90
                         ]
                     }
                 }
@@ -16361,6 +16916,27 @@
                         "coordinates": [
                             140,
                             162
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Crate",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "item"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            142,
+                            158
                         ]
                     }
                 },
@@ -16672,7 +17248,7 @@
                         "type": "Point",
                         "coordinates": [
                             273,
-                            142
+                            135
                         ]
                     }
                 }
@@ -16883,27 +17459,6 @@
                             143
                         ]
                     }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Door",
-                        "category": "Entity",
-                        "size": [
-                            2,
-                            1
-                        ],
-                        "classes": [
-                            "interactable"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            287,
-                            150
-                        ]
-                    }
                 }
             ]
         },
@@ -16917,7 +17472,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                        "name": "Dye Tub",
+                        "name": "Dye Tub Clay Red",
                         "category": "Entity",
                         "size": [
                             1,
@@ -16932,6 +17487,405 @@
                         "coordinates": [
                             186,
                             177
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Bark Brown",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            185,
+                            177
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Walnut Brown",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            184,
+                            177
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Mist Gray",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            186,
+                            182
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Slate Gray",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            185,
+                            182
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Storm Gray",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            184,
+                            182
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Pine Green",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            176,
+                            184
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Moss Green",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            177,
+                            184
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Fern Green",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            178,
+                            184
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Forest Green",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            179,
+                            184
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Willow Green",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            180,
+                            184
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Forest Yellow",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            181,
+                            184
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Sand Yellow",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            182,
+                            184
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Rosewood Red",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            176,
+                            175
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Brick Red",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            177,
+                            175
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Currant Red",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            178,
+                            175
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Forest Red",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            179,
+                            175
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Tawny Brown",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            180,
+                            175
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Neutral",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            181,
+                            175
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "name": "Dye Tub Rust Red",
+                        "category": "Entity",
+                        "size": [
+                            1,
+                            1
+                        ],
+                        "classes": [
+                            "palette"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            182,
+                            175
                         ]
                     }
                 },
@@ -17021,7 +17975,7 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            277,
+                            273,
                             177
                         ]
                     }
@@ -17065,28 +18019,6 @@
                         "coordinates": [
                             278,
                             181
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "To Mine of Mantuban",
-                        "link": "Mine of Mantuban",
-                        "category": "Entity",
-                        "size": [
-                            3,
-                            1
-                        ],
-                        "classes": [
-                            "interactable"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            281,
-                            180
                         ]
                     }
                 }
@@ -17136,8 +18068,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            270,
-                            166
+                            273,
+                            158
                         ]
                     }
                 },
@@ -17603,6 +18535,27 @@
                 {
                     "type": "Feature",
                     "properties": {
+                        "name": "Work for Ebsworth",
+                        "category": "Entity",
+                        "size": [
+                            3,
+                            1
+                        ],
+                        "classes": [
+                            "alchemist"
+                        ]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            132,
+                            103
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
                         "name": "Potent Potion Station",
                         "category": "Entity",
                         "size": [
@@ -17702,8 +18655,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            134,
-                            103
+                            129,
+                            109
                         ]
                     }
                 }
@@ -17785,8 +18738,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            181,
-                            193
+                            189,
+                            188
                         ]
                     }
                 },
@@ -17998,8 +18951,8 @@
                         "name": "Circular Saw",
                         "category": "Entity",
                         "size": [
-                            1,
-                            5
+                            5,
+                            1
                         ],
                         "classes": [
                             "carpenter"
@@ -18141,8 +19094,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            239,
-                            32
+                            240,
+                            28
                         ]
                     }
                 },
@@ -18306,8 +19259,8 @@
                     "geometry": {
                         "type": "Point",
                         "coordinates": [
-                            376,
-                            206
+                            367,
+                            210
                         ]
                     }
                 }
@@ -18857,30 +19810,7 @@
                 427.52702702702703,
                 86.04054054054055
             ],
-            "markers": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Street Hag",
-                        "category": "Entity",
-                        "size": [
-                            1,
-                            1
-                        ],
-                        "classes": [
-                            "watchperson",
-                            "theme-neutral"
-                        ]
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            435,
-                            87
-                        ]
-                    }
-                }
-            ]
+            "markers": []
         },
         {
             "name": "Soap Shop",
@@ -19645,512 +20575,5 @@
             ]
         }
     ],
-    "standaloneMarkers": [
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Crate",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "item"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    142,
-                    158
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "To Stonemaw Hill",
-                "link": "Stonemaw Hill",
-                "category": "Entity",
-                "size": [
-                    2,
-                    1
-                ],
-                "classes": [
-                    "interactable"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    30,
-                    64
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Storage Rift Marker",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "storage"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    235,
-                    83
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Oak Tree",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "woodcutter"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    258,
-                    76
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Suave Tree",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "woodcutter"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    290,
-                    75
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Chestnut",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "gatherer"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    257,
-                    116
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Thistle",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "gatherer"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    261,
-                    98
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Poplar Tree",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "woodcutter"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    279,
-                    95
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Pine Tree",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "woodcutter"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    273,
-                    135
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Big Flat Boulder",
-                "category": "Entity",
-                "size": [
-                    1,
-                    2
-                ],
-                "classes": [
-                    "interactable"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    272,
-                    164
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Juniper Tree",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "woodcutter"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    243,
-                    213
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Ash Tree",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "woodcutter"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    212,
-                    185
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Apple",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "gatherer"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    189,
-                    188
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Shinerium",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "miner"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    312,
-                    249
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Purpladium",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "miner"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    285,
-                    239
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Two Handed Melee Workbench",
-                "link": "Two Handed Melee Workbench (bonewright)",
-                "category": "Entity",
-                "size": [
-                    2,
-                    1
-                ],
-                "classes": [
-                    "bonewright"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    269,
-                    219
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Iron Ore",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "miner"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    281,
-                    191
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Cabranese Ore",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "miner"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    313,
-                    217
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Silver",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "miner"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    417,
-                    162
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Adathril Ore",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "miner"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    367,
-                    210
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Safe Box",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "interactable"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    449,
-                    92
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Fountain of Delight",
-                "category": "Entity",
-                "size": [
-                    2,
-                    2
-                ],
-                "classes": [
-                    "interactable"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    470,
-                    12
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Smashed Window",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "interactable"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    490,
-                    35
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Hole",
-                "category": "Entity",
-                "size": [
-                    1,
-                    1
-                ],
-                "classes": [
-                    "interactable"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    493,
-                    32
-                ]
-            }
-        }
-    ]
+    "standaloneMarkers": []
 }
